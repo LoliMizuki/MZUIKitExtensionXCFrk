@@ -1,0 +1,538 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
+// swift-module-flags: -target arm64-apple-ios15.5 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MZSwifts
+import Combine
+import CoreGraphics
+import CryptoKit
+import Foundation
+@_exported import MZSwifts
+import Swift
+import UIKit
+import _Concurrency
+public struct MZMath {
+  public static func lerp(numerator: MZSwifts.MZFloat, denominator: MZSwifts.MZFloat, canOverOne: Swift.Bool = false) -> MZSwifts.MZFloat
+  public static func lerp(numerator: CoreGraphics.CGFloat, denominator: CoreGraphics.CGFloat, canOverOne: Swift.Bool = false) -> CoreGraphics.CGFloat
+  public static func valueInBound<T>(origin: T, lower: T, upper: T) -> T where T : Swift.Comparable
+}
+extension MZSwifts.MZMath {
+  public static func greatestCommonDivisorOf(_ a: Swift.Int, _ b: Swift.Int) -> Swift.Int
+  public static func gcd(_ a: Swift.Int, _ b: Swift.Int) -> Swift.Int
+}
+extension MZSwifts.MZMath {
+  public static func distancePow2(from: CoreGraphics.CGPoint, to: CoreGraphics.CGPoint) -> CoreGraphics.CGFloat
+  public static func distance(from: CoreGraphics.CGPoint, to: CoreGraphics.CGPoint) -> CoreGraphics.CGFloat
+}
+public class MZTimer {
+  public var isCancelled: Swift.Bool {
+    get
+  }
+  public var state: MZSwifts.MZTimer.State {
+    get
+  }
+  public init(repeating: Dispatch.DispatchTimeInterval, queue: Dispatch.DispatchQueue? = nil, event: (() -> ())?)
+  public func resume()
+  public func suspend()
+  public func activate()
+  public func cancel()
+  @objc deinit
+}
+extension MZSwifts.MZTimer {
+  public enum State {
+    case suspended
+    case resumed
+    public static func == (a: MZSwifts.MZTimer.State, b: MZSwifts.MZTimer.State) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+extension Foundation.Data {
+  public var utf8String: Swift.String? {
+    get
+  }
+  public func md5(returnEmptyIfZeroCount: Swift.Bool = true) -> Swift.String
+  public func byteDescription(allowedUnits: Foundation.ByteCountFormatter.Units = .useMB) -> Swift.String
+  public func copyBytes<ConvertedType>(to array: inout [ConvertedType])
+  public func copyBytes<ConvertedType>(to value: inout ConvertedType)
+}
+extension Swift.Array where Element == Combine.AnyCancellable {
+  public mutating func cancelAll(alsoRemove remove: Swift.Bool = true)
+}
+extension Foundation.Date {
+  public func string(withFormat format: Swift.String? = "yyyyMMdd-HHmmss", local: Foundation.Locale? = nil, timeZone: Foundation.TimeZone? = nil) -> Swift.String
+  public func string(dateStyle: Foundation.DateFormatter.Style, local: Foundation.Locale? = nil, timeZone: Foundation.TimeZone? = nil) -> Swift.String
+}
+extension Foundation.Date {
+  public static let iso8610Format: Swift.String
+}
+public protocol MZNotificationComponentEventProtocol : Swift.CaseIterable {
+  var notificationName: Foundation.Notification.Name { get }
+}
+public protocol MZNotificationComponentProtocol {
+  associatedtype NotifyEvent
+  var baseCenter: Foundation.NotificationCenter { get }
+  func observe(_ event: Self.NotifyEvent, observer: Any, action: ObjectiveC.Selector)
+  func remove(observer: Any, event: Self.NotifyEvent)
+  func remove(observer: Any)
+  func post(_ event: Self.NotifyEvent, userInfo: [Swift.AnyHashable : Any]?)
+}
+extension MZSwifts.MZNotificationComponentProtocol where Self.NotifyEvent : MZSwifts.MZNotificationComponentEventProtocol {
+  public var baseCenter: Foundation.NotificationCenter {
+    get
+  }
+  public func observe(_ event: Self.NotifyEvent, observer: Any, action: ObjectiveC.Selector)
+  public func observe(_ event: Self.NotifyEvent, queue: Foundation.OperationQueue?, using block: @escaping (Foundation.Notification) -> Swift.Void) -> ObjectiveC.NSObjectProtocol
+  public func remove(observer: Any, event: Self.NotifyEvent)
+  public func remove(observer: Any)
+  public func post(_ event: Self.NotifyEvent, userInfo: [Swift.AnyHashable : Any]? = nil)
+}
+@propertyWrapper public struct UserDefaultsStored<Type> {
+  public init(key: Swift.String, default: Type)
+  public var wrappedValue: Type {
+    get
+    set
+  }
+}
+@_hasMissingDesignatedInitializers public class MZImage {
+  public enum Format {
+    case png
+    case jpg(compressionQuality: CoreGraphics.CGFloat)
+  }
+  public class func cropping(cgImage: CoreGraphics.CGImage, toRect cropRect: CoreGraphics.CGRect) -> CoreGraphics.CGImage?
+  public class func cropping(uiImage: UIKit.UIImage, toRect cropRect: CoreGraphics.CGRect) -> UIKit.UIImage?
+  public class func rotate(uiImage image: UIKit.UIImage?, orientation: UIKit.UIImage.Orientation) -> UIKit.UIImage?
+  @objc deinit
+}
+extension UIKit.UIImage {
+  public func data(as format: MZSwifts.MZImage.Format = .png) -> Foundation.Data?
+  public func normalized() -> UIKit.UIImage
+  public func resized(to targetSize: CoreGraphics.CGSize) -> UIKit.UIImage
+  public func resized(maxEdge: CoreGraphics.CGFloat, forceResizeIfLess: Swift.Bool = false) -> UIKit.UIImage
+}
+@_hasMissingDesignatedInitializers public class MZType {
+  public class func className(ofObject object: Swift.AnyObject) -> Swift.String
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class MZUnit {
+  @objc deinit
+}
+extension MZSwifts.MZUnit {
+  @_hasMissingDesignatedInitializers public class Length {
+    public static func meter(ofFeet feet: MZSwifts.MZFloat) -> MZSwifts.MZFloat
+    public static func feet(ofMeter meter: MZSwifts.MZFloat) -> MZSwifts.MZFloat
+    @objc deinit
+  }
+}
+extension MZSwifts.MZUnit {
+  @_hasMissingDesignatedInitializers public class Temperature {
+    public static func fahrenheit(ofCelsius celsius: MZSwifts.MZFloat) -> MZSwifts.MZFloat
+    public static func celsius(ofFahrenheit fahrenheit: MZSwifts.MZFloat) -> MZSwifts.MZFloat
+    @objc deinit
+  }
+}
+extension MZSwifts.MZUnit {
+  public enum MeasurementSystem : Swift.CaseIterable {
+    case metric
+    case imperial
+    public static func == (a: MZSwifts.MZUnit.MeasurementSystem, b: MZSwifts.MZUnit.MeasurementSystem) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public typealias AllCases = [MZSwifts.MZUnit.MeasurementSystem]
+    public static var allCases: [MZSwifts.MZUnit.MeasurementSystem] {
+      get
+    }
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+extension Dispatch.DispatchTimeInterval {
+  public static func with(seconds: Swift.Double) -> Dispatch.DispatchTimeInterval
+  public static func now(after seconds: Swift.Double) -> Dispatch.DispatchTime
+}
+extension Dispatch.DispatchTime {
+  public static func now(after seconds: Swift.Double) -> Dispatch.DispatchTime
+}
+@_hasMissingDesignatedInitializers public class MZAngle {
+  public enum CircularMotion : Swift.Int, Swift.CaseIterable, Swift.CustomStringConvertible {
+    case clockwise
+    case counterClockwise
+    public var description: Swift.String {
+      get
+    }
+    public init?(rawValue: Swift.Int)
+    public typealias AllCases = [MZSwifts.MZAngle.CircularMotion]
+    public typealias RawValue = Swift.Int
+    public static var allCases: [MZSwifts.MZAngle.CircularMotion] {
+      get
+    }
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public class func degrees(ofRadians radians: MZSwifts.MZFloat) -> MZSwifts.MZFloat
+  public class func radians(ofDegrees degree: MZSwifts.MZFloat) -> MZSwifts.MZFloat
+  public class func formatDegree(_ origin: MZSwifts.MZFloat) -> MZSwifts.MZFloat
+  public class func degree(fromVector from: CoreGraphics.CGVector, toVector to: CoreGraphics.CGVector) -> MZSwifts.MZFloat
+  public class func degree(fromXAxisToVector vector: CoreGraphics.CGVector) -> MZSwifts.MZFloat
+  public class func radians(fromXAxisToVector vector: CoreGraphics.CGVector) -> MZSwifts.MZFloat
+  public class func degress(from: CoreGraphics.CGPoint, to: CoreGraphics.CGPoint) -> MZSwifts.MZFloat
+  public class func radians(from: CoreGraphics.CGPoint, to: CoreGraphics.CGPoint) -> MZSwifts.MZFloat
+  public class func isOver(from: MZSwifts.MZFloat, to: MZSwifts.MZFloat, add: MZSwifts.MZFloat, circularMotion: MZSwifts.MZAngle.CircularMotion = CircularMotion.counterClockwise) -> Swift.Bool
+  public class func shortestDegreeDistance(from: MZSwifts.MZFloat, to: MZSwifts.MZFloat) -> MZSwifts.MZFloat
+  @objc deinit
+}
+extension Swift.String {
+  public func toInt(ignores: [Swift.String] = [], trimInvalid: Swift.Bool = false) -> Swift.Int?
+  public func toDouble(ignores: [Swift.String] = [], trimInvalid: Swift.Bool = false) -> Swift.Double?
+  public func toSeconds() -> Swift.Double?
+}
+@_hasMissingDesignatedInitializers public class MZDebug {
+  public static var isEnable: Swift.Bool
+  public class func log(_ item: Any? = nil, filePath: Swift.String = #file, functionName: Swift.String = #function, line: Swift.Int = #line)
+  public class func logFunctionName(prefix: Swift.String? = nil, filePath: Swift.String = #file, functionName: Swift.String = #function, line: Swift.Int = #line)
+  public class func timeLog(_ message: Swift.String, filePath: Swift.String = #file, functionName: Swift.String = #function, line: Swift.Int = #line)
+  public class func assert(predicate: @autoclosure () -> Swift.Bool, message: Swift.String, filePath: Swift.String = #file, functionName: Swift.String = #function, line: Swift.Int = #line)
+  public class func assert(noNil target: Any?)
+  public class func assertAlwayFalse(_ message: Swift.String, filePath: Swift.String = #file, functionName: Swift.String = #function, line: Swift.Int = #line)
+  public class func overrideMe(filePath: Swift.String = #file, functionName: Swift.String = #function, line: Swift.Int = #line) -> Swift.Never
+  public class func youCannotPass(filePath: Swift.String = #file, functionName: Swift.String = #function, line: Swift.Int = #line) -> Swift.Never
+  public class func implementMe(filePath: Swift.String = #file, functionName: Swift.String = #function, line: Swift.Int = #line)
+  public class func formatLogString(filePath: Swift.String = #file, functionName: Swift.String = #function, line: Swift.Int = #line) -> Swift.String
+  public class func fileNameInPath(path: Swift.String = #file) -> Swift.String
+  public class func fatalError(_ message: Swift.String, filePath: Swift.String = #file, functionName: Swift.String = #function, line: Swift.Int = #line) -> Swift.Never
+  public class func logDocumentPath()
+  @objc deinit
+}
+extension MZSwifts.MZDebug {
+  public class func fatalUnkonowSegue(to any: Any)
+}
+@_hasMissingDesignatedInitializers public class MZJson {
+  public class func jsonData(ofAny any: Any) -> Foundation.Data?
+  public class func jsonData(ofDictionary dictionary: [Swift.String : Swift.AnyObject]) -> Foundation.Data?
+  public class func jsonString(from data: Foundation.Data) -> Swift.String?
+  public class func jsonString(from dictionary: [Swift.String : Swift.AnyObject]) -> Swift.String?
+  public class func array(from jsonString: Swift.String) -> [Swift.AnyObject]?
+  public class func dictionary(from jsonString: Swift.String) -> [Swift.String : Swift.AnyObject]?
+  @objc deinit
+}
+extension Foundation.Bundle {
+  public var appVersion: Swift.String? {
+    get
+  }
+  public var appBuildNumber: Swift.String? {
+    get
+  }
+}
+public struct MZVector {
+  public static func unitVector(ofDegrees degrees: MZSwifts.MZFloat) -> CoreGraphics.CGVector
+  public static func unitVector(ofRadians radians: MZSwifts.MZFloat) -> CoreGraphics.CGVector
+  public static func unitVector(from: CoreGraphics.CGPoint, to: CoreGraphics.CGPoint) -> CoreGraphics.CGVector
+  public static func vector(fromVector vector: CoreGraphics.CGVector, mapToRadians radians: MZSwifts.MZFloat) -> CoreGraphics.CGVector
+  public static func vector(fromVector vector: CoreGraphics.CGVector, mapToDegrees degrees: MZSwifts.MZFloat) -> CoreGraphics.CGVector
+  public static func dot(vector1: CoreGraphics.CGVector, vector2: CoreGraphics.CGVector) -> MZSwifts.MZFloat
+  public static func length(ofVector vector: CoreGraphics.CGVector) -> MZSwifts.MZFloat
+}
+@_hasMissingDesignatedInitializers public class MZPath {
+  public static var appDocument: Swift.String {
+    get
+  }
+  @objc deinit
+}
+public struct MZEnvironment {
+  public static func isSimulator() -> Swift.Bool
+  public static func isDevice() -> Swift.Bool
+}
+public struct MZWeight {
+  public var gram: MZSwifts.MZWeight {
+    get
+  }
+  public var ounce: MZSwifts.MZWeight {
+    get
+  }
+  public var value: Swift.Double {
+    get
+  }
+  public var unit: MZSwifts.MZWeight.Unit {
+    get
+  }
+  public var formatter: MZSwifts.MZWeight.Formatter {
+    get
+  }
+  public init(_ value: Swift.Double)
+  public func setFormatter(_ formatter: MZSwifts.MZWeight.Formatter) -> MZSwifts.MZWeight
+}
+extension MZSwifts.MZWeight {
+  public enum Unit {
+    case gram
+    case ounce
+    public var text: Swift.String {
+      get
+    }
+    public var shortText: Swift.String {
+      get
+    }
+    public static func == (a: MZSwifts.MZWeight.Unit, b: MZSwifts.MZWeight.Unit) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+extension MZSwifts.MZWeight {
+  public static func gram(fromOunce ounce: Swift.Double) -> Swift.Double
+  public static func ounce(fromGram gram: Swift.Double) -> Swift.Double
+}
+extension MZSwifts.MZWeight {
+  public static func + (lhs: MZSwifts.MZWeight, rhs: MZSwifts.MZWeight) -> MZSwifts.MZWeight
+  public static func - (lhs: MZSwifts.MZWeight, rhs: MZSwifts.MZWeight) -> MZSwifts.MZWeight
+}
+extension MZSwifts.MZWeight {
+  public class Formatter {
+    public static let shared: MZSwifts.MZWeight.Formatter
+    public var digitsOfGram: Swift.Int
+    public var digitsOfOunce: Swift.Int
+    public var hideUnitText: Swift.Bool
+    public var useShortUnitText: Swift.Bool
+    public var addSpaceBeforeUnit: Swift.Bool
+    public init(digitsOfGram: Swift.Int = 1, digitsOfOunce: Swift.Int = 3, hideUnitText: Swift.Bool = false, useShortUnitText: Swift.Bool = false, addSpaceBeforeUnit: Swift.Bool = true)
+    public func digits(for unit: MZSwifts.MZWeight.Unit) -> Swift.Int
+    @objc deinit
+  }
+}
+extension MZSwifts.MZWeight : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+  public func string(digits: Swift.Int? = nil, locale: Foundation.Locale? = nil) -> Swift.String
+}
+extension Swift.Double {
+  public var weight: MZSwifts.MZWeight {
+    get
+  }
+}
+public class MZSampleUpdateTimer {
+  public var delta: Swift.Double {
+    get
+  }
+  public var passed: Swift.Double {
+    get
+  }
+  public init()
+  public func update(currentTime: Foundation.TimeInterval)
+  @objc deinit
+}
+public class MZShapeEllipse {
+  public var center: CoreGraphics.CGPoint
+  public var a: MZSwifts.MZFloat
+  public var b: MZSwifts.MZFloat
+  public init(center: CoreGraphics.CGPoint, a: MZSwifts.MZFloat, b: MZSwifts.MZFloat)
+  public func xWithRadians(radians: MZSwifts.MZFloat) -> MZSwifts.MZFloat
+  public func yWithRadians(radians: MZSwifts.MZFloat) -> MZSwifts.MZFloat
+  public func positionWithRadians(radians: MZSwifts.MZFloat) -> CoreGraphics.CGPoint
+  public func positionWithDegrees(degrees: MZSwifts.MZFloat) -> CoreGraphics.CGPoint
+  @objc deinit
+}
+extension CoreGraphics.CGFloat : MZSwifts.MZFloatToStringProtocol {
+  public var mzFloat: MZSwifts.MZFloat {
+    get
+  }
+  public var double: Swift.Double {
+    get
+  }
+  public var float: Swift.Float {
+    get
+  }
+  public var int: Swift.Int {
+    get
+  }
+  public init?(localed string: Swift.String, as locale: Foundation.Locale)
+}
+extension CoreGraphics.CGPoint {
+  public static var one: CoreGraphics.CGPoint {
+    get
+  }
+  public init(x: Swift.Float, y: Swift.Float)
+  public init(size: CoreGraphics.CGSize)
+  public var size: CoreGraphics.CGSize {
+    get
+  }
+  public var vector: CoreGraphics.CGVector {
+    get
+  }
+}
+public func + (lhs: CoreGraphics.CGPoint, rhs: CoreGraphics.CGPoint) -> CoreGraphics.CGPoint
+public func - (lhs: CoreGraphics.CGPoint, rhs: CoreGraphics.CGPoint) -> CoreGraphics.CGPoint
+public func * (lhs: CoreGraphics.CGPoint, rhs: CoreGraphics.CGFloat) -> CoreGraphics.CGPoint
+public func * (lhs: CoreGraphics.CGPoint, rhs: CoreGraphics.CGPoint) -> CoreGraphics.CGPoint
+public func / (lhs: CoreGraphics.CGPoint, rhs: CoreGraphics.CGFloat) -> CoreGraphics.CGPoint
+public func / (lhs: CoreGraphics.CGPoint, rhs: CoreGraphics.CGPoint) -> CoreGraphics.CGPoint
+public func += (lhs: inout CoreGraphics.CGPoint, rhs: CoreGraphics.CGPoint)
+public func -= (lhs: inout CoreGraphics.CGPoint, rhs: CoreGraphics.CGPoint)
+public func *= (lhs: inout CoreGraphics.CGPoint, rhs: CoreGraphics.CGFloat)
+public func *= (lhs: inout CoreGraphics.CGPoint, rhs: CoreGraphics.CGPoint)
+extension CoreGraphics.CGSize {
+  public static var zero: CoreGraphics.CGSize {
+    get
+  }
+  public static var one: CoreGraphics.CGSize {
+    get
+  }
+  public var point: CoreGraphics.CGPoint {
+    get
+  }
+  public var maxEdge: CoreGraphics.CGFloat {
+    get
+  }
+  public var minEdge: CoreGraphics.CGFloat {
+    get
+  }
+  public init(widthHeight: CoreGraphics.CGFloat)
+}
+public func + (lhs: CoreGraphics.CGSize, rhs: CoreGraphics.CGSize) -> CoreGraphics.CGSize
+public func - (lhs: CoreGraphics.CGSize, rhs: CoreGraphics.CGSize) -> CoreGraphics.CGSize
+public func * (lhs: CoreGraphics.CGSize, rhs: CoreGraphics.CGFloat) -> CoreGraphics.CGSize
+public func * (lhs: CoreGraphics.CGSize, rhs: CoreGraphics.CGSize) -> CoreGraphics.CGSize
+public func / (lhs: CoreGraphics.CGSize, rhs: CoreGraphics.CGFloat) -> CoreGraphics.CGSize
+extension CoreGraphics.CGRect {
+  public static var one: CoreGraphics.CGRect {
+    get
+  }
+  public init(center: CoreGraphics.CGPoint, size: CoreGraphics.CGSize)
+  public init(centerX: CoreGraphics.CGFloat, centerY: CoreGraphics.CGFloat, width: CoreGraphics.CGFloat, height: CoreGraphics.CGFloat)
+  public init(size: CoreGraphics.CGSize)
+  public init(width: CoreGraphics.CGFloat, height: CoreGraphics.CGFloat)
+  public var center: CoreGraphics.CGPoint {
+    get
+    set
+  }
+  public func width(withLerp lerp: CoreGraphics.CGFloat) -> CoreGraphics.CGFloat
+  public func height(withLerp lerp: CoreGraphics.CGFloat) -> CoreGraphics.CGFloat
+  public func xPosition(withLerp lerp: CoreGraphics.CGFloat) -> CoreGraphics.CGFloat
+  public func yPosition(withLerp lerp: CoreGraphics.CGFloat) -> CoreGraphics.CGFloat
+  public func position(withXLerp xLerp: CoreGraphics.CGFloat, andYLerp yLerp: CoreGraphics.CGFloat) -> CoreGraphics.CGPoint
+  public var topLeft: CoreGraphics.CGPoint {
+    get
+  }
+  public var topRight: CoreGraphics.CGPoint {
+    get
+  }
+  public var bottomLeft: CoreGraphics.CGPoint {
+    get
+  }
+  public var bottomRight: CoreGraphics.CGPoint {
+    get
+  }
+}
+public func * (lhs: CoreGraphics.CGRect, rhs: CoreGraphics.CGFloat) -> CoreGraphics.CGRect
+extension CoreGraphics.CGVector {
+  public func mapToRadians(radians: CoreGraphics.CGFloat) -> CoreGraphics.CGVector
+  public var point: CoreGraphics.CGPoint {
+    get
+  }
+}
+public func + (lhs: CoreGraphics.CGVector, rhs: CoreGraphics.CGVector) -> CoreGraphics.CGVector
+public func - (lhs: CoreGraphics.CGVector, rhs: CoreGraphics.CGVector) -> CoreGraphics.CGVector
+public func * (lhs: CoreGraphics.CGVector, rhs: CoreGraphics.CGFloat) -> CoreGraphics.CGVector
+public func * (lhs: CoreGraphics.CGVector, rhs: CoreGraphics.CGVector) -> CoreGraphics.CGVector
+public func / (lhs: CoreGraphics.CGVector, rhs: CoreGraphics.CGFloat) -> CoreGraphics.CGVector
+public func / (lhs: CoreGraphics.CGVector, rhs: CoreGraphics.CGVector) -> CoreGraphics.CGVector
+public func += (lhs: inout CoreGraphics.CGVector, rhs: CoreGraphics.CGVector)
+public func -= (lhs: inout CoreGraphics.CGVector, rhs: CoreGraphics.CGVector)
+public func *= (lhs: inout CoreGraphics.CGVector, rhs: CoreGraphics.CGFloat)
+public func /= (lhs: inout CoreGraphics.CGVector, rhs: CoreGraphics.CGFloat)
+public func * (lhs: CoreGraphics.CGPoint, rhs: CoreGraphics.CGSize) -> CoreGraphics.CGPoint
+@_hasMissingDesignatedInitializers public class MZThread {
+  public static func forceToMainThread(_ action: @escaping () -> ())
+  @objc deinit
+}
+public typealias MZFloat = Swift.Double
+extension Swift.Double {
+  public var float: Swift.Float {
+    get
+  }
+  public var double: Swift.Double {
+    get
+  }
+  public var cgFloat: CoreGraphics.CGFloat {
+    get
+  }
+}
+extension Swift.Float : MZSwifts.MZFloatToStringProtocol {
+  public var int: Swift.Int {
+    get
+  }
+  public var double: Swift.Double {
+    get
+  }
+  public var mzFloat: MZSwifts.MZFloat {
+    get
+  }
+  public var cgFloat: CoreGraphics.CGFloat {
+    get
+  }
+  public init?(localed string: Swift.String, as locale: Foundation.Locale)
+}
+extension Swift.Double : MZSwifts.MZFloatToStringProtocol {
+  public init?(localed string: Swift.String, as locale: Foundation.Locale)
+}
+extension Swift.Int {
+  public var mzFloat: MZSwifts.MZFloat {
+    get
+  }
+  public var cgFloat: CoreGraphics.CGFloat {
+    get
+  }
+  public var float: Swift.Float {
+    get
+  }
+  public var double: Swift.Double {
+    get
+  }
+  public var int32: Swift.Int32 {
+    get
+  }
+  public var int64: Swift.Int64 {
+    get
+  }
+  public var uint: Swift.UInt {
+    get
+  }
+  public var uint16: Swift.UInt16 {
+    get
+  }
+}
+extension Swift.UInt {
+  public var int: Swift.Int {
+    get
+  }
+  public var int32: Swift.Int32 {
+    get
+  }
+}
+extension Swift.Bool {
+  public func string(true: Swift.String = "true", false: Swift.String = "false") -> Swift.String
+}
+public protocol MZFloatToStringProtocol {
+  init?(localed string: Swift.String, as locale: Foundation.Locale)
+  func string(digits: Swift.Int?, locale: Foundation.Locale?) -> Swift.String
+}
+extension MZSwifts.MZFloatToStringProtocol where Self : Swift.CVarArg {
+  public func string(digits: Swift.Int? = nil, locale: Foundation.Locale? = nil) -> Swift.String
+}
+extension Swift.String {
+  public func int(removeNonNumbersCharacters: Swift.Bool = true, locale: Foundation.Locale = Locale.current) -> Swift.Int?
+  public func float(removeNonNumbersCharacters: Swift.Bool = true, locale: Foundation.Locale = Locale.current) -> Swift.Float?
+  public func double(removeNonNumbersCharacters: Swift.Bool = true, locale: Foundation.Locale = Locale.current) -> Swift.Double?
+  public func cgFloat(removeNonNumbersCharacters: Swift.Bool = true, locale: Foundation.Locale = Locale.current) -> CoreGraphics.CGFloat?
+  public func mzFloat(removeNonNumbersCharacters: Swift.Bool = true, locale: Foundation.Locale = Locale.current) -> MZSwifts.MZFloat?
+}
+extension MZSwifts.MZTimer.State : Swift.Equatable {}
+extension MZSwifts.MZTimer.State : Swift.Hashable {}
+extension MZSwifts.MZUnit.MeasurementSystem : Swift.Equatable {}
+extension MZSwifts.MZUnit.MeasurementSystem : Swift.Hashable {}
+extension MZSwifts.MZAngle.CircularMotion : Swift.Equatable {}
+extension MZSwifts.MZAngle.CircularMotion : Swift.Hashable {}
+extension MZSwifts.MZAngle.CircularMotion : Swift.RawRepresentable {}
+extension MZSwifts.MZWeight.Unit : Swift.Equatable {}
+extension MZSwifts.MZWeight.Unit : Swift.Hashable {}

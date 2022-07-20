@@ -1,0 +1,224 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
+// swift-module-flags: -target x86_64-apple-ios14.4-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MZUIKitExtension
+import Foundation
+import MZSwifts
+@_exported import MZUIKitExtension
+import StoreKit
+import Swift
+import UIKit
+import UniformTypeIdentifiers
+import _Concurrency
+extension UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public var isShown: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public func set(anchorPoint: CoreGraphics.CGPoint)
+  @_Concurrency.MainActor(unsafe) public func addCircleMask()
+  @_Concurrency.MainActor(unsafe) public func drawBorder(color: UIKit.UIColor = UIColor.green, width: CoreGraphics.CGFloat = 2)
+  @_Concurrency.MainActor(unsafe) public func copyView<T>() -> T where T : UIKit.UIView
+}
+public protocol MZTouchNotifierProtocol : AnyObject {
+  func addTouchResponder(touchResponder: MZUIKitExtension.MZTouchResponderProtocol)
+  func removeTouchResponder(touchResponder: MZUIKitExtension.MZTouchResponderProtocol)
+  func touchesBegan(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  func touchesMoved(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  func touchesEnded(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  func positionWithTouch(touch: UIKit.UITouch) -> CoreGraphics.CGPoint
+}
+public protocol MZTouchResponderProtocol : AnyObject {
+  var touchNotifier: MZUIKitExtension.MZTouchNotifierProtocol! { get set }
+  func touchesBegan(touches: Swift.Set<UIKit.UITouch>)
+  func touchesMoved(touches: Swift.Set<UIKit.UITouch>)
+  func touchesEnded(touches: Swift.Set<UIKit.UITouch>)
+  func removeFromNotifier()
+}
+public enum MZTouchType : Swift.Int {
+  case began
+  case moved
+  case ended
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension MZUIKitExtension.MZTouchType : Swift.CaseIterable {
+  public typealias AllCases = [MZUIKitExtension.MZTouchType]
+  public static var allCases: [MZUIKitExtension.MZTouchType] {
+    get
+  }
+}
+extension MZUIKitExtension.MZTouchType : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension MZUIKitExtension.MZUIs {
+  @_hasMissingDesignatedInitializers public class AlertController {
+    public static var actionTitleFunc: ((Swift.String) -> Swift.String)?
+    @discardableResult
+    public class func show(title: Swift.String? = nil, message: Swift.String? = nil, needLocalize: Swift.Bool = false, style: UIKit.UIAlertController.Style, actions: [UIKit.UIAlertAction]? = nil, in viewController: UIKit.UIViewController? = nil, actionSheetPadStyle: UIKit.UIAlertController.ActionSheetPadStyle = .default) -> UIKit.UIAlertController
+    @discardableResult
+    public class func showWithCancel(title: Swift.String? = nil, message: Swift.String? = nil, needLocalize: Swift.Bool = false, style: UIKit.UIAlertController.Style, actions: [UIKit.UIAlertAction]? = nil, in viewController: UIKit.UIViewController? = nil, cancelTitle: Swift.String = "Cancel", cancelAction: ((UIKit.UIAlertAction) -> ())? = nil, actionSheetPadStyle: UIKit.UIAlertController.ActionSheetPadStyle = .default) -> UIKit.UIAlertController
+    @objc deinit
+  }
+}
+extension UIKit.UIAlertController {
+  @_Concurrency.MainActor(unsafe) convenience public init(title: Swift.String? = nil, message: Swift.String? = nil, needLocalize: Swift.Bool = false, style: UIKit.UIAlertController.Style, actions: [UIKit.UIAlertAction]? = nil, actionSheetPadStyle: UIKit.UIAlertController.ActionSheetPadStyle = .default)
+}
+extension UIKit.UIAlertController {
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public class func show(title: Swift.String? = nil, message: Swift.String? = nil, needLocalize: Swift.Bool = false, style: UIKit.UIAlertController.Style, actions: [UIKit.UIAlertAction]? = nil, in viewController: UIKit.UIViewController? = nil, actionSheetPadStyle: UIKit.UIAlertController.ActionSheetPadStyle = .default) -> UIKit.UIAlertController
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public class func showWithCancel(title: Swift.String? = nil, message: Swift.String? = nil, needLocalize: Swift.Bool = false, style: UIKit.UIAlertController.Style, actions: [UIKit.UIAlertAction]? = nil, in viewController: UIKit.UIViewController? = nil, cancelTitle: Swift.String = "Cancel", cancelAction: ((UIKit.UIAlertAction) -> ())? = nil, actionSheetPadStyle: UIKit.UIAlertController.ActionSheetPadStyle = .default) -> UIKit.UIAlertController
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public static func popover(title: Swift.String? = nil, message: Swift.String? = nil, in owner: UIKit.UIViewController, okTitle: Swift.String = "Ok", okAction: (() -> ())? = nil) -> UIKit.UIAlertController
+}
+extension UIKit.UIAlertController {
+  public enum ActionSheetPadStyle {
+    case `default`
+    case barButtonItem(UIKit.UIBarButtonItem)
+    case customFrame(CoreGraphics.CGRect)
+  }
+}
+extension UIKit.UIImageView {
+  @_Concurrency.MainActor(unsafe) public var contentClippingRect: CoreGraphics.CGRect {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class MZInputUtility {
+  public static func editingNumberText(of text: Swift.String?) -> Swift.String?
+  public static func numberText(of text: Swift.String?, range: Swift.Range<Swift.Double>? = nil, unit: Swift.String) -> Swift.String?
+  @objc deinit
+}
+extension MZUIKitExtension.MZInputUtility {
+  public class func AsAmount(unit: Swift.String = "g") -> MZUIKitExtension.MZInputUtility.AsNumber
+  public class func AsTempture() -> MZUIKitExtension.MZInputUtility.AsNumber
+  @objc public class AsNumber : ObjectiveC.NSObject {
+    required public init(unit: Swift.String, range: Swift.Range<Swift.Double>? = nil)
+    public func apply(to textFileds: [UIKit.UITextField])
+    @objc deinit
+  }
+}
+extension MZUIKitExtension.MZInputUtility {
+  @objc public class TextInputToolBar : ObjectiveC.NSObject {
+    public init?(setTo textInputs: [UIKit.UIView], tintColor: UIKit.UIColor? = nil)
+    @objc deinit
+  }
+}
+extension MZUIKitExtension.MZInputUtility {
+  @objc public class TextFieldMaxLength : ObjectiveC.NSObject {
+    public init?(setTo textFields: [UIKit.UITextField], maxLength: Swift.Int)
+    @objc deinit
+  }
+}
+extension MZUIKitExtension.MZInputUtility {
+  @objc @_Concurrency.MainActor(unsafe) public class TextViewControl : ObjectiveC.NSObject, UIKit.UITextViewDelegate {
+    @_Concurrency.MainActor(unsafe) public init(textView: UIKit.UITextView, maxLength: Swift.Int? = nil, placeholder: Swift.String? = nil)
+    @objc deinit
+    @_Concurrency.MainActor(unsafe) public func update()
+    @_Concurrency.MainActor(unsafe) @objc public func textViewDidChange(_ textView: UIKit.UITextView)
+  }
+}
+@objc public class MZInAppPurchaseManger : ObjectiveC.NSObject {
+  public var canMakePayments: Swift.Bool {
+    get
+  }
+  public var productIdentifiers: Swift.Set<Swift.String> {
+    get
+  }
+  public var products: [StoreKit.SKProduct] {
+    get
+  }
+  public init(productIdentifiers: Swift.Set<Swift.String>)
+  public func requestProducts(handler: (([StoreKit.SKProduct]?, Swift.Error?) -> ())?)
+  public func sendPayment(with product: StoreKit.SKProduct, success: ((Swift.String) -> ())? = nil, fail: ((Swift.String) -> ())? = nil)
+  public func sendRestoreRequest(handler: (([Swift.String]?, Swift.Error?) -> ())? = nil)
+  @objc deinit
+}
+extension MZUIKitExtension.MZInAppPurchaseManger : StoreKit.SKProductsRequestDelegate {
+  @objc dynamic public func request(_ request: StoreKit.SKRequest, didFailWithError error: Swift.Error)
+  @objc dynamic public func productsRequest(_ request: StoreKit.SKProductsRequest, didReceive response: StoreKit.SKProductsResponse)
+}
+extension MZUIKitExtension.MZInAppPurchaseManger : StoreKit.SKPaymentTransactionObserver {
+  @objc dynamic public func paymentQueue(_ queue: StoreKit.SKPaymentQueue, updatedTransactions transactions: [StoreKit.SKPaymentTransaction])
+  @objc dynamic public func paymentQueueRestoreCompletedTransactionsFinished(_ queue: StoreKit.SKPaymentQueue)
+  @objc dynamic public func paymentQueue(_ queue: StoreKit.SKPaymentQueue, restoreCompletedTransactionsFailedWithError error: Swift.Error)
+}
+@_hasMissingDesignatedInitializers public class MZUIs {
+  @objc deinit
+}
+extension MZUIKitExtension.MZUIs {
+  public class func topViewController() -> UIKit.UIViewController?
+}
+extension UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) public class func topViewController() -> UIKit.UIViewController?
+}
+@objc @_inheritsConvenienceInitializers public class MZMediaLibraryPicker : ObjectiveC.NSObject {
+  @available(iOS 13.0, *)
+  public func show(in parent: UIKit.UIViewController, sourceType: UIKit.UIImagePickerController.SourceType, modalPresentationStyle: UIKit.UIModalPresentationStyle = .automatic, completed: (() -> ())? = nil, done: ((UIKit.UIImage?) -> ())?)
+  public func show(in parent: UIKit.UIViewController, sourceType: UIKit.UIImagePickerController.SourceType, completed: (() -> ())? = nil, done: ((UIKit.UIImage?) -> ())?)
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension MZUIKitExtension.MZMediaLibraryPicker : UIKit.UIImagePickerControllerDelegate, UIKit.UINavigationControllerDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func imagePickerController(_ picker: UIKit.UIImagePickerController, didFinishPickingMediaWithInfo info: [UIKit.UIImagePickerController.InfoKey : Any])
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func imagePickerControllerDidCancel(_ picker: UIKit.UIImagePickerController)
+}
+extension UIKit.UIColor {
+  convenience public init(hex: Swift.Int)
+}
+public protocol MZUIControlKeyboardEventsProtocol {
+  var _observers: [ObjectiveC.NSObjectProtocol] { get set }
+  func willShow(notification: Foundation.Notification)
+  func willHide(notification: Foundation.Notification)
+  mutating func enable()
+  mutating func disable()
+}
+extension MZUIKitExtension.MZUIControlKeyboardEventsProtocol {
+  public mutating func enable()
+  public mutating func disable()
+}
+public class MZUIControlKeyboardEvents : MZUIKitExtension.MZUIControlKeyboardEventsProtocol {
+  public var _observers: [ObjectiveC.NSObjectProtocol]
+  public var willShowAction: ((Foundation.Notification) -> ())?
+  public var willHideAction: ((Foundation.Notification) -> ())?
+  public init()
+  public func willShow(notification: Foundation.Notification)
+  public func willHide(notification: Foundation.Notification)
+  @objc deinit
+}
+public class MZUIControlTapToDismissKeyboard : MZUIKitExtension.MZUIControlKeyboardEventsProtocol {
+  public var _observers: [ObjectiveC.NSObjectProtocol]
+  public init()
+  public func willShow(notification: Foundation.Notification)
+  public func willHide(notification: Foundation.Notification)
+  public func addControl(to view: UIKit.UIView)
+  public func addOtherResponder(_ responder: UIKit.UIResponder)
+  public func removeControl()
+  @objc deinit
+}
+public class MZUIControlShiftViewWhenKeyboardShow : MZUIKitExtension.MZUIControlKeyboardEventsProtocol {
+  public var _observers: [ObjectiveC.NSObjectProtocol]
+  public init()
+  public func addInputViews(_ inputViews: [UIKit.UIView])
+  public func setAtViewDidAppear(view: UIKit.UIView)
+  public func willShow(notification: Foundation.Notification)
+  public func willHide(notification: Foundation.Notification)
+  @objc deinit
+}
+extension UIKit.UINavigationBar {
+  @_Concurrency.MainActor(unsafe) public func removeShadow()
+}
+public class MZUIPresentViewOnTopWithMask {
+  public var enableTapMaskToHide: Swift.Bool
+  public init()
+  public func show(presentFor presentView: UIKit.UIView? = nil, on parentView: UIKit.UIView? = nil, beforePresenting: ((UIKit.UIView) -> ())? = nil)
+  public func hide(forPresented view: UIKit.UIView? = nil, animating: Swift.Bool = true)
+  @objc deinit
+}
+extension MZUIKitExtension.MZTouchType : Swift.Equatable {}
+extension MZUIKitExtension.MZTouchType : Swift.Hashable {}
+extension MZUIKitExtension.MZTouchType : Swift.RawRepresentable {}

@@ -1,0 +1,11 @@
+framework module MZUIKitExtension {
+  umbrella header "MZUIKitExtension.h"
+
+  export *
+  module * { export * }
+}
+
+module MZUIKitExtension.Swift {
+    header "MZUIKitExtension-Swift.h"
+    requires objc
+}
