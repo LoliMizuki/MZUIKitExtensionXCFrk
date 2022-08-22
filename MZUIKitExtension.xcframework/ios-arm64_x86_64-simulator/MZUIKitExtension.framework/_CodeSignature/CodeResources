@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/MZUIKitExtension-Swift.h</key>
 		<data>
-		4CFfubTG9WEIcClofZdDNMf7vVs=
+		n+YNZ851NVYfgvakOjnCsDXs1Tg=
 		</data>
 		<key>Headers/MZUIKitExtension.h</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		5tXudSAhAAuj1YT3RNTXdcCLrjw=
+		czJRkwAADHUB0SJQc4Avb6xisZU=
 		</data>
 		<key>Modules/MZUIKitExtension.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -22,11 +22,11 @@
 		</data>
 		<key>Modules/MZUIKitExtension.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		ACT02Kul1kWiVuIzjk0lQY+XKnk=
+		f4duEb6Ufoc/0wDp2bBaZW34Klc=
 		</data>
 		<key>Modules/MZUIKitExtension.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		0nWiREO/QzepLYPuEQdcUIoYIok=
+		6dyb50NSoPlmocgsWtedOqGr5Oc=
 		</data>
 		<key>Modules/MZUIKitExtension.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/MZUIKitExtension.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		DH2RdZ2afO3Okuada6N1xW3I7DQ=
+		3+ht2o4oSOmwV2bZttBkR3DlcUI=
 		</data>
 		<key>Modules/MZUIKitExtension.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		I/ZMHVGwALq4wGgtIOqJcTW4FtA=
+		TrShVMHQCBvxAeEMaoR4idKVv6s=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -51,7 +51,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1MLk1fc0zNrcFTchj0NM1WhclzB96Qh4q3QjkcXQQUg=
+			nI/L8Rf7+t5sY5G384/VGImmd+cIiWDWiOcOH0APQf4=
 			</data>
 		</dict>
 		<key>Headers/MZUIKitExtension.h</key>
@@ -72,14 +72,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Iea7Th3pV++wmd5MjrRzjw3XN03kHqiuPAa72G3xlCM=
+			l8lEtK9qKKHwZXMN2OeiodTqWQNccpiZzOF7GX4HwNg=
 			</data>
 		</dict>
 		<key>Modules/MZUIKitExtension.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZYDRd2fHeixvoBL+Fjbzs4chjaRri0O1kJqbOsjAJ/E=
+			NiqvTSzWXsOPn2sQk3JPhyZ3/bqB/AfUxS5Et+rBmKc=
 			</data>
 		</dict>
 		<key>Modules/MZUIKitExtension.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -93,14 +93,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qYC1tB4plYTP+3U3ZXSR7fzT9CVs67c7O2NjxDecdws=
+			anuhrG9vnl/MdEa//RPCWFUeAxGJkmytp4t35KC6jkE=
 			</data>
 		</dict>
 		<key>Modules/MZUIKitExtension.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sMVgnD5qOAm2BI5nVFiqVP0qH4M9p/PqafwVj1cvwBA=
+			KHrl95nm26dQQaRmBKnHMlKs6hX2j1NVYVF+vpGIPd8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -4,6 +4,7 @@
 import Foundation
 import MZSwifts
 @_exported import MZUIKitExtension
+import PhotosUI
 import StoreKit
 import Swift
 import UIKit
@@ -150,6 +151,28 @@ extension MZUIKitExtension.MZInAppPurchaseManger : StoreKit.SKPaymentTransaction
 @_hasMissingDesignatedInitializers public class MZUIs {
   @objc deinit
 }
+@objc @_inheritsConvenienceInitializers public class MZMediaLibraryPickerX : ObjectiveC.NSObject {
+  public enum SourceType {
+    case photoLibrary
+    case camera
+    public static func == (a: MZUIKitExtension.MZMediaLibraryPickerX.SourceType, b: MZUIKitExtension.MZMediaLibraryPickerX.SourceType) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  @available(iOS 13.0, *)
+  public func show(in parent: UIKit.UIViewController, sourceType: MZUIKitExtension.MZMediaLibraryPickerX.SourceType, modalPresentationStyle style: UIKit.UIModalPresentationStyle = .fullScreen, completed: (() -> ())? = nil, done: ((UIKit.UIImage?) -> ())?)
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension MZUIKitExtension.MZMediaLibraryPickerX : PhotosUI.PHPickerViewControllerDelegate {
+  public func picker(_ picker: PhotosUI.PHPickerViewController, didFinishPicking results: [PhotosUI.PHPickerResult])
+}
+extension MZUIKitExtension.MZMediaLibraryPickerX : UIKit.UIImagePickerControllerDelegate, UIKit.UINavigationControllerDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func imagePickerController(_ picker: UIKit.UIImagePickerController, didFinishPickingMediaWithInfo info: [UIKit.UIImagePickerController.InfoKey : Any])
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func imagePickerControllerDidCancel(_ picker: UIKit.UIImagePickerController)
+}
 extension MZUIKitExtension.MZUIs {
   public class func topViewController() -> UIKit.UIViewController?
 }
@@ -222,3 +245,5 @@ public class MZUIPresentViewOnTopWithMask {
 extension MZUIKitExtension.MZTouchType : Swift.Equatable {}
 extension MZUIKitExtension.MZTouchType : Swift.Hashable {}
 extension MZUIKitExtension.MZTouchType : Swift.RawRepresentable {}
+extension MZUIKitExtension.MZMediaLibraryPickerX.SourceType : Swift.Equatable {}
+extension MZUIKitExtension.MZMediaLibraryPickerX.SourceType : Swift.Hashable {}
