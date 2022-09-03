@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
-// swift-module-flags: -target arm64-apple-ios15.5-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MZSwifts
+// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MZSwifts
 import Combine
 import CoreGraphics
 import CryptoKit
@@ -94,21 +94,17 @@ extension MZSwifts.MZNotificationComponentProtocol where Self.NotifyEvent : MZSw
     set
   }
 }
-@_hasMissingDesignatedInitializers public class MZImage {
+extension UIKit.UIImage {
   public enum Format {
     case png
     case jpg(compressionQuality: CoreGraphics.CGFloat)
   }
-  public class func cropping(cgImage: CoreGraphics.CGImage, toRect cropRect: CoreGraphics.CGRect) -> CoreGraphics.CGImage?
-  public class func cropping(uiImage: UIKit.UIImage, toRect cropRect: CoreGraphics.CGRect) -> UIKit.UIImage?
-  public class func rotate(uiImage image: UIKit.UIImage?, orientation: UIKit.UIImage.Orientation) -> UIKit.UIImage?
-  @objc deinit
-}
-extension UIKit.UIImage {
-  public func data(as format: MZSwifts.MZImage.Format = .png) -> Foundation.Data?
+  public func data(as format: UIKit.UIImage.Format = .png, needAutoreleasepool: Swift.Bool = false) -> Foundation.Data?
   public func normalized() -> UIKit.UIImage
   public func resized(to targetSize: CoreGraphics.CGSize) -> UIKit.UIImage
   public func resized(maxEdge: CoreGraphics.CGFloat, forceResizeIfLess: Swift.Bool = false) -> UIKit.UIImage
+  public func cropped(to cropRect: CoreGraphics.CGRect) -> UIKit.UIImage?
+  public func rotating(to orientation: UIKit.UIImage.Orientation) -> UIKit.UIImage?
 }
 @_hasMissingDesignatedInitializers public class MZType {
   public class func className(ofObject object: Swift.AnyObject) -> Swift.String
@@ -304,7 +300,7 @@ extension MZSwifts.MZWeight : Swift.CustomStringConvertible {
   public var description: Swift.String {
     get
   }
-  public func string(digits: Swift.Int? = nil, locale: Foundation.Locale? = nil) -> Swift.String
+  public func string(decimalPlaces: Swift.Int? = nil, locale: Foundation.Locale? = nil) -> Swift.String
 }
 extension Swift.Double {
   public var weight: MZSwifts.MZWeight {
@@ -515,10 +511,10 @@ extension Swift.Bool {
 }
 public protocol MZFloatToStringProtocol {
   init?(localed string: Swift.String, as locale: Foundation.Locale)
-  func string(digits: Swift.Int?, locale: Foundation.Locale?) -> Swift.String
+  func string(decimalPlaces: Swift.Int?, locale: Foundation.Locale?) -> Swift.String
 }
 extension MZSwifts.MZFloatToStringProtocol where Self : Swift.CVarArg {
-  public func string(digits: Swift.Int? = nil, locale: Foundation.Locale? = nil) -> Swift.String
+  public func string(decimalPlaces: Swift.Int? = nil, locale: Foundation.Locale? = nil) -> Swift.String
 }
 extension Swift.String {
   public func int(removeNonNumbersCharacters: Swift.Bool = true, locale: Foundation.Locale = Locale.current) -> Swift.Int?

@@ -14,19 +14,19 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		73QKH/6WCuujIliJQnOd5CKL7MM=
+		HrUszfPyxSASbWnPwpxaN03BfFA=
 		</data>
 		<key>Modules/MZSwifts.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		ZNuy+4Ar1rFWf2tVdnIA3wSqdoQ=
+		6uUxuQyFKd/xtUAnvJ5ynS62Z/4=
 		</data>
 		<key>Modules/MZSwifts.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		Zvg9RPBgaXVaJ04cCmz/FdZF0Dg=
+		dKq5iji0DPGqB6Yx3RNzfSIwq38=
 		</data>
 		<key>Modules/MZSwifts.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		IdJ2EygFGrjiJTGNx9CV5rfuwbk=
+		7vkMkMElQTJxvmo7JBiRhXz6u0c=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -53,21 +53,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SE5WZcq5uYlDxTrYyi028OijcFGjUAVG4RrNJLayAUM=
+			YPjJ40h1yX9gTIR7H8pWfuFYdMkjMWSutI89R5OYaIc=
 			</data>
 		</dict>
 		<key>Modules/MZSwifts.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8mbpfUJv40uJHzGkMsN+T6bK/8cd2LSaXc3NVn1+KIY=
+			SSvNx8Q6Qoj6tVw37KYtyc8YPFEKkB0FN/UjazuL2c8=
 			</data>
 		</dict>
 		<key>Modules/MZSwifts.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			szfMlwBWpD0kYtxugynpjv6Xk+BYE/J7JgofWjc8ToY=
+			khZd7uhLwS7HcQoEz9+FqaZVJr+d3tBbQhdNIt6Rndo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
