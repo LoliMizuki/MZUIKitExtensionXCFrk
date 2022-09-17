@@ -6,6 +6,6 @@ framework module MZUIKitExtension {
 }
 
 module MZUIKitExtension.Swift {
-    header "MZUIKitExtension-Swift.h"
-    requires objc
+  header "MZUIKitExtension-Swift.h"
+  requires objc
 }

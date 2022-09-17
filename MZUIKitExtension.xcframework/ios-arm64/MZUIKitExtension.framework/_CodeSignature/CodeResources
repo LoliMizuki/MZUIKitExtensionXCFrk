@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/MZUIKitExtension-Swift.h</key>
 		<data>
-		qhrKpOkAiTmOQLxFtNvwus2jofs=
+		KZiZWwqPbuNx+KlDmEbnz/AzhbI=
 		</data>
 		<key>Headers/MZUIKitExtension.h</key>
 		<data>
@@ -14,23 +14,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		sepgOhSZKU437/SFnH5B+o8DHIQ=
+		DBkoqjbepu+Ut2O/yXbfZ7FD8cM=
+		</data>
+		<key>Modules/MZUIKitExtension.swiftmodule/arm64-apple-ios.abi.json</key>
+		<data>
+		dr0ioB2eDTQxMBiEW9/QiLnp3Yw=
+		</data>
+		<key>Modules/MZUIKitExtension.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
+		<data>
+		8x2MMvXxYdL73mwhL7Juy42YbuI=
 		</data>
 		<key>Modules/MZUIKitExtension.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		+/IBuCLpQ4nof/vwtxJm+dxb9AU=
+		uXK88ePgwxtsZhJZXPyTYU4h44c=
 		</data>
 		<key>Modules/MZUIKitExtension.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		1rrJ9oWv7xrAwubh4UqtGeNjTx0=
+		8x2MMvXxYdL73mwhL7Juy42YbuI=
 		</data>
 		<key>Modules/MZUIKitExtension.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		Y9r/7SROK4Yt2jZKZdcEXVmvs5Q=
+		gT8SOGIUEH9VMdNsH0+7mUP43DI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		kzAkt6RkbCZ3RlSO3bTiwV6tt7M=
+		eY9t48oLtOikWuL1ZlMhn5MWBxc=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -39,7 +47,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7icIjXzuPGvYu/0JwZNteRDrQ0dBWtf8CDgfE9SUy3Q=
+			y+Uu1Uobrn0695LbgPEgMOMljqmTUDxIr/nyl1HpaF4=
 			</data>
 		</dict>
 		<key>Headers/MZUIKitExtension.h</key>
@@ -49,32 +57,46 @@
 			msuI3n+kzGaNAYF3Z6tZGOKnas+RceSSJNBOoWTlMVQ=
 			</data>
 		</dict>
+		<key>Modules/MZUIKitExtension.swiftmodule/arm64-apple-ios.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			NrnalPwzzOervCzIqB7CjWy5NK7pB7UPJoYFzJmE2HA=
+			</data>
+		</dict>
+		<key>Modules/MZUIKitExtension.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			VwxUIRo06kK9wsig3RwuXx5Op8UGRiR9vPSEfyjUSCg=
+			</data>
+		</dict>
 		<key>Modules/MZUIKitExtension.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jkZQvs+DvZgUBc5WkQ7YAQKZHZc/loUIJS1H0HLn3o4=
+			/klkea3uQ42AV14AaldmD95xdFSCtU4GdDRY7BVtZ50=
 			</data>
 		</dict>
 		<key>Modules/MZUIKitExtension.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aRi7c+CyWo9Sqf3l0tp3iObgB5PYW8qwFw95HEGyTng=
+			VwxUIRo06kK9wsig3RwuXx5Op8UGRiR9vPSEfyjUSCg=
 			</data>
 		</dict>
 		<key>Modules/MZUIKitExtension.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TeNmbtYdCDSWbIAjg8eV+mb7VDfw1v8aDOsReSIoe/k=
+			WzFDsQxtTAcNK3pH0bSic7iofHA710d6+0IYmhFwUNc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jxSDSFeS0w6YLZZSZ9WFhl6yrNlRp1/oUB3TGAsaQz8=
+			jziBzY6qK2U8uqt43hJTRUsvqEgK56SMwYTgWrxpvG0=
 			</data>
 		</dict>
 	</dict>

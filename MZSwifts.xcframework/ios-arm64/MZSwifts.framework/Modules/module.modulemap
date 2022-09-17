@@ -6,6 +6,6 @@ framework module MZSwifts {
 }
 
 module MZSwifts.Swift {
-    header "MZSwifts-Swift.h"
-    requires objc
+  header "MZSwifts-Swift.h"
+  requires objc
 }
