@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
 // swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MZUIKitExtension
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import CoreGraphics
@@ -13,16 +13,10 @@ import UIKit
 import UniformTypeIdentifiers
 import _Concurrency
 import _StringProcessing
-extension UIKit.UIView {
-  @_Concurrency.MainActor(unsafe) public var isShown: Swift.Bool {
+extension UIKit.UIImageView {
+  @_Concurrency.MainActor(unsafe) public var contentClippingRect: CoreFoundation.CGRect {
     get
-    set
   }
-  @_Concurrency.MainActor(unsafe) public func set(anchorPoint: CoreFoundation.CGPoint)
-  @_Concurrency.MainActor(unsafe) public func addCircleMask()
-  @_Concurrency.MainActor(unsafe) public func drawBorder(color: UIKit.UIColor = UIColor.green, width: CoreFoundation.CGFloat = 2)
-  @_Concurrency.MainActor(unsafe) public func copyView<T>() -> T where T : UIKit.UIView
-  @_Concurrency.MainActor(unsafe) public func snapshotImage(size: CoreFoundation.CGSize? = nil, dpi: Swift.Int = 72, opaque: Swift.Bool = true, usingCopyView: Swift.Bool = false) -> UIKit.UIImage?
 }
 public protocol MZTouchNotifierProtocol : AnyObject {
   func addTouchResponder(touchResponder: MZUIKitExtension.MZTouchResponderProtocol)
@@ -60,38 +54,95 @@ extension MZUIKitExtension.MZTouchType : Swift.CustomStringConvertible {
     get
   }
 }
-extension MZUIKitExtension.MZUIs {
-  @_hasMissingDesignatedInitializers public class AlertController {
-    public static var actionTitleFunc: ((Swift.String) -> Swift.String)?
-    @discardableResult
-    public class func show(title: Swift.String? = nil, message: Swift.String? = nil, needLocalize: Swift.Bool = false, style: UIKit.UIAlertController.Style, actions: [UIKit.UIAlertAction]? = nil, in viewController: UIKit.UIViewController? = nil, actionSheetPadStyle: UIKit.UIAlertController.ActionSheetPadStyle = .default) -> UIKit.UIAlertController
-    @discardableResult
-    public class func showWithCancel(title: Swift.String? = nil, message: Swift.String? = nil, needLocalize: Swift.Bool = false, style: UIKit.UIAlertController.Style, actions: [UIKit.UIAlertAction]? = nil, in viewController: UIKit.UIViewController? = nil, cancelTitle: Swift.String = "Cancel", cancelAction: ((UIKit.UIAlertAction) -> ())? = nil, actionSheetPadStyle: UIKit.UIAlertController.ActionSheetPadStyle = .default) -> UIKit.UIAlertController
+extension UIKit.UIImage {
+  public enum Format {
+    case png
+    case jpg(compressionQuality: CoreFoundation.CGFloat)
+  }
+  public func data(as format: UIKit.UIImage.Format = .png, needAutoreleasepool: Swift.Bool = false) -> Foundation.Data?
+  public func normalized() -> UIKit.UIImage
+  public func resized(to targetSize: CoreFoundation.CGSize, scale: CoreFoundation.CGFloat = UIScreen.main.scale, opaque: Swift.Bool = true) -> UIKit.UIImage
+  public func resized(maxEdge: CoreFoundation.CGFloat, forceResizeIfLess: Swift.Bool = false, scale: CoreFoundation.CGFloat = UIScreen.main.scale, opaque: Swift.Bool = true) -> UIKit.UIImage
+  public func cropped(to cropRect: CoreFoundation.CGRect) -> UIKit.UIImage?
+  public func rotating(to orientation: UIKit.UIImage.Orientation) -> UIKit.UIImage?
+}
+@_hasMissingDesignatedInitializers public class MZImage {
+  public struct DataInfo {
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class MZUIControl {
+  @objc deinit
+}
+extension MZUIKitExtension.MZUIControl {
+  public class KeyboardEvents : MZUIKitExtension.MZUIControlKeyboardEventsProtocol {
+    public var _observers: [ObjectiveC.NSObjectProtocol]
+    public var willShowAction: ((Foundation.Notification) -> ())?
+    public var willHideAction: ((Foundation.Notification) -> ())?
+    public init()
+    public func willShow(notification: Foundation.Notification)
+    public func willHide(notification: Foundation.Notification)
     @objc deinit
   }
 }
-extension UIKit.UIAlertController {
-  @_Concurrency.MainActor(unsafe) convenience public init(title: Swift.String? = nil, message: Swift.String? = nil, needLocalize: Swift.Bool = false, style: UIKit.UIAlertController.Style, actions: [UIKit.UIAlertAction]? = nil, actionSheetPadStyle: UIKit.UIAlertController.ActionSheetPadStyle = .default)
-}
-extension UIKit.UIAlertController {
-  @discardableResult
-  @_Concurrency.MainActor(unsafe) public class func show(title: Swift.String? = nil, message: Swift.String? = nil, needLocalize: Swift.Bool = false, style: UIKit.UIAlertController.Style, actions: [UIKit.UIAlertAction]? = nil, in viewController: UIKit.UIViewController? = nil, actionSheetPadStyle: UIKit.UIAlertController.ActionSheetPadStyle = .default) -> UIKit.UIAlertController
-  @discardableResult
-  @_Concurrency.MainActor(unsafe) public class func showWithCancel(title: Swift.String? = nil, message: Swift.String? = nil, needLocalize: Swift.Bool = false, style: UIKit.UIAlertController.Style, actions: [UIKit.UIAlertAction]? = nil, in viewController: UIKit.UIViewController? = nil, cancelTitle: Swift.String = "Cancel", cancelAction: ((UIKit.UIAlertAction) -> ())? = nil, actionSheetPadStyle: UIKit.UIAlertController.ActionSheetPadStyle = .default) -> UIKit.UIAlertController
-  @discardableResult
-  @_Concurrency.MainActor(unsafe) public static func popover(title: Swift.String? = nil, message: Swift.String? = nil, in owner: UIKit.UIViewController, okTitle: Swift.String = "Ok", okAction: (() -> ())? = nil) -> UIKit.UIAlertController
-}
-extension UIKit.UIAlertController {
-  public enum ActionSheetPadStyle {
-    case `default`
-    case barButtonItem(UIKit.UIBarButtonItem)
-    case customFrame(CoreFoundation.CGRect)
+extension MZUIKitExtension.MZUIControl {
+  public class TapToDismissKeyboard : MZUIKitExtension.MZUIControlKeyboardEventsProtocol {
+    public var _observers: [ObjectiveC.NSObjectProtocol]
+    public init()
+    public func willShow(notification: Foundation.Notification)
+    public func willHide(notification: Foundation.Notification)
+    public func addControl(to view: UIKit.UIView)
+    public func addOtherResponder(_ responder: UIKit.UIResponder)
+    public func removeControl()
+    @objc deinit
   }
 }
-extension UIKit.UIImageView {
-  @_Concurrency.MainActor(unsafe) public var contentClippingRect: CoreFoundation.CGRect {
+extension MZUIKitExtension.MZUIControl {
+  public class ShiftViewWhenKeyboardShow : MZUIKitExtension.MZUIControlKeyboardEventsProtocol {
+    public var _observers: [ObjectiveC.NSObjectProtocol]
+    public init()
+    public func addInputViews(_ inputViews: [UIKit.UIView])
+    public func setAtViewDidAppear(view: UIKit.UIView)
+    public func willShow(notification: Foundation.Notification)
+    public func willHide(notification: Foundation.Notification)
+    @objc deinit
+  }
+}
+public protocol MZUIControlKeyboardEventsProtocol {
+  var _observers: [ObjectiveC.NSObjectProtocol] { get set }
+  func willShow(notification: Foundation.Notification)
+  func willHide(notification: Foundation.Notification)
+  mutating func enable()
+  mutating func disable()
+}
+extension MZUIKitExtension.MZUIControlKeyboardEventsProtocol {
+  public mutating func enable()
+  public mutating func disable()
+}
+@objc public class MZInAppPurchaseManger : ObjectiveC.NSObject {
+  public var canMakePayments: Swift.Bool {
     get
   }
+  public var productIdentifiers: Swift.Set<Swift.String> {
+    get
+  }
+  public var products: [StoreKit.SKProduct] {
+    get
+  }
+  public init(productIdentifiers: Swift.Set<Swift.String>)
+  public func requestProducts(handler: (([StoreKit.SKProduct]?, Swift.Error?) -> ())?)
+  public func sendPayment(with product: StoreKit.SKProduct, success: ((Swift.String) -> ())? = nil, fail: ((Swift.String) -> ())? = nil)
+  public func sendRestoreRequest(handler: (([Swift.String]?, Swift.Error?) -> ())? = nil)
+  @objc deinit
+}
+extension MZUIKitExtension.MZInAppPurchaseManger : StoreKit.SKProductsRequestDelegate {
+  @objc dynamic public func request(_ request: StoreKit.SKRequest, didFailWithError error: Swift.Error)
+  @objc dynamic public func productsRequest(_ request: StoreKit.SKProductsRequest, didReceive response: StoreKit.SKProductsResponse)
+}
+extension MZUIKitExtension.MZInAppPurchaseManger : StoreKit.SKPaymentTransactionObserver {
+  @objc dynamic public func paymentQueue(_ queue: StoreKit.SKPaymentQueue, updatedTransactions transactions: [StoreKit.SKPaymentTransaction])
+  @objc dynamic public func paymentQueueRestoreCompletedTransactionsFinished(_ queue: StoreKit.SKPaymentQueue)
+  @objc dynamic public func paymentQueue(_ queue: StoreKit.SKPaymentQueue, restoreCompletedTransactionsFailedWithError error: Swift.Error)
 }
 @_hasMissingDesignatedInitializers public class MZInputUtility {
   public static func editingNumberText(of text: Swift.String?) -> Swift.String?
@@ -127,33 +178,22 @@ extension MZUIKitExtension.MZInputUtility {
     @_Concurrency.MainActor(unsafe) @objc public func textViewDidChange(_ textView: UIKit.UITextView)
   }
 }
-@objc public class MZInAppPurchaseManger : ObjectiveC.NSObject {
-  public var canMakePayments: Swift.Bool {
-    get
-  }
-  public var productIdentifiers: Swift.Set<Swift.String> {
-    get
-  }
-  public var products: [StoreKit.SKProduct] {
-    get
-  }
-  public init(productIdentifiers: Swift.Set<Swift.String>)
-  public func requestProducts(handler: (([StoreKit.SKProduct]?, Swift.Error?) -> ())?)
-  public func sendPayment(with product: StoreKit.SKProduct, success: ((Swift.String) -> ())? = nil, fail: ((Swift.String) -> ())? = nil)
-  public func sendRestoreRequest(handler: (([Swift.String]?, Swift.Error?) -> ())? = nil)
-  @objc deinit
-}
-extension MZUIKitExtension.MZInAppPurchaseManger : StoreKit.SKProductsRequestDelegate {
-  @objc dynamic public func request(_ request: StoreKit.SKRequest, didFailWithError error: Swift.Error)
-  @objc dynamic public func productsRequest(_ request: StoreKit.SKProductsRequest, didReceive response: StoreKit.SKProductsResponse)
-}
-extension MZUIKitExtension.MZInAppPurchaseManger : StoreKit.SKPaymentTransactionObserver {
-  @objc dynamic public func paymentQueue(_ queue: StoreKit.SKPaymentQueue, updatedTransactions transactions: [StoreKit.SKPaymentTransaction])
-  @objc dynamic public func paymentQueueRestoreCompletedTransactionsFinished(_ queue: StoreKit.SKPaymentQueue)
-  @objc dynamic public func paymentQueue(_ queue: StoreKit.SKPaymentQueue, restoreCompletedTransactionsFailedWithError error: Swift.Error)
-}
 @_hasMissingDesignatedInitializers public class MZUIs {
   @objc deinit
+}
+extension UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public var isShown: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public func set(anchorPoint: CoreFoundation.CGPoint)
+  @_Concurrency.MainActor(unsafe) public func addCircleMask()
+  @_Concurrency.MainActor(unsafe) public func drawBorder(color: UIKit.UIColor = UIColor.green, width: CoreFoundation.CGFloat = 2)
+  @_Concurrency.MainActor(unsafe) public func copyView<T>() -> T where T : UIKit.UIView
+  @_Concurrency.MainActor(unsafe) public func snapshotImage(size: CoreFoundation.CGSize? = nil, dpi: Swift.Int = 72, opaque: Swift.Bool = true, usingCopyView: Swift.Bool = false) -> UIKit.UIImage?
+}
+extension UIKit.UIColor {
+  convenience public init(hex: Swift.Int)
 }
 @objc @_inheritsConvenienceInitializers public class MZMediaLibraryPickerX : ObjectiveC.NSObject {
   public enum SourceType {
@@ -183,6 +223,37 @@ extension MZUIKitExtension.MZUIs {
 extension UIKit.UIViewController {
   @_Concurrency.MainActor(unsafe) public class func topViewController() -> UIKit.UIViewController?
 }
+extension MZUIKitExtension.MZUIs {
+  @_hasMissingDesignatedInitializers public class AlertController {
+    public static var actionTitleFunc: ((Swift.String) -> Swift.String)?
+    @discardableResult
+    public class func show(title: Swift.String? = nil, message: Swift.String? = nil, needLocalize: Swift.Bool = false, style: UIKit.UIAlertController.Style, actions: [UIKit.UIAlertAction]? = nil, in viewController: UIKit.UIViewController? = nil, actionSheetPadStyle: UIKit.UIAlertController.ActionSheetPadStyle = .default) -> UIKit.UIAlertController
+    @discardableResult
+    public class func showWithCancel(title: Swift.String? = nil, message: Swift.String? = nil, needLocalize: Swift.Bool = false, style: UIKit.UIAlertController.Style, actions: [UIKit.UIAlertAction]? = nil, in viewController: UIKit.UIViewController? = nil, cancelTitle: Swift.String = "Cancel", cancelAction: ((UIKit.UIAlertAction) -> ())? = nil, actionSheetPadStyle: UIKit.UIAlertController.ActionSheetPadStyle = .default) -> UIKit.UIAlertController
+    @objc deinit
+  }
+}
+extension UIKit.UIAlertController {
+  @_Concurrency.MainActor(unsafe) convenience public init(title: Swift.String? = nil, message: Swift.String? = nil, needLocalize: Swift.Bool = false, style: UIKit.UIAlertController.Style, actions: [UIKit.UIAlertAction]? = nil, actionSheetPadStyle: UIKit.UIAlertController.ActionSheetPadStyle = .default)
+}
+extension UIKit.UIAlertController {
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public class func show(title: Swift.String? = nil, message: Swift.String? = nil, needLocalize: Swift.Bool = false, style: UIKit.UIAlertController.Style, actions: [UIKit.UIAlertAction]? = nil, in viewController: UIKit.UIViewController? = nil, actionSheetPadStyle: UIKit.UIAlertController.ActionSheetPadStyle = .default) -> UIKit.UIAlertController
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public class func showWithCancel(title: Swift.String? = nil, message: Swift.String? = nil, needLocalize: Swift.Bool = false, style: UIKit.UIAlertController.Style, actions: [UIKit.UIAlertAction]? = nil, in viewController: UIKit.UIViewController? = nil, cancelTitle: Swift.String = "Cancel", cancelAction: ((UIKit.UIAlertAction) -> ())? = nil, actionSheetPadStyle: UIKit.UIAlertController.ActionSheetPadStyle = .default) -> UIKit.UIAlertController
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public static func popover(title: Swift.String? = nil, message: Swift.String? = nil, in owner: UIKit.UIViewController, okTitle: Swift.String = "Ok", okAction: (() -> ())? = nil) -> UIKit.UIAlertController
+}
+extension UIKit.UIAlertController {
+  public enum ActionSheetPadStyle {
+    case `default`
+    case barButtonItem(UIKit.UIBarButtonItem)
+    case customFrame(CoreFoundation.CGRect)
+  }
+}
+extension UIKit.UINavigationBar {
+  @_Concurrency.MainActor(unsafe) public func removeShadow()
+}
 @objc @_inheritsConvenienceInitializers public class MZMediaLibraryPicker : ObjectiveC.NSObject {
   @available(iOS 13.0, *)
   public func show(in parent: UIKit.UIViewController, sourceType: UIKit.UIImagePickerController.SourceType, modalPresentationStyle: UIKit.UIModalPresentationStyle = .automatic, completed: (() -> ())? = nil, done: ((UIKit.UIImage?) -> ())?)
@@ -193,68 +264,6 @@ extension UIKit.UIViewController {
 extension MZUIKitExtension.MZMediaLibraryPicker : UIKit.UIImagePickerControllerDelegate, UIKit.UINavigationControllerDelegate {
   @_Concurrency.MainActor(unsafe) @objc dynamic public func imagePickerController(_ picker: UIKit.UIImagePickerController, didFinishPickingMediaWithInfo info: [UIKit.UIImagePickerController.InfoKey : Any])
   @_Concurrency.MainActor(unsafe) @objc dynamic public func imagePickerControllerDidCancel(_ picker: UIKit.UIImagePickerController)
-}
-extension UIKit.UIImage {
-  public enum Format {
-    case png
-    case jpg(compressionQuality: CoreFoundation.CGFloat)
-  }
-  public func data(as format: UIKit.UIImage.Format = .png, needAutoreleasepool: Swift.Bool = false) -> Foundation.Data?
-  public func normalized() -> UIKit.UIImage
-  public func resized(to targetSize: CoreFoundation.CGSize, scale: CoreFoundation.CGFloat = UIScreen.main.scale, opaque: Swift.Bool = true) -> UIKit.UIImage
-  public func resized(maxEdge: CoreFoundation.CGFloat, forceResizeIfLess: Swift.Bool = false, scale: CoreFoundation.CGFloat = UIScreen.main.scale, opaque: Swift.Bool = true) -> UIKit.UIImage
-  public func cropped(to cropRect: CoreFoundation.CGRect) -> UIKit.UIImage?
-  public func rotating(to orientation: UIKit.UIImage.Orientation) -> UIKit.UIImage?
-}
-@_hasMissingDesignatedInitializers public class MZImage {
-  public struct DataInfo {
-  }
-  @objc deinit
-}
-extension UIKit.UIColor {
-  convenience public init(hex: Swift.Int)
-}
-public protocol MZUIControlKeyboardEventsProtocol {
-  var _observers: [ObjectiveC.NSObjectProtocol] { get set }
-  func willShow(notification: Foundation.Notification)
-  func willHide(notification: Foundation.Notification)
-  mutating func enable()
-  mutating func disable()
-}
-extension MZUIKitExtension.MZUIControlKeyboardEventsProtocol {
-  public mutating func enable()
-  public mutating func disable()
-}
-public class MZUIControlKeyboardEvents : MZUIKitExtension.MZUIControlKeyboardEventsProtocol {
-  public var _observers: [ObjectiveC.NSObjectProtocol]
-  public var willShowAction: ((Foundation.Notification) -> ())?
-  public var willHideAction: ((Foundation.Notification) -> ())?
-  public init()
-  public func willShow(notification: Foundation.Notification)
-  public func willHide(notification: Foundation.Notification)
-  @objc deinit
-}
-public class MZUIControlTapToDismissKeyboard : MZUIKitExtension.MZUIControlKeyboardEventsProtocol {
-  public var _observers: [ObjectiveC.NSObjectProtocol]
-  public init()
-  public func willShow(notification: Foundation.Notification)
-  public func willHide(notification: Foundation.Notification)
-  public func addControl(to view: UIKit.UIView)
-  public func addOtherResponder(_ responder: UIKit.UIResponder)
-  public func removeControl()
-  @objc deinit
-}
-public class MZUIControlShiftViewWhenKeyboardShow : MZUIKitExtension.MZUIControlKeyboardEventsProtocol {
-  public var _observers: [ObjectiveC.NSObjectProtocol]
-  public init()
-  public func addInputViews(_ inputViews: [UIKit.UIView])
-  public func setAtViewDidAppear(view: UIKit.UIView)
-  public func willShow(notification: Foundation.Notification)
-  public func willHide(notification: Foundation.Notification)
-  @objc deinit
-}
-extension UIKit.UINavigationBar {
-  @_Concurrency.MainActor(unsafe) public func removeShadow()
 }
 public class MZUIPresentViewOnTopWithMask {
   public var enableTapMaskToHide: Swift.Bool
