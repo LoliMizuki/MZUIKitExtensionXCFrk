@@ -192,6 +192,13 @@ extension UIKit.UIView {
   @_Concurrency.MainActor(unsafe) public func copyView<T>() -> T where T : UIKit.UIView
   @_Concurrency.MainActor(unsafe) public func snapshotImage(size: CoreFoundation.CGSize? = nil, dpi: Swift.Int = 72, opaque: Swift.Bool = true, usingCopyView: Swift.Bool = false) -> UIKit.UIImage?
 }
+extension UIKit.UIControl {
+  @_Concurrency.MainActor(unsafe) public func setAction(_ action: UIKit.UIAction, for event: UIKit.UIControl.Event)
+  @_Concurrency.MainActor(unsafe) public func setAction(for event: UIKit.UIControl.Event, action: @escaping ((UIKit.UIAction) -> ()))
+  @_Concurrency.MainActor(unsafe) public func addAction(for event: UIKit.UIControl.Event, action: @escaping ((UIKit.UIAction) -> ()))
+  @_Concurrency.MainActor(unsafe) public func removeAllActions()
+  @_Concurrency.MainActor(unsafe) public func removeAction(for event: UIKit.UIControl.Event)
+}
 extension UIKit.UIColor {
   convenience public init(hex: Swift.Int)
 }
