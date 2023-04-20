@@ -918,6 +918,241 @@
                 ]
               },
               {
+                "kind": "Var",
+                "name": "forceShiftTo",
+                "printedName": "forceShiftTo",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIView?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIView",
+                        "printedName": "UIKit.UIView",
+                        "usr": "c:objc(cs)UIView"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:16MZUIKitExtension11MZUIControlC24ShiftViewForKeyboardShowC05forceD2ToSo6UIViewCSgvp",
+                "mangledName": "$s16MZUIKitExtension11MZUIControlC24ShiftViewForKeyboardShowC05forceD2ToSo6UIViewCSgvp",
+                "moduleName": "MZUIKitExtension",
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "UIKit.UIView?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UIView",
+                            "printedName": "UIKit.UIView",
+                            "usr": "c:objc(cs)UIView"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:16MZUIKitExtension11MZUIControlC24ShiftViewForKeyboardShowC05forceD2ToSo6UIViewCSgvg",
+                    "mangledName": "$s16MZUIKitExtension11MZUIControlC24ShiftViewForKeyboardShowC05forceD2ToSo6UIViewCSgvg",
+                    "moduleName": "MZUIKitExtension",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "UIKit.UIView?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UIView",
+                            "printedName": "UIKit.UIView",
+                            "usr": "c:objc(cs)UIView"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:16MZUIKitExtension11MZUIControlC24ShiftViewForKeyboardShowC05forceD2ToSo6UIViewCSgvs",
+                    "mangledName": "$s16MZUIKitExtension11MZUIControlC24ShiftViewForKeyboardShowC05forceD2ToSo6UIViewCSgvs",
+                    "moduleName": "MZUIKitExtension",
+                    "implicit": true,
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:16MZUIKitExtension11MZUIControlC24ShiftViewForKeyboardShowC05forceD2ToSo6UIViewCSgvM",
+                    "mangledName": "$s16MZUIKitExtension11MZUIControlC24ShiftViewForKeyboardShowC05forceD2ToSo6UIViewCSgvM",
+                    "moduleName": "MZUIKitExtension",
+                    "implicit": true,
+                    "accessorKind": "_modify"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "adjustShiftFunc",
+                "printedName": "adjustShiftFunc",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(CoreGraphics.CGFloat) -> CoreGraphics.CGFloat",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CGFloat",
+                        "printedName": "CoreGraphics.CGFloat",
+                        "usr": "s:14CoreFoundation7CGFloatV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CGFloat",
+                        "printedName": "CoreGraphics.CGFloat",
+                        "usr": "s:14CoreFoundation7CGFloatV"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:16MZUIKitExtension11MZUIControlC24ShiftViewForKeyboardShowC06adjustD4Funcy14CoreFoundation7CGFloatVAIcvp",
+                "mangledName": "$s16MZUIKitExtension11MZUIControlC24ShiftViewForKeyboardShowC06adjustD4Funcy12CoreGraphics7CGFloatVAIcvp",
+                "moduleName": "MZUIKitExtension",
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(CoreGraphics.CGFloat) -> CoreGraphics.CGFloat",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CGFloat",
+                            "printedName": "CoreGraphics.CGFloat",
+                            "usr": "s:14CoreFoundation7CGFloatV"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CGFloat",
+                            "printedName": "CoreGraphics.CGFloat",
+                            "usr": "s:14CoreFoundation7CGFloatV"
+                          }
+                        ]
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:16MZUIKitExtension11MZUIControlC24ShiftViewForKeyboardShowC06adjustD4Funcy14CoreFoundation7CGFloatVAIcvg",
+                    "mangledName": "$s16MZUIKitExtension11MZUIControlC24ShiftViewForKeyboardShowC06adjustD4Funcy12CoreGraphics7CGFloatVAIcvg",
+                    "moduleName": "MZUIKitExtension",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(CoreGraphics.CGFloat) -> CoreGraphics.CGFloat",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CGFloat",
+                            "printedName": "CoreGraphics.CGFloat",
+                            "usr": "s:14CoreFoundation7CGFloatV"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CGFloat",
+                            "printedName": "CoreGraphics.CGFloat",
+                            "usr": "s:14CoreFoundation7CGFloatV"
+                          }
+                        ]
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:16MZUIKitExtension11MZUIControlC24ShiftViewForKeyboardShowC06adjustD4Funcy14CoreFoundation7CGFloatVAIcvs",
+                    "mangledName": "$s16MZUIKitExtension11MZUIControlC24ShiftViewForKeyboardShowC06adjustD4Funcy12CoreGraphics7CGFloatVAIcvs",
+                    "moduleName": "MZUIKitExtension",
+                    "implicit": true,
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:16MZUIKitExtension11MZUIControlC24ShiftViewForKeyboardShowC06adjustD4Funcy14CoreFoundation7CGFloatVAIcvM",
+                    "mangledName": "$s16MZUIKitExtension11MZUIControlC24ShiftViewForKeyboardShowC06adjustD4Funcy12CoreGraphics7CGFloatVAIcvM",
+                    "moduleName": "MZUIKitExtension",
+                    "implicit": true,
+                    "accessorKind": "_modify"
+                  }
+                ]
+              },
+              {
                 "kind": "Constructor",
                 "name": "init",
                 "printedName": "init()",
@@ -8114,70 +8349,70 @@
     {
       "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZKeyboardEvents.swift",
       "kind": "IntegerLiteral",
-      "offset": 4501,
+      "offset": 4515,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZKeyboardEvents.swift",
       "kind": "IntegerLiteral",
-      "offset": 4507,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZKeyboardEvents.swift",
-      "kind": "FloatLiteral",
-      "offset": 4586,
-      "length": 4,
-      "value": "0.25"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZKeyboardEvents.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4670,
+      "offset": 4521,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZKeyboardEvents.swift",
       "kind": "FloatLiteral",
-      "offset": 4890,
+      "offset": 4600,
       "length": 4,
       "value": "0.25"
     },
     {
       "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZKeyboardEvents.swift",
       "kind": "IntegerLiteral",
-      "offset": 4974,
+      "offset": 4684,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZKeyboardEvents.swift",
+      "kind": "FloatLiteral",
+      "offset": 4904,
+      "length": 4,
+      "value": "0.25"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZKeyboardEvents.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4988,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZKeyboardEvents.swift",
       "kind": "IntegerLiteral",
-      "offset": 4980,
+      "offset": 4994,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZKeyboardEvents.swift",
       "kind": "Array",
-      "offset": 5209,
+      "offset": 5223,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZKeyboardEvents.swift",
       "kind": "IntegerLiteral",
-      "offset": 5801,
+      "offset": 5815,
       "length": 2,
       "value": "44"
     },
     {
       "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZKeyboardEvents.swift",
       "kind": "IntegerLiteral",
-      "offset": 5841,
+      "offset": 5855,
       "length": 1,
       "value": "0"
     },

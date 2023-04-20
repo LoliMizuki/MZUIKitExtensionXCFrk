@@ -42,6 +42,8 @@ extension MZUIKitExtension.MZUIControl {
 extension MZUIKitExtension.MZUIControl {
   public class ShiftViewForKeyboardShow : MZUIKitExtension.MZUIControlKeyboardEventsProtocol {
     public var _observers: [any ObjectiveC.NSObjectProtocol]
+    public var forceShiftTo: UIKit.UIView?
+    public var adjustShiftFunc: (CoreFoundation.CGFloat) -> CoreFoundation.CGFloat
     public init()
     public func addInputViews(_ inputViews: [UIKit.UIView])
     public func setAtViewDidAppear(view: UIKit.UIView)
