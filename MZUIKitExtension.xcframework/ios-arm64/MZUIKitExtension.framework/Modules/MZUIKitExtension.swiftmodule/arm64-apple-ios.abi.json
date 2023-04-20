@@ -13,6 +13,1363 @@
       },
       {
         "kind": "Import",
+        "name": "MZSwifts",
+        "printedName": "MZSwifts",
+        "declKind": "Import",
+        "moduleName": "MZUIKitExtension"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MZUIControl",
+        "printedName": "MZUIControl",
+        "children": [
+          {
+            "kind": "TypeDecl",
+            "name": "KeyboardEvents",
+            "printedName": "KeyboardEvents",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "_observers",
+                "printedName": "_observers",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[ObjectiveC.NSObjectProtocol]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSObjectProtocol",
+                        "printedName": "ObjectiveC.NSObjectProtocol",
+                        "usr": "c:objc(pl)NSObject"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:16MZUIKitExtension11MZUIControlC14KeyboardEventsC10_observersSaySo8NSObject_pGvp",
+                "mangledName": "$s16MZUIKitExtension11MZUIControlC14KeyboardEventsC10_observersSaySo8NSObject_pGvp",
+                "moduleName": "MZUIKitExtension",
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[ObjectiveC.NSObjectProtocol]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSObjectProtocol",
+                            "printedName": "ObjectiveC.NSObjectProtocol",
+                            "usr": "c:objc(pl)NSObject"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:16MZUIKitExtension11MZUIControlC14KeyboardEventsC10_observersSaySo8NSObject_pGvg",
+                    "mangledName": "$s16MZUIKitExtension11MZUIControlC14KeyboardEventsC10_observersSaySo8NSObject_pGvg",
+                    "moduleName": "MZUIKitExtension",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[ObjectiveC.NSObjectProtocol]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSObjectProtocol",
+                            "printedName": "ObjectiveC.NSObjectProtocol",
+                            "usr": "c:objc(pl)NSObject"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:16MZUIKitExtension11MZUIControlC14KeyboardEventsC10_observersSaySo8NSObject_pGvs",
+                    "mangledName": "$s16MZUIKitExtension11MZUIControlC14KeyboardEventsC10_observersSaySo8NSObject_pGvs",
+                    "moduleName": "MZUIKitExtension",
+                    "implicit": true,
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:16MZUIKitExtension11MZUIControlC14KeyboardEventsC10_observersSaySo8NSObject_pGvM",
+                    "mangledName": "$s16MZUIKitExtension11MZUIControlC14KeyboardEventsC10_observersSaySo8NSObject_pGvM",
+                    "moduleName": "MZUIKitExtension",
+                    "implicit": true,
+                    "accessorKind": "_modify"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "willShowAction",
+                "printedName": "willShowAction",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((Foundation.Notification) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Foundation.Notification) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Notification",
+                            "printedName": "Foundation.Notification",
+                            "usr": "s:10Foundation12NotificationV"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:16MZUIKitExtension11MZUIControlC14KeyboardEventsC14willShowActiony10Foundation12NotificationVcSgvp",
+                "mangledName": "$s16MZUIKitExtension11MZUIControlC14KeyboardEventsC14willShowActiony10Foundation12NotificationVcSgvp",
+                "moduleName": "MZUIKitExtension",
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "((Foundation.Notification) -> ())?",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(Foundation.Notification) -> ()",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Void",
+                                "printedName": "()"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Notification",
+                                "printedName": "Foundation.Notification",
+                                "usr": "s:10Foundation12NotificationV"
+                              }
+                            ]
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:16MZUIKitExtension11MZUIControlC14KeyboardEventsC14willShowActiony10Foundation12NotificationVcSgvg",
+                    "mangledName": "$s16MZUIKitExtension11MZUIControlC14KeyboardEventsC14willShowActiony10Foundation12NotificationVcSgvg",
+                    "moduleName": "MZUIKitExtension",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "((Foundation.Notification) -> ())?",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(Foundation.Notification) -> ()",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Void",
+                                "printedName": "()"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Notification",
+                                "printedName": "Foundation.Notification",
+                                "usr": "s:10Foundation12NotificationV"
+                              }
+                            ]
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:16MZUIKitExtension11MZUIControlC14KeyboardEventsC14willShowActiony10Foundation12NotificationVcSgvs",
+                    "mangledName": "$s16MZUIKitExtension11MZUIControlC14KeyboardEventsC14willShowActiony10Foundation12NotificationVcSgvs",
+                    "moduleName": "MZUIKitExtension",
+                    "implicit": true,
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:16MZUIKitExtension11MZUIControlC14KeyboardEventsC14willShowActiony10Foundation12NotificationVcSgvM",
+                    "mangledName": "$s16MZUIKitExtension11MZUIControlC14KeyboardEventsC14willShowActiony10Foundation12NotificationVcSgvM",
+                    "moduleName": "MZUIKitExtension",
+                    "implicit": true,
+                    "accessorKind": "_modify"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "willHideAction",
+                "printedName": "willHideAction",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((Foundation.Notification) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Foundation.Notification) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Notification",
+                            "printedName": "Foundation.Notification",
+                            "usr": "s:10Foundation12NotificationV"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:16MZUIKitExtension11MZUIControlC14KeyboardEventsC14willHideActiony10Foundation12NotificationVcSgvp",
+                "mangledName": "$s16MZUIKitExtension11MZUIControlC14KeyboardEventsC14willHideActiony10Foundation12NotificationVcSgvp",
+                "moduleName": "MZUIKitExtension",
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "((Foundation.Notification) -> ())?",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(Foundation.Notification) -> ()",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Void",
+                                "printedName": "()"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Notification",
+                                "printedName": "Foundation.Notification",
+                                "usr": "s:10Foundation12NotificationV"
+                              }
+                            ]
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:16MZUIKitExtension11MZUIControlC14KeyboardEventsC14willHideActiony10Foundation12NotificationVcSgvg",
+                    "mangledName": "$s16MZUIKitExtension11MZUIControlC14KeyboardEventsC14willHideActiony10Foundation12NotificationVcSgvg",
+                    "moduleName": "MZUIKitExtension",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "((Foundation.Notification) -> ())?",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(Foundation.Notification) -> ()",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Void",
+                                "printedName": "()"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Notification",
+                                "printedName": "Foundation.Notification",
+                                "usr": "s:10Foundation12NotificationV"
+                              }
+                            ]
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:16MZUIKitExtension11MZUIControlC14KeyboardEventsC14willHideActiony10Foundation12NotificationVcSgvs",
+                    "mangledName": "$s16MZUIKitExtension11MZUIControlC14KeyboardEventsC14willHideActiony10Foundation12NotificationVcSgvs",
+                    "moduleName": "MZUIKitExtension",
+                    "implicit": true,
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:16MZUIKitExtension11MZUIControlC14KeyboardEventsC14willHideActiony10Foundation12NotificationVcSgvM",
+                    "mangledName": "$s16MZUIKitExtension11MZUIControlC14KeyboardEventsC14willHideActiony10Foundation12NotificationVcSgvM",
+                    "moduleName": "MZUIKitExtension",
+                    "implicit": true,
+                    "accessorKind": "_modify"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KeyboardEvents",
+                    "printedName": "MZUIKitExtension.MZUIControl.KeyboardEvents",
+                    "usr": "s:16MZUIKitExtension11MZUIControlC14KeyboardEventsC"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:16MZUIKitExtension11MZUIControlC14KeyboardEventsCAEycfc",
+                "mangledName": "$s16MZUIKitExtension11MZUIControlC14KeyboardEventsCAEycfc",
+                "moduleName": "MZUIKitExtension",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Function",
+                "name": "KeyboardWillShow",
+                "printedName": "KeyboardWillShow(notification:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Notification",
+                    "printedName": "Foundation.Notification",
+                    "usr": "s:10Foundation12NotificationV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:16MZUIKitExtension11MZUIControlC14KeyboardEventsC0D8WillShow12notificationy10Foundation12NotificationV_tF",
+                "mangledName": "$s16MZUIKitExtension11MZUIControlC14KeyboardEventsC0D8WillShow12notificationy10Foundation12NotificationV_tF",
+                "moduleName": "MZUIKitExtension",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "KeyboardWillHide",
+                "printedName": "KeyboardWillHide(notification:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Notification",
+                    "printedName": "Foundation.Notification",
+                    "usr": "s:10Foundation12NotificationV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:16MZUIKitExtension11MZUIControlC14KeyboardEventsC0D8WillHide12notificationy10Foundation12NotificationV_tF",
+                "mangledName": "$s16MZUIKitExtension11MZUIControlC14KeyboardEventsC0D8WillHide12notificationy10Foundation12NotificationV_tF",
+                "moduleName": "MZUIKitExtension",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Class",
+            "usr": "s:16MZUIKitExtension11MZUIControlC14KeyboardEventsC",
+            "mangledName": "$s16MZUIKitExtension11MZUIControlC14KeyboardEventsC",
+            "moduleName": "MZUIKitExtension",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "MZUIControlKeyboardEventsProtocol",
+                "printedName": "MZUIControlKeyboardEventsProtocol",
+                "usr": "s:16MZUIKitExtension33MZUIControlKeyboardEventsProtocolP",
+                "mangledName": "$s16MZUIKitExtension33MZUIControlKeyboardEventsProtocolP"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "TapToDismissKeyboard",
+            "printedName": "TapToDismissKeyboard",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "_observers",
+                "printedName": "_observers",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[ObjectiveC.NSObjectProtocol]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSObjectProtocol",
+                        "printedName": "ObjectiveC.NSObjectProtocol",
+                        "usr": "c:objc(pl)NSObject"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:16MZUIKitExtension11MZUIControlC20TapToDismissKeyboardC10_observersSaySo8NSObject_pGvp",
+                "mangledName": "$s16MZUIKitExtension11MZUIControlC20TapToDismissKeyboardC10_observersSaySo8NSObject_pGvp",
+                "moduleName": "MZUIKitExtension",
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[ObjectiveC.NSObjectProtocol]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSObjectProtocol",
+                            "printedName": "ObjectiveC.NSObjectProtocol",
+                            "usr": "c:objc(pl)NSObject"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:16MZUIKitExtension11MZUIControlC20TapToDismissKeyboardC10_observersSaySo8NSObject_pGvg",
+                    "mangledName": "$s16MZUIKitExtension11MZUIControlC20TapToDismissKeyboardC10_observersSaySo8NSObject_pGvg",
+                    "moduleName": "MZUIKitExtension",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[ObjectiveC.NSObjectProtocol]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSObjectProtocol",
+                            "printedName": "ObjectiveC.NSObjectProtocol",
+                            "usr": "c:objc(pl)NSObject"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:16MZUIKitExtension11MZUIControlC20TapToDismissKeyboardC10_observersSaySo8NSObject_pGvs",
+                    "mangledName": "$s16MZUIKitExtension11MZUIControlC20TapToDismissKeyboardC10_observersSaySo8NSObject_pGvs",
+                    "moduleName": "MZUIKitExtension",
+                    "implicit": true,
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:16MZUIKitExtension11MZUIControlC20TapToDismissKeyboardC10_observersSaySo8NSObject_pGvM",
+                    "mangledName": "$s16MZUIKitExtension11MZUIControlC20TapToDismissKeyboardC10_observersSaySo8NSObject_pGvM",
+                    "moduleName": "MZUIKitExtension",
+                    "implicit": true,
+                    "accessorKind": "_modify"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TapToDismissKeyboard",
+                    "printedName": "MZUIKitExtension.MZUIControl.TapToDismissKeyboard",
+                    "usr": "s:16MZUIKitExtension11MZUIControlC20TapToDismissKeyboardC"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:16MZUIKitExtension11MZUIControlC20TapToDismissKeyboardCAEycfc",
+                "mangledName": "$s16MZUIKitExtension11MZUIControlC20TapToDismissKeyboardCAEycfc",
+                "moduleName": "MZUIKitExtension",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Function",
+                "name": "KeyboardWillShow",
+                "printedName": "KeyboardWillShow(notification:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Notification",
+                    "printedName": "Foundation.Notification",
+                    "usr": "s:10Foundation12NotificationV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:16MZUIKitExtension11MZUIControlC20TapToDismissKeyboardC0G8WillShow12notificationy10Foundation12NotificationV_tF",
+                "mangledName": "$s16MZUIKitExtension11MZUIControlC20TapToDismissKeyboardC0G8WillShow12notificationy10Foundation12NotificationV_tF",
+                "moduleName": "MZUIKitExtension",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "KeyboardWillHide",
+                "printedName": "KeyboardWillHide(notification:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Notification",
+                    "printedName": "Foundation.Notification",
+                    "usr": "s:10Foundation12NotificationV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:16MZUIKitExtension11MZUIControlC20TapToDismissKeyboardC0G8WillHide12notificationy10Foundation12NotificationV_tF",
+                "mangledName": "$s16MZUIKitExtension11MZUIControlC20TapToDismissKeyboardC0G8WillHide12notificationy10Foundation12NotificationV_tF",
+                "moduleName": "MZUIKitExtension",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "addControl",
+                "printedName": "addControl(to:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:16MZUIKitExtension11MZUIControlC20TapToDismissKeyboardC10addControl2toySo6UIViewC_tF",
+                "mangledName": "$s16MZUIKitExtension11MZUIControlC20TapToDismissKeyboardC10addControl2toySo6UIViewC_tF",
+                "moduleName": "MZUIKitExtension",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "addOtherResponder",
+                "printedName": "addOtherResponder(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIResponder",
+                    "printedName": "UIKit.UIResponder",
+                    "usr": "c:objc(cs)UIResponder"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:16MZUIKitExtension11MZUIControlC20TapToDismissKeyboardC17addOtherResponderyySo11UIResponderCF",
+                "mangledName": "$s16MZUIKitExtension11MZUIControlC20TapToDismissKeyboardC17addOtherResponderyySo11UIResponderCF",
+                "moduleName": "MZUIKitExtension",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "removeControl",
+                "printedName": "removeControl()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:16MZUIKitExtension11MZUIControlC20TapToDismissKeyboardC13removeControlyyF",
+                "mangledName": "$s16MZUIKitExtension11MZUIControlC20TapToDismissKeyboardC13removeControlyyF",
+                "moduleName": "MZUIKitExtension",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Class",
+            "usr": "s:16MZUIKitExtension11MZUIControlC20TapToDismissKeyboardC",
+            "mangledName": "$s16MZUIKitExtension11MZUIControlC20TapToDismissKeyboardC",
+            "moduleName": "MZUIKitExtension",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "MZUIControlKeyboardEventsProtocol",
+                "printedName": "MZUIControlKeyboardEventsProtocol",
+                "usr": "s:16MZUIKitExtension33MZUIControlKeyboardEventsProtocolP",
+                "mangledName": "$s16MZUIKitExtension33MZUIControlKeyboardEventsProtocolP"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "ShiftViewForKeyboardShow",
+            "printedName": "ShiftViewForKeyboardShow",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "_observers",
+                "printedName": "_observers",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[ObjectiveC.NSObjectProtocol]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSObjectProtocol",
+                        "printedName": "ObjectiveC.NSObjectProtocol",
+                        "usr": "c:objc(pl)NSObject"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:16MZUIKitExtension11MZUIControlC24ShiftViewForKeyboardShowC10_observersSaySo8NSObject_pGvp",
+                "mangledName": "$s16MZUIKitExtension11MZUIControlC24ShiftViewForKeyboardShowC10_observersSaySo8NSObject_pGvp",
+                "moduleName": "MZUIKitExtension",
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[ObjectiveC.NSObjectProtocol]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSObjectProtocol",
+                            "printedName": "ObjectiveC.NSObjectProtocol",
+                            "usr": "c:objc(pl)NSObject"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:16MZUIKitExtension11MZUIControlC24ShiftViewForKeyboardShowC10_observersSaySo8NSObject_pGvg",
+                    "mangledName": "$s16MZUIKitExtension11MZUIControlC24ShiftViewForKeyboardShowC10_observersSaySo8NSObject_pGvg",
+                    "moduleName": "MZUIKitExtension",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[ObjectiveC.NSObjectProtocol]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSObjectProtocol",
+                            "printedName": "ObjectiveC.NSObjectProtocol",
+                            "usr": "c:objc(pl)NSObject"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:16MZUIKitExtension11MZUIControlC24ShiftViewForKeyboardShowC10_observersSaySo8NSObject_pGvs",
+                    "mangledName": "$s16MZUIKitExtension11MZUIControlC24ShiftViewForKeyboardShowC10_observersSaySo8NSObject_pGvs",
+                    "moduleName": "MZUIKitExtension",
+                    "implicit": true,
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:16MZUIKitExtension11MZUIControlC24ShiftViewForKeyboardShowC10_observersSaySo8NSObject_pGvM",
+                    "mangledName": "$s16MZUIKitExtension11MZUIControlC24ShiftViewForKeyboardShowC10_observersSaySo8NSObject_pGvM",
+                    "moduleName": "MZUIKitExtension",
+                    "implicit": true,
+                    "accessorKind": "_modify"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ShiftViewForKeyboardShow",
+                    "printedName": "MZUIKitExtension.MZUIControl.ShiftViewForKeyboardShow",
+                    "usr": "s:16MZUIKitExtension11MZUIControlC24ShiftViewForKeyboardShowC"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:16MZUIKitExtension11MZUIControlC24ShiftViewForKeyboardShowCAEycfc",
+                "mangledName": "$s16MZUIKitExtension11MZUIControlC24ShiftViewForKeyboardShowCAEycfc",
+                "moduleName": "MZUIKitExtension",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Function",
+                "name": "addInputViews",
+                "printedName": "addInputViews(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[UIKit.UIView]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIView",
+                        "printedName": "UIKit.UIView",
+                        "usr": "c:objc(cs)UIView"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:16MZUIKitExtension11MZUIControlC24ShiftViewForKeyboardShowC13addInputViewsyySaySo6UIViewCGF",
+                "mangledName": "$s16MZUIKitExtension11MZUIControlC24ShiftViewForKeyboardShowC13addInputViewsyySaySo6UIViewCGF",
+                "moduleName": "MZUIKitExtension",
+                "declAttributes": [
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "setAtViewDidAppear",
+                "printedName": "setAtViewDidAppear(view:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:16MZUIKitExtension11MZUIControlC24ShiftViewForKeyboardShowC05setAtE9DidAppear4viewySo6UIViewC_tF",
+                "mangledName": "$s16MZUIKitExtension11MZUIControlC24ShiftViewForKeyboardShowC05setAtE9DidAppear4viewySo6UIViewC_tF",
+                "moduleName": "MZUIKitExtension",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "KeyboardWillShow",
+                "printedName": "KeyboardWillShow(notification:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Notification",
+                    "printedName": "Foundation.Notification",
+                    "usr": "s:10Foundation12NotificationV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:16MZUIKitExtension11MZUIControlC24ShiftViewForKeyboardShowC0g4WillH012notificationy10Foundation12NotificationV_tF",
+                "mangledName": "$s16MZUIKitExtension11MZUIControlC24ShiftViewForKeyboardShowC0g4WillH012notificationy10Foundation12NotificationV_tF",
+                "moduleName": "MZUIKitExtension",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "KeyboardWillHide",
+                "printedName": "KeyboardWillHide(notification:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Notification",
+                    "printedName": "Foundation.Notification",
+                    "usr": "s:10Foundation12NotificationV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:16MZUIKitExtension11MZUIControlC24ShiftViewForKeyboardShowC0G8WillHide12notificationy10Foundation12NotificationV_tF",
+                "mangledName": "$s16MZUIKitExtension11MZUIControlC24ShiftViewForKeyboardShowC0G8WillHide12notificationy10Foundation12NotificationV_tF",
+                "moduleName": "MZUIKitExtension",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Class",
+            "usr": "s:16MZUIKitExtension11MZUIControlC24ShiftViewForKeyboardShowC",
+            "mangledName": "$s16MZUIKitExtension11MZUIControlC24ShiftViewForKeyboardShowC",
+            "moduleName": "MZUIKitExtension",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "MZUIControlKeyboardEventsProtocol",
+                "printedName": "MZUIControlKeyboardEventsProtocol",
+                "usr": "s:16MZUIKitExtension33MZUIControlKeyboardEventsProtocolP",
+                "mangledName": "$s16MZUIKitExtension33MZUIControlKeyboardEventsProtocolP"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:16MZUIKitExtension11MZUIControlC",
+        "mangledName": "$s16MZUIKitExtension11MZUIControlC",
+        "moduleName": "MZUIKitExtension",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MZUIControlKeyboardEventsProtocol",
+        "printedName": "MZUIControlKeyboardEventsProtocol",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "_observers",
+            "printedName": "_observers",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[ObjectiveC.NSObjectProtocol]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSObjectProtocol",
+                    "printedName": "ObjectiveC.NSObjectProtocol",
+                    "usr": "c:objc(pl)NSObject"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16MZUIKitExtension33MZUIControlKeyboardEventsProtocolP10_observersSaySo8NSObject_pGvp",
+            "mangledName": "$s16MZUIKitExtension33MZUIControlKeyboardEventsProtocolP10_observersSaySo8NSObject_pGvp",
+            "moduleName": "MZUIKitExtension",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[ObjectiveC.NSObjectProtocol]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSObjectProtocol",
+                        "printedName": "ObjectiveC.NSObjectProtocol",
+                        "usr": "c:objc(pl)NSObject"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16MZUIKitExtension33MZUIControlKeyboardEventsProtocolP10_observersSaySo8NSObject_pGvg",
+                "mangledName": "$s16MZUIKitExtension33MZUIControlKeyboardEventsProtocolP10_observersSaySo8NSObject_pGvg",
+                "moduleName": "MZUIKitExtension",
+                "genericSig": "<τ_0_0 where τ_0_0 : MZUIKitExtension.MZUIControlKeyboardEventsProtocol>",
+                "sugared_genericSig": "<Self where Self : MZUIKitExtension.MZUIControlKeyboardEventsProtocol>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[ObjectiveC.NSObjectProtocol]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSObjectProtocol",
+                        "printedName": "ObjectiveC.NSObjectProtocol",
+                        "usr": "c:objc(pl)NSObject"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16MZUIKitExtension33MZUIControlKeyboardEventsProtocolP10_observersSaySo8NSObject_pGvs",
+                "mangledName": "$s16MZUIKitExtension33MZUIControlKeyboardEventsProtocolP10_observersSaySo8NSObject_pGvs",
+                "moduleName": "MZUIKitExtension",
+                "genericSig": "<τ_0_0 where τ_0_0 : MZUIKitExtension.MZUIControlKeyboardEventsProtocol>",
+                "sugared_genericSig": "<Self where Self : MZUIKitExtension.MZUIControlKeyboardEventsProtocol>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16MZUIKitExtension33MZUIControlKeyboardEventsProtocolP10_observersSaySo8NSObject_pGvM",
+                "mangledName": "$s16MZUIKitExtension33MZUIControlKeyboardEventsProtocolP10_observersSaySo8NSObject_pGvM",
+                "moduleName": "MZUIKitExtension",
+                "genericSig": "<τ_0_0 where τ_0_0 : MZUIKitExtension.MZUIControlKeyboardEventsProtocol>",
+                "sugared_genericSig": "<Self where Self : MZUIKitExtension.MZUIControlKeyboardEventsProtocol>",
+                "protocolReq": true,
+                "implicit": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "KeyboardWillShow",
+            "printedName": "KeyboardWillShow(notification:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Notification",
+                "printedName": "Foundation.Notification",
+                "usr": "s:10Foundation12NotificationV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16MZUIKitExtension33MZUIControlKeyboardEventsProtocolP0D8WillShow12notificationy10Foundation12NotificationV_tF",
+            "mangledName": "$s16MZUIKitExtension33MZUIControlKeyboardEventsProtocolP0D8WillShow12notificationy10Foundation12NotificationV_tF",
+            "moduleName": "MZUIKitExtension",
+            "genericSig": "<τ_0_0 where τ_0_0 : MZUIKitExtension.MZUIControlKeyboardEventsProtocol>",
+            "sugared_genericSig": "<Self where Self : MZUIKitExtension.MZUIControlKeyboardEventsProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "KeyboardWillHide",
+            "printedName": "KeyboardWillHide(notification:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Notification",
+                "printedName": "Foundation.Notification",
+                "usr": "s:10Foundation12NotificationV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16MZUIKitExtension33MZUIControlKeyboardEventsProtocolP0D8WillHide12notificationy10Foundation12NotificationV_tF",
+            "mangledName": "$s16MZUIKitExtension33MZUIControlKeyboardEventsProtocolP0D8WillHide12notificationy10Foundation12NotificationV_tF",
+            "moduleName": "MZUIKitExtension",
+            "genericSig": "<τ_0_0 where τ_0_0 : MZUIKitExtension.MZUIControlKeyboardEventsProtocol>",
+            "sugared_genericSig": "<Self where Self : MZUIKitExtension.MZUIControlKeyboardEventsProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "enable",
+            "printedName": "enable()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16MZUIKitExtension33MZUIControlKeyboardEventsProtocolP6enableyyF",
+            "mangledName": "$s16MZUIKitExtension33MZUIControlKeyboardEventsProtocolP6enableyyF",
+            "moduleName": "MZUIKitExtension",
+            "genericSig": "<τ_0_0 where τ_0_0 : MZUIKitExtension.MZUIControlKeyboardEventsProtocol>",
+            "sugared_genericSig": "<Self where Self : MZUIKitExtension.MZUIControlKeyboardEventsProtocol>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Mutating"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "Mutating"
+          },
+          {
+            "kind": "Function",
+            "name": "disable",
+            "printedName": "disable()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16MZUIKitExtension33MZUIControlKeyboardEventsProtocolP7disableyyF",
+            "mangledName": "$s16MZUIKitExtension33MZUIControlKeyboardEventsProtocolP7disableyyF",
+            "moduleName": "MZUIKitExtension",
+            "genericSig": "<τ_0_0 where τ_0_0 : MZUIKitExtension.MZUIControlKeyboardEventsProtocol>",
+            "sugared_genericSig": "<Self where Self : MZUIKitExtension.MZUIControlKeyboardEventsProtocol>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Mutating"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "Mutating"
+          },
+          {
+            "kind": "Function",
+            "name": "enable",
+            "printedName": "enable()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16MZUIKitExtension33MZUIControlKeyboardEventsProtocolPAAE6enableyyF",
+            "mangledName": "$s16MZUIKitExtension33MZUIControlKeyboardEventsProtocolPAAE6enableyyF",
+            "moduleName": "MZUIKitExtension",
+            "genericSig": "<τ_0_0 where τ_0_0 : MZUIKitExtension.MZUIControlKeyboardEventsProtocol>",
+            "sugared_genericSig": "<Self where Self : MZUIKitExtension.MZUIControlKeyboardEventsProtocol>",
+            "declAttributes": [
+              "Mutating",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "Mutating"
+          },
+          {
+            "kind": "Function",
+            "name": "disable",
+            "printedName": "disable()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16MZUIKitExtension33MZUIControlKeyboardEventsProtocolPAAE7disableyyF",
+            "mangledName": "$s16MZUIKitExtension33MZUIControlKeyboardEventsProtocolPAAE7disableyyF",
+            "moduleName": "MZUIKitExtension",
+            "genericSig": "<τ_0_0 where τ_0_0 : MZUIKitExtension.MZUIControlKeyboardEventsProtocol>",
+            "sugared_genericSig": "<Self where Self : MZUIKitExtension.MZUIControlKeyboardEventsProtocol>",
+            "declAttributes": [
+              "Mutating",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "Mutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:16MZUIKitExtension33MZUIControlKeyboardEventsProtocolP",
+        "mangledName": "$s16MZUIKitExtension33MZUIControlKeyboardEventsProtocolP",
+        "moduleName": "MZUIKitExtension",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MZUIKitExtension"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -954,1363 +2311,6 @@
           "AccessControl"
         ],
         "hasMissingDesignatedInitializers": true
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "MZUIKitExtension"
-      },
-      {
-        "kind": "Import",
-        "name": "MZSwifts",
-        "printedName": "MZSwifts",
-        "declKind": "Import",
-        "moduleName": "MZUIKitExtension"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "MZUIControl",
-        "printedName": "MZUIControl",
-        "children": [
-          {
-            "kind": "TypeDecl",
-            "name": "KeyboardEvents",
-            "printedName": "KeyboardEvents",
-            "children": [
-              {
-                "kind": "Var",
-                "name": "_observers",
-                "printedName": "_observers",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[ObjectiveC.NSObjectProtocol]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "NSObjectProtocol",
-                        "printedName": "ObjectiveC.NSObjectProtocol",
-                        "usr": "c:objc(pl)NSObject"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:16MZUIKitExtension11MZUIControlC14KeyboardEventsC10_observersSaySo8NSObject_pGvp",
-                "mangledName": "$s16MZUIKitExtension11MZUIControlC14KeyboardEventsC10_observersSaySo8NSObject_pGvp",
-                "moduleName": "MZUIKitExtension",
-                "declAttributes": [
-                  "HasInitialValue",
-                  "HasStorage",
-                  "AccessControl"
-                ],
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[ObjectiveC.NSObjectProtocol]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "NSObjectProtocol",
-                            "printedName": "ObjectiveC.NSObjectProtocol",
-                            "usr": "c:objc(pl)NSObject"
-                          }
-                        ],
-                        "usr": "s:Sa"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:16MZUIKitExtension11MZUIControlC14KeyboardEventsC10_observersSaySo8NSObject_pGvg",
-                    "mangledName": "$s16MZUIKitExtension11MZUIControlC14KeyboardEventsC10_observersSaySo8NSObject_pGvg",
-                    "moduleName": "MZUIKitExtension",
-                    "implicit": true,
-                    "accessorKind": "get"
-                  },
-                  {
-                    "kind": "Accessor",
-                    "name": "Set",
-                    "printedName": "Set()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[ObjectiveC.NSObjectProtocol]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "NSObjectProtocol",
-                            "printedName": "ObjectiveC.NSObjectProtocol",
-                            "usr": "c:objc(pl)NSObject"
-                          }
-                        ],
-                        "usr": "s:Sa"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:16MZUIKitExtension11MZUIControlC14KeyboardEventsC10_observersSaySo8NSObject_pGvs",
-                    "mangledName": "$s16MZUIKitExtension11MZUIControlC14KeyboardEventsC10_observersSaySo8NSObject_pGvs",
-                    "moduleName": "MZUIKitExtension",
-                    "implicit": true,
-                    "accessorKind": "set"
-                  },
-                  {
-                    "kind": "Accessor",
-                    "name": "Modify",
-                    "printedName": "Modify()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:16MZUIKitExtension11MZUIControlC14KeyboardEventsC10_observersSaySo8NSObject_pGvM",
-                    "mangledName": "$s16MZUIKitExtension11MZUIControlC14KeyboardEventsC10_observersSaySo8NSObject_pGvM",
-                    "moduleName": "MZUIKitExtension",
-                    "implicit": true,
-                    "accessorKind": "_modify"
-                  }
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "willShowAction",
-                "printedName": "willShowAction",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "((Foundation.Notification) -> ())?",
-                    "children": [
-                      {
-                        "kind": "TypeFunc",
-                        "name": "Function",
-                        "printedName": "(Foundation.Notification) -> ()",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Void",
-                            "printedName": "()"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Notification",
-                            "printedName": "Foundation.Notification",
-                            "usr": "s:10Foundation12NotificationV"
-                          }
-                        ]
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:16MZUIKitExtension11MZUIControlC14KeyboardEventsC14willShowActiony10Foundation12NotificationVcSgvp",
-                "mangledName": "$s16MZUIKitExtension11MZUIControlC14KeyboardEventsC14willShowActiony10Foundation12NotificationVcSgvp",
-                "moduleName": "MZUIKitExtension",
-                "declAttributes": [
-                  "HasInitialValue",
-                  "HasStorage",
-                  "AccessControl"
-                ],
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "((Foundation.Notification) -> ())?",
-                        "children": [
-                          {
-                            "kind": "TypeFunc",
-                            "name": "Function",
-                            "printedName": "(Foundation.Notification) -> ()",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Void",
-                                "printedName": "()"
-                              },
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Notification",
-                                "printedName": "Foundation.Notification",
-                                "usr": "s:10Foundation12NotificationV"
-                              }
-                            ]
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:16MZUIKitExtension11MZUIControlC14KeyboardEventsC14willShowActiony10Foundation12NotificationVcSgvg",
-                    "mangledName": "$s16MZUIKitExtension11MZUIControlC14KeyboardEventsC14willShowActiony10Foundation12NotificationVcSgvg",
-                    "moduleName": "MZUIKitExtension",
-                    "implicit": true,
-                    "accessorKind": "get"
-                  },
-                  {
-                    "kind": "Accessor",
-                    "name": "Set",
-                    "printedName": "Set()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "((Foundation.Notification) -> ())?",
-                        "children": [
-                          {
-                            "kind": "TypeFunc",
-                            "name": "Function",
-                            "printedName": "(Foundation.Notification) -> ()",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Void",
-                                "printedName": "()"
-                              },
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Notification",
-                                "printedName": "Foundation.Notification",
-                                "usr": "s:10Foundation12NotificationV"
-                              }
-                            ]
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:16MZUIKitExtension11MZUIControlC14KeyboardEventsC14willShowActiony10Foundation12NotificationVcSgvs",
-                    "mangledName": "$s16MZUIKitExtension11MZUIControlC14KeyboardEventsC14willShowActiony10Foundation12NotificationVcSgvs",
-                    "moduleName": "MZUIKitExtension",
-                    "implicit": true,
-                    "accessorKind": "set"
-                  },
-                  {
-                    "kind": "Accessor",
-                    "name": "Modify",
-                    "printedName": "Modify()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:16MZUIKitExtension11MZUIControlC14KeyboardEventsC14willShowActiony10Foundation12NotificationVcSgvM",
-                    "mangledName": "$s16MZUIKitExtension11MZUIControlC14KeyboardEventsC14willShowActiony10Foundation12NotificationVcSgvM",
-                    "moduleName": "MZUIKitExtension",
-                    "implicit": true,
-                    "accessorKind": "_modify"
-                  }
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "willHideAction",
-                "printedName": "willHideAction",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "((Foundation.Notification) -> ())?",
-                    "children": [
-                      {
-                        "kind": "TypeFunc",
-                        "name": "Function",
-                        "printedName": "(Foundation.Notification) -> ()",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Void",
-                            "printedName": "()"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Notification",
-                            "printedName": "Foundation.Notification",
-                            "usr": "s:10Foundation12NotificationV"
-                          }
-                        ]
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:16MZUIKitExtension11MZUIControlC14KeyboardEventsC14willHideActiony10Foundation12NotificationVcSgvp",
-                "mangledName": "$s16MZUIKitExtension11MZUIControlC14KeyboardEventsC14willHideActiony10Foundation12NotificationVcSgvp",
-                "moduleName": "MZUIKitExtension",
-                "declAttributes": [
-                  "HasInitialValue",
-                  "HasStorage",
-                  "AccessControl"
-                ],
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "((Foundation.Notification) -> ())?",
-                        "children": [
-                          {
-                            "kind": "TypeFunc",
-                            "name": "Function",
-                            "printedName": "(Foundation.Notification) -> ()",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Void",
-                                "printedName": "()"
-                              },
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Notification",
-                                "printedName": "Foundation.Notification",
-                                "usr": "s:10Foundation12NotificationV"
-                              }
-                            ]
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:16MZUIKitExtension11MZUIControlC14KeyboardEventsC14willHideActiony10Foundation12NotificationVcSgvg",
-                    "mangledName": "$s16MZUIKitExtension11MZUIControlC14KeyboardEventsC14willHideActiony10Foundation12NotificationVcSgvg",
-                    "moduleName": "MZUIKitExtension",
-                    "implicit": true,
-                    "accessorKind": "get"
-                  },
-                  {
-                    "kind": "Accessor",
-                    "name": "Set",
-                    "printedName": "Set()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "((Foundation.Notification) -> ())?",
-                        "children": [
-                          {
-                            "kind": "TypeFunc",
-                            "name": "Function",
-                            "printedName": "(Foundation.Notification) -> ()",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Void",
-                                "printedName": "()"
-                              },
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Notification",
-                                "printedName": "Foundation.Notification",
-                                "usr": "s:10Foundation12NotificationV"
-                              }
-                            ]
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:16MZUIKitExtension11MZUIControlC14KeyboardEventsC14willHideActiony10Foundation12NotificationVcSgvs",
-                    "mangledName": "$s16MZUIKitExtension11MZUIControlC14KeyboardEventsC14willHideActiony10Foundation12NotificationVcSgvs",
-                    "moduleName": "MZUIKitExtension",
-                    "implicit": true,
-                    "accessorKind": "set"
-                  },
-                  {
-                    "kind": "Accessor",
-                    "name": "Modify",
-                    "printedName": "Modify()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:16MZUIKitExtension11MZUIControlC14KeyboardEventsC14willHideActiony10Foundation12NotificationVcSgvM",
-                    "mangledName": "$s16MZUIKitExtension11MZUIControlC14KeyboardEventsC14willHideActiony10Foundation12NotificationVcSgvM",
-                    "moduleName": "MZUIKitExtension",
-                    "implicit": true,
-                    "accessorKind": "_modify"
-                  }
-                ]
-              },
-              {
-                "kind": "Constructor",
-                "name": "init",
-                "printedName": "init()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "KeyboardEvents",
-                    "printedName": "MZUIKitExtension.MZUIControl.KeyboardEvents",
-                    "usr": "s:16MZUIKitExtension11MZUIControlC14KeyboardEventsC"
-                  }
-                ],
-                "declKind": "Constructor",
-                "usr": "s:16MZUIKitExtension11MZUIControlC14KeyboardEventsCAEycfc",
-                "mangledName": "$s16MZUIKitExtension11MZUIControlC14KeyboardEventsCAEycfc",
-                "moduleName": "MZUIKitExtension",
-                "declAttributes": [
-                  "AccessControl"
-                ],
-                "init_kind": "Designated"
-              },
-              {
-                "kind": "Function",
-                "name": "willShow",
-                "printedName": "willShow(notification:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Notification",
-                    "printedName": "Foundation.Notification",
-                    "usr": "s:10Foundation12NotificationV"
-                  }
-                ],
-                "declKind": "Func",
-                "usr": "s:16MZUIKitExtension11MZUIControlC14KeyboardEventsC8willShow12notificationy10Foundation12NotificationV_tF",
-                "mangledName": "$s16MZUIKitExtension11MZUIControlC14KeyboardEventsC8willShow12notificationy10Foundation12NotificationV_tF",
-                "moduleName": "MZUIKitExtension",
-                "declAttributes": [
-                  "AccessControl"
-                ],
-                "funcSelfKind": "NonMutating"
-              },
-              {
-                "kind": "Function",
-                "name": "willHide",
-                "printedName": "willHide(notification:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Notification",
-                    "printedName": "Foundation.Notification",
-                    "usr": "s:10Foundation12NotificationV"
-                  }
-                ],
-                "declKind": "Func",
-                "usr": "s:16MZUIKitExtension11MZUIControlC14KeyboardEventsC8willHide12notificationy10Foundation12NotificationV_tF",
-                "mangledName": "$s16MZUIKitExtension11MZUIControlC14KeyboardEventsC8willHide12notificationy10Foundation12NotificationV_tF",
-                "moduleName": "MZUIKitExtension",
-                "declAttributes": [
-                  "AccessControl"
-                ],
-                "funcSelfKind": "NonMutating"
-              }
-            ],
-            "declKind": "Class",
-            "usr": "s:16MZUIKitExtension11MZUIControlC14KeyboardEventsC",
-            "mangledName": "$s16MZUIKitExtension11MZUIControlC14KeyboardEventsC",
-            "moduleName": "MZUIKitExtension",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "conformances": [
-              {
-                "kind": "Conformance",
-                "name": "MZUIControlKeyboardEventsProtocol",
-                "printedName": "MZUIControlKeyboardEventsProtocol",
-                "usr": "s:16MZUIKitExtension33MZUIControlKeyboardEventsProtocolP",
-                "mangledName": "$s16MZUIKitExtension33MZUIControlKeyboardEventsProtocolP"
-              }
-            ]
-          },
-          {
-            "kind": "TypeDecl",
-            "name": "TapToDismissKeyboard",
-            "printedName": "TapToDismissKeyboard",
-            "children": [
-              {
-                "kind": "Var",
-                "name": "_observers",
-                "printedName": "_observers",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[ObjectiveC.NSObjectProtocol]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "NSObjectProtocol",
-                        "printedName": "ObjectiveC.NSObjectProtocol",
-                        "usr": "c:objc(pl)NSObject"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:16MZUIKitExtension11MZUIControlC20TapToDismissKeyboardC10_observersSaySo8NSObject_pGvp",
-                "mangledName": "$s16MZUIKitExtension11MZUIControlC20TapToDismissKeyboardC10_observersSaySo8NSObject_pGvp",
-                "moduleName": "MZUIKitExtension",
-                "declAttributes": [
-                  "HasInitialValue",
-                  "HasStorage",
-                  "AccessControl"
-                ],
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[ObjectiveC.NSObjectProtocol]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "NSObjectProtocol",
-                            "printedName": "ObjectiveC.NSObjectProtocol",
-                            "usr": "c:objc(pl)NSObject"
-                          }
-                        ],
-                        "usr": "s:Sa"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:16MZUIKitExtension11MZUIControlC20TapToDismissKeyboardC10_observersSaySo8NSObject_pGvg",
-                    "mangledName": "$s16MZUIKitExtension11MZUIControlC20TapToDismissKeyboardC10_observersSaySo8NSObject_pGvg",
-                    "moduleName": "MZUIKitExtension",
-                    "implicit": true,
-                    "accessorKind": "get"
-                  },
-                  {
-                    "kind": "Accessor",
-                    "name": "Set",
-                    "printedName": "Set()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[ObjectiveC.NSObjectProtocol]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "NSObjectProtocol",
-                            "printedName": "ObjectiveC.NSObjectProtocol",
-                            "usr": "c:objc(pl)NSObject"
-                          }
-                        ],
-                        "usr": "s:Sa"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:16MZUIKitExtension11MZUIControlC20TapToDismissKeyboardC10_observersSaySo8NSObject_pGvs",
-                    "mangledName": "$s16MZUIKitExtension11MZUIControlC20TapToDismissKeyboardC10_observersSaySo8NSObject_pGvs",
-                    "moduleName": "MZUIKitExtension",
-                    "implicit": true,
-                    "accessorKind": "set"
-                  },
-                  {
-                    "kind": "Accessor",
-                    "name": "Modify",
-                    "printedName": "Modify()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:16MZUIKitExtension11MZUIControlC20TapToDismissKeyboardC10_observersSaySo8NSObject_pGvM",
-                    "mangledName": "$s16MZUIKitExtension11MZUIControlC20TapToDismissKeyboardC10_observersSaySo8NSObject_pGvM",
-                    "moduleName": "MZUIKitExtension",
-                    "implicit": true,
-                    "accessorKind": "_modify"
-                  }
-                ]
-              },
-              {
-                "kind": "Constructor",
-                "name": "init",
-                "printedName": "init()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "TapToDismissKeyboard",
-                    "printedName": "MZUIKitExtension.MZUIControl.TapToDismissKeyboard",
-                    "usr": "s:16MZUIKitExtension11MZUIControlC20TapToDismissKeyboardC"
-                  }
-                ],
-                "declKind": "Constructor",
-                "usr": "s:16MZUIKitExtension11MZUIControlC20TapToDismissKeyboardCAEycfc",
-                "mangledName": "$s16MZUIKitExtension11MZUIControlC20TapToDismissKeyboardCAEycfc",
-                "moduleName": "MZUIKitExtension",
-                "declAttributes": [
-                  "AccessControl"
-                ],
-                "init_kind": "Designated"
-              },
-              {
-                "kind": "Function",
-                "name": "willShow",
-                "printedName": "willShow(notification:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Notification",
-                    "printedName": "Foundation.Notification",
-                    "usr": "s:10Foundation12NotificationV"
-                  }
-                ],
-                "declKind": "Func",
-                "usr": "s:16MZUIKitExtension11MZUIControlC20TapToDismissKeyboardC8willShow12notificationy10Foundation12NotificationV_tF",
-                "mangledName": "$s16MZUIKitExtension11MZUIControlC20TapToDismissKeyboardC8willShow12notificationy10Foundation12NotificationV_tF",
-                "moduleName": "MZUIKitExtension",
-                "declAttributes": [
-                  "AccessControl"
-                ],
-                "funcSelfKind": "NonMutating"
-              },
-              {
-                "kind": "Function",
-                "name": "willHide",
-                "printedName": "willHide(notification:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Notification",
-                    "printedName": "Foundation.Notification",
-                    "usr": "s:10Foundation12NotificationV"
-                  }
-                ],
-                "declKind": "Func",
-                "usr": "s:16MZUIKitExtension11MZUIControlC20TapToDismissKeyboardC8willHide12notificationy10Foundation12NotificationV_tF",
-                "mangledName": "$s16MZUIKitExtension11MZUIControlC20TapToDismissKeyboardC8willHide12notificationy10Foundation12NotificationV_tF",
-                "moduleName": "MZUIKitExtension",
-                "declAttributes": [
-                  "AccessControl"
-                ],
-                "funcSelfKind": "NonMutating"
-              },
-              {
-                "kind": "Function",
-                "name": "addControl",
-                "printedName": "addControl(to:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIView",
-                    "printedName": "UIKit.UIView",
-                    "usr": "c:objc(cs)UIView"
-                  }
-                ],
-                "declKind": "Func",
-                "usr": "s:16MZUIKitExtension11MZUIControlC20TapToDismissKeyboardC10addControl2toySo6UIViewC_tF",
-                "mangledName": "$s16MZUIKitExtension11MZUIControlC20TapToDismissKeyboardC10addControl2toySo6UIViewC_tF",
-                "moduleName": "MZUIKitExtension",
-                "declAttributes": [
-                  "AccessControl"
-                ],
-                "funcSelfKind": "NonMutating"
-              },
-              {
-                "kind": "Function",
-                "name": "addOtherResponder",
-                "printedName": "addOtherResponder(_:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIResponder",
-                    "printedName": "UIKit.UIResponder",
-                    "usr": "c:objc(cs)UIResponder"
-                  }
-                ],
-                "declKind": "Func",
-                "usr": "s:16MZUIKitExtension11MZUIControlC20TapToDismissKeyboardC17addOtherResponderyySo11UIResponderCF",
-                "mangledName": "$s16MZUIKitExtension11MZUIControlC20TapToDismissKeyboardC17addOtherResponderyySo11UIResponderCF",
-                "moduleName": "MZUIKitExtension",
-                "declAttributes": [
-                  "AccessControl"
-                ],
-                "funcSelfKind": "NonMutating"
-              },
-              {
-                "kind": "Function",
-                "name": "removeControl",
-                "printedName": "removeControl()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Func",
-                "usr": "s:16MZUIKitExtension11MZUIControlC20TapToDismissKeyboardC13removeControlyyF",
-                "mangledName": "$s16MZUIKitExtension11MZUIControlC20TapToDismissKeyboardC13removeControlyyF",
-                "moduleName": "MZUIKitExtension",
-                "declAttributes": [
-                  "AccessControl"
-                ],
-                "funcSelfKind": "NonMutating"
-              }
-            ],
-            "declKind": "Class",
-            "usr": "s:16MZUIKitExtension11MZUIControlC20TapToDismissKeyboardC",
-            "mangledName": "$s16MZUIKitExtension11MZUIControlC20TapToDismissKeyboardC",
-            "moduleName": "MZUIKitExtension",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "conformances": [
-              {
-                "kind": "Conformance",
-                "name": "MZUIControlKeyboardEventsProtocol",
-                "printedName": "MZUIControlKeyboardEventsProtocol",
-                "usr": "s:16MZUIKitExtension33MZUIControlKeyboardEventsProtocolP",
-                "mangledName": "$s16MZUIKitExtension33MZUIControlKeyboardEventsProtocolP"
-              }
-            ]
-          },
-          {
-            "kind": "TypeDecl",
-            "name": "ShiftViewWhenKeyboardShow",
-            "printedName": "ShiftViewWhenKeyboardShow",
-            "children": [
-              {
-                "kind": "Var",
-                "name": "_observers",
-                "printedName": "_observers",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[ObjectiveC.NSObjectProtocol]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "NSObjectProtocol",
-                        "printedName": "ObjectiveC.NSObjectProtocol",
-                        "usr": "c:objc(pl)NSObject"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:16MZUIKitExtension11MZUIControlC25ShiftViewWhenKeyboardShowC10_observersSaySo8NSObject_pGvp",
-                "mangledName": "$s16MZUIKitExtension11MZUIControlC25ShiftViewWhenKeyboardShowC10_observersSaySo8NSObject_pGvp",
-                "moduleName": "MZUIKitExtension",
-                "declAttributes": [
-                  "HasInitialValue",
-                  "HasStorage",
-                  "AccessControl"
-                ],
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[ObjectiveC.NSObjectProtocol]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "NSObjectProtocol",
-                            "printedName": "ObjectiveC.NSObjectProtocol",
-                            "usr": "c:objc(pl)NSObject"
-                          }
-                        ],
-                        "usr": "s:Sa"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:16MZUIKitExtension11MZUIControlC25ShiftViewWhenKeyboardShowC10_observersSaySo8NSObject_pGvg",
-                    "mangledName": "$s16MZUIKitExtension11MZUIControlC25ShiftViewWhenKeyboardShowC10_observersSaySo8NSObject_pGvg",
-                    "moduleName": "MZUIKitExtension",
-                    "implicit": true,
-                    "accessorKind": "get"
-                  },
-                  {
-                    "kind": "Accessor",
-                    "name": "Set",
-                    "printedName": "Set()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[ObjectiveC.NSObjectProtocol]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "NSObjectProtocol",
-                            "printedName": "ObjectiveC.NSObjectProtocol",
-                            "usr": "c:objc(pl)NSObject"
-                          }
-                        ],
-                        "usr": "s:Sa"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:16MZUIKitExtension11MZUIControlC25ShiftViewWhenKeyboardShowC10_observersSaySo8NSObject_pGvs",
-                    "mangledName": "$s16MZUIKitExtension11MZUIControlC25ShiftViewWhenKeyboardShowC10_observersSaySo8NSObject_pGvs",
-                    "moduleName": "MZUIKitExtension",
-                    "implicit": true,
-                    "accessorKind": "set"
-                  },
-                  {
-                    "kind": "Accessor",
-                    "name": "Modify",
-                    "printedName": "Modify()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:16MZUIKitExtension11MZUIControlC25ShiftViewWhenKeyboardShowC10_observersSaySo8NSObject_pGvM",
-                    "mangledName": "$s16MZUIKitExtension11MZUIControlC25ShiftViewWhenKeyboardShowC10_observersSaySo8NSObject_pGvM",
-                    "moduleName": "MZUIKitExtension",
-                    "implicit": true,
-                    "accessorKind": "_modify"
-                  }
-                ]
-              },
-              {
-                "kind": "Constructor",
-                "name": "init",
-                "printedName": "init()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ShiftViewWhenKeyboardShow",
-                    "printedName": "MZUIKitExtension.MZUIControl.ShiftViewWhenKeyboardShow",
-                    "usr": "s:16MZUIKitExtension11MZUIControlC25ShiftViewWhenKeyboardShowC"
-                  }
-                ],
-                "declKind": "Constructor",
-                "usr": "s:16MZUIKitExtension11MZUIControlC25ShiftViewWhenKeyboardShowCAEycfc",
-                "mangledName": "$s16MZUIKitExtension11MZUIControlC25ShiftViewWhenKeyboardShowCAEycfc",
-                "moduleName": "MZUIKitExtension",
-                "declAttributes": [
-                  "AccessControl"
-                ],
-                "init_kind": "Designated"
-              },
-              {
-                "kind": "Function",
-                "name": "addInputViews",
-                "printedName": "addInputViews(_:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[UIKit.UIView]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "UIView",
-                        "printedName": "UIKit.UIView",
-                        "usr": "c:objc(cs)UIView"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "declKind": "Func",
-                "usr": "s:16MZUIKitExtension11MZUIControlC25ShiftViewWhenKeyboardShowC13addInputViewsyySaySo6UIViewCGF",
-                "mangledName": "$s16MZUIKitExtension11MZUIControlC25ShiftViewWhenKeyboardShowC13addInputViewsyySaySo6UIViewCGF",
-                "moduleName": "MZUIKitExtension",
-                "declAttributes": [
-                  "AccessControl",
-                  "RawDocComment"
-                ],
-                "funcSelfKind": "NonMutating"
-              },
-              {
-                "kind": "Function",
-                "name": "setAtViewDidAppear",
-                "printedName": "setAtViewDidAppear(view:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIView",
-                    "printedName": "UIKit.UIView",
-                    "usr": "c:objc(cs)UIView"
-                  }
-                ],
-                "declKind": "Func",
-                "usr": "s:16MZUIKitExtension11MZUIControlC25ShiftViewWhenKeyboardShowC05setAtE9DidAppear4viewySo6UIViewC_tF",
-                "mangledName": "$s16MZUIKitExtension11MZUIControlC25ShiftViewWhenKeyboardShowC05setAtE9DidAppear4viewySo6UIViewC_tF",
-                "moduleName": "MZUIKitExtension",
-                "declAttributes": [
-                  "AccessControl"
-                ],
-                "funcSelfKind": "NonMutating"
-              },
-              {
-                "kind": "Function",
-                "name": "willShow",
-                "printedName": "willShow(notification:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Notification",
-                    "printedName": "Foundation.Notification",
-                    "usr": "s:10Foundation12NotificationV"
-                  }
-                ],
-                "declKind": "Func",
-                "usr": "s:16MZUIKitExtension11MZUIControlC25ShiftViewWhenKeyboardShowC04willH012notificationy10Foundation12NotificationV_tF",
-                "mangledName": "$s16MZUIKitExtension11MZUIControlC25ShiftViewWhenKeyboardShowC04willH012notificationy10Foundation12NotificationV_tF",
-                "moduleName": "MZUIKitExtension",
-                "declAttributes": [
-                  "AccessControl"
-                ],
-                "funcSelfKind": "NonMutating"
-              },
-              {
-                "kind": "Function",
-                "name": "willHide",
-                "printedName": "willHide(notification:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Notification",
-                    "printedName": "Foundation.Notification",
-                    "usr": "s:10Foundation12NotificationV"
-                  }
-                ],
-                "declKind": "Func",
-                "usr": "s:16MZUIKitExtension11MZUIControlC25ShiftViewWhenKeyboardShowC8willHide12notificationy10Foundation12NotificationV_tF",
-                "mangledName": "$s16MZUIKitExtension11MZUIControlC25ShiftViewWhenKeyboardShowC8willHide12notificationy10Foundation12NotificationV_tF",
-                "moduleName": "MZUIKitExtension",
-                "declAttributes": [
-                  "AccessControl"
-                ],
-                "funcSelfKind": "NonMutating"
-              }
-            ],
-            "declKind": "Class",
-            "usr": "s:16MZUIKitExtension11MZUIControlC25ShiftViewWhenKeyboardShowC",
-            "mangledName": "$s16MZUIKitExtension11MZUIControlC25ShiftViewWhenKeyboardShowC",
-            "moduleName": "MZUIKitExtension",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "conformances": [
-              {
-                "kind": "Conformance",
-                "name": "MZUIControlKeyboardEventsProtocol",
-                "printedName": "MZUIControlKeyboardEventsProtocol",
-                "usr": "s:16MZUIKitExtension33MZUIControlKeyboardEventsProtocolP",
-                "mangledName": "$s16MZUIKitExtension33MZUIControlKeyboardEventsProtocolP"
-              }
-            ]
-          }
-        ],
-        "declKind": "Class",
-        "usr": "s:16MZUIKitExtension11MZUIControlC",
-        "mangledName": "$s16MZUIKitExtension11MZUIControlC",
-        "moduleName": "MZUIKitExtension",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "hasMissingDesignatedInitializers": true
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "MZUIControlKeyboardEventsProtocol",
-        "printedName": "MZUIControlKeyboardEventsProtocol",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "_observers",
-            "printedName": "_observers",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[ObjectiveC.NSObjectProtocol]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NSObjectProtocol",
-                    "printedName": "ObjectiveC.NSObjectProtocol",
-                    "usr": "c:objc(pl)NSObject"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:16MZUIKitExtension33MZUIControlKeyboardEventsProtocolP10_observersSaySo8NSObject_pGvp",
-            "mangledName": "$s16MZUIKitExtension33MZUIControlKeyboardEventsProtocolP10_observersSaySo8NSObject_pGvp",
-            "moduleName": "MZUIKitExtension",
-            "protocolReq": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[ObjectiveC.NSObjectProtocol]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "NSObjectProtocol",
-                        "printedName": "ObjectiveC.NSObjectProtocol",
-                        "usr": "c:objc(pl)NSObject"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16MZUIKitExtension33MZUIControlKeyboardEventsProtocolP10_observersSaySo8NSObject_pGvg",
-                "mangledName": "$s16MZUIKitExtension33MZUIControlKeyboardEventsProtocolP10_observersSaySo8NSObject_pGvg",
-                "moduleName": "MZUIKitExtension",
-                "genericSig": "<τ_0_0 where τ_0_0 : MZUIKitExtension.MZUIControlKeyboardEventsProtocol>",
-                "sugared_genericSig": "<Self where Self : MZUIKitExtension.MZUIControlKeyboardEventsProtocol>",
-                "protocolReq": true,
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[ObjectiveC.NSObjectProtocol]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "NSObjectProtocol",
-                        "printedName": "ObjectiveC.NSObjectProtocol",
-                        "usr": "c:objc(pl)NSObject"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16MZUIKitExtension33MZUIControlKeyboardEventsProtocolP10_observersSaySo8NSObject_pGvs",
-                "mangledName": "$s16MZUIKitExtension33MZUIControlKeyboardEventsProtocolP10_observersSaySo8NSObject_pGvs",
-                "moduleName": "MZUIKitExtension",
-                "genericSig": "<τ_0_0 where τ_0_0 : MZUIKitExtension.MZUIControlKeyboardEventsProtocol>",
-                "sugared_genericSig": "<Self where Self : MZUIKitExtension.MZUIControlKeyboardEventsProtocol>",
-                "protocolReq": true,
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16MZUIKitExtension33MZUIControlKeyboardEventsProtocolP10_observersSaySo8NSObject_pGvM",
-                "mangledName": "$s16MZUIKitExtension33MZUIControlKeyboardEventsProtocolP10_observersSaySo8NSObject_pGvM",
-                "moduleName": "MZUIKitExtension",
-                "genericSig": "<τ_0_0 where τ_0_0 : MZUIKitExtension.MZUIControlKeyboardEventsProtocol>",
-                "sugared_genericSig": "<Self where Self : MZUIKitExtension.MZUIControlKeyboardEventsProtocol>",
-                "protocolReq": true,
-                "implicit": true,
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "willShow",
-            "printedName": "willShow(notification:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Notification",
-                "printedName": "Foundation.Notification",
-                "usr": "s:10Foundation12NotificationV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16MZUIKitExtension33MZUIControlKeyboardEventsProtocolP8willShow12notificationy10Foundation12NotificationV_tF",
-            "mangledName": "$s16MZUIKitExtension33MZUIControlKeyboardEventsProtocolP8willShow12notificationy10Foundation12NotificationV_tF",
-            "moduleName": "MZUIKitExtension",
-            "genericSig": "<τ_0_0 where τ_0_0 : MZUIKitExtension.MZUIControlKeyboardEventsProtocol>",
-            "sugared_genericSig": "<Self where Self : MZUIKitExtension.MZUIControlKeyboardEventsProtocol>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "willHide",
-            "printedName": "willHide(notification:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Notification",
-                "printedName": "Foundation.Notification",
-                "usr": "s:10Foundation12NotificationV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16MZUIKitExtension33MZUIControlKeyboardEventsProtocolP8willHide12notificationy10Foundation12NotificationV_tF",
-            "mangledName": "$s16MZUIKitExtension33MZUIControlKeyboardEventsProtocolP8willHide12notificationy10Foundation12NotificationV_tF",
-            "moduleName": "MZUIKitExtension",
-            "genericSig": "<τ_0_0 where τ_0_0 : MZUIKitExtension.MZUIControlKeyboardEventsProtocol>",
-            "sugared_genericSig": "<Self where Self : MZUIKitExtension.MZUIControlKeyboardEventsProtocol>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "enable",
-            "printedName": "enable()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16MZUIKitExtension33MZUIControlKeyboardEventsProtocolP6enableyyF",
-            "mangledName": "$s16MZUIKitExtension33MZUIControlKeyboardEventsProtocolP6enableyyF",
-            "moduleName": "MZUIKitExtension",
-            "genericSig": "<τ_0_0 where τ_0_0 : MZUIKitExtension.MZUIControlKeyboardEventsProtocol>",
-            "sugared_genericSig": "<Self where Self : MZUIKitExtension.MZUIControlKeyboardEventsProtocol>",
-            "protocolReq": true,
-            "declAttributes": [
-              "Mutating"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "Mutating"
-          },
-          {
-            "kind": "Function",
-            "name": "disable",
-            "printedName": "disable()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16MZUIKitExtension33MZUIControlKeyboardEventsProtocolP7disableyyF",
-            "mangledName": "$s16MZUIKitExtension33MZUIControlKeyboardEventsProtocolP7disableyyF",
-            "moduleName": "MZUIKitExtension",
-            "genericSig": "<τ_0_0 where τ_0_0 : MZUIKitExtension.MZUIControlKeyboardEventsProtocol>",
-            "sugared_genericSig": "<Self where Self : MZUIKitExtension.MZUIControlKeyboardEventsProtocol>",
-            "protocolReq": true,
-            "declAttributes": [
-              "Mutating"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "Mutating"
-          },
-          {
-            "kind": "Function",
-            "name": "enable",
-            "printedName": "enable()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16MZUIKitExtension33MZUIControlKeyboardEventsProtocolPAAE6enableyyF",
-            "mangledName": "$s16MZUIKitExtension33MZUIControlKeyboardEventsProtocolPAAE6enableyyF",
-            "moduleName": "MZUIKitExtension",
-            "genericSig": "<τ_0_0 where τ_0_0 : MZUIKitExtension.MZUIControlKeyboardEventsProtocol>",
-            "sugared_genericSig": "<Self where Self : MZUIKitExtension.MZUIControlKeyboardEventsProtocol>",
-            "declAttributes": [
-              "Mutating",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "Mutating"
-          },
-          {
-            "kind": "Function",
-            "name": "disable",
-            "printedName": "disable()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16MZUIKitExtension33MZUIControlKeyboardEventsProtocolPAAE7disableyyF",
-            "mangledName": "$s16MZUIKitExtension33MZUIControlKeyboardEventsProtocolPAAE7disableyyF",
-            "moduleName": "MZUIKitExtension",
-            "genericSig": "<τ_0_0 where τ_0_0 : MZUIKitExtension.MZUIControlKeyboardEventsProtocol>",
-            "sugared_genericSig": "<Self where Self : MZUIKitExtension.MZUIControlKeyboardEventsProtocol>",
-            "declAttributes": [
-              "Mutating",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "Mutating"
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "s:16MZUIKitExtension33MZUIControlKeyboardEventsProtocolP",
-        "mangledName": "$s16MZUIKitExtension33MZUIControlKeyboardEventsProtocolP",
-        "moduleName": "MZUIKitExtension",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
-        ]
       },
       {
         "kind": "Import",
@@ -5550,6 +5550,149 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "onHidingAction",
+            "printedName": "onHidingAction",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16MZUIKitExtension28MZUIPresentViewOnTopWithMaskC14onHidingActionyycSgvp",
+            "mangledName": "$s16MZUIKitExtension28MZUIPresentViewOnTopWithMaskC14onHidingActionyycSgvp",
+            "moduleName": "MZUIKitExtension",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(() -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "() -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16MZUIKitExtension28MZUIPresentViewOnTopWithMaskC14onHidingActionyycSgvg",
+                "mangledName": "$s16MZUIKitExtension28MZUIPresentViewOnTopWithMaskC14onHidingActionyycSgvg",
+                "moduleName": "MZUIKitExtension",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(() -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "() -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16MZUIKitExtension28MZUIPresentViewOnTopWithMaskC14onHidingActionyycSgvs",
+                "mangledName": "$s16MZUIKitExtension28MZUIPresentViewOnTopWithMaskC14onHidingActionyycSgvs",
+                "moduleName": "MZUIKitExtension",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16MZUIKitExtension28MZUIPresentViewOnTopWithMaskC14onHidingActionyycSgvM",
+                "mangledName": "$s16MZUIKitExtension28MZUIPresentViewOnTopWithMaskC14onHidingActionyycSgvM",
+                "moduleName": "MZUIKitExtension",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -5597,18 +5740,9 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "UIKit.UIView?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIView",
-                    "printedName": "UIKit.UIView",
-                    "usr": "c:objc(cs)UIView"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
               },
               {
                 "kind": "TypeNominal",
@@ -5639,8 +5773,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16MZUIKitExtension28MZUIPresentViewOnTopWithMaskC4show10presentFor2on16beforePresentingySo6UIViewCSg_AJyAIcSgtF",
-            "mangledName": "$s16MZUIKitExtension28MZUIPresentViewOnTopWithMaskC4show10presentFor2on16beforePresentingySo6UIViewCSg_AJyAIcSgtF",
+            "usr": "s:16MZUIKitExtension28MZUIPresentViewOnTopWithMaskC4show10presentFor2on16beforePresentingySo6UIViewCSg_AIyAIcSgtF",
+            "mangledName": "$s16MZUIKitExtension28MZUIPresentViewOnTopWithMaskC4show10presentFor2on16beforePresentingySo6UIViewCSg_AIyAIcSgtF",
             "moduleName": "MZUIKitExtension",
             "declAttributes": [
               "AccessControl"
@@ -7901,6 +8035,181 @@
   },
   "ConstValues": [
     {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZKeyboardEvents.swift",
+      "kind": "Array",
+      "offset": 528,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZKeyboardEvents.swift",
+      "kind": "Array",
+      "offset": 1131,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZKeyboardEvents.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1281,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZKeyboardEvents.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1408,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZKeyboardEvents.swift",
+      "kind": "Array",
+      "offset": 2054,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZKeyboardEvents.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2282,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZKeyboardEvents.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2695,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZKeyboardEvents.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2845,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZKeyboardEvents.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3106,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZKeyboardEvents.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3240,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZKeyboardEvents.swift",
+      "kind": "Array",
+      "offset": 3651,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZKeyboardEvents.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4501,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZKeyboardEvents.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4507,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZKeyboardEvents.swift",
+      "kind": "FloatLiteral",
+      "offset": 4586,
+      "length": 4,
+      "value": "0.25"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZKeyboardEvents.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4670,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZKeyboardEvents.swift",
+      "kind": "FloatLiteral",
+      "offset": 4890,
+      "length": 4,
+      "value": "0.25"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZKeyboardEvents.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4974,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZKeyboardEvents.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4980,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZKeyboardEvents.swift",
+      "kind": "Array",
+      "offset": 5209,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZKeyboardEvents.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5801,
+      "length": 2,
+      "value": "44"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZKeyboardEvents.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5841,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIExtensions.UIImageView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 597,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIExtensions.UIImageView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 616,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIExtensions.UIImageView.swift",
+      "kind": "FloatLiteral",
+      "offset": 1004,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIExtensions.UIImageView.swift",
+      "kind": "FloatLiteral",
+      "offset": 1069,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
       "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/TouchExtensions\/MZTouchDefines.swift",
       "kind": "IntegerLiteral",
       "offset": 1095,
@@ -7941,11 +8250,39 @@
       "offset": 1110,
       "length": 5,
       "value": "2"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/TouchExtensions\/MZTouchDefines.swift",
+      "kind": "StringLiteral",
+      "offset": 1302,
+      "length": 7,
+      "value": "\"began\""
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/TouchExtensions\/MZTouchDefines.swift",
+      "kind": "StringLiteral",
+      "offset": 1338,
+      "length": 7,
+      "value": "\"moved\""
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/TouchExtensions\/MZTouchDefines.swift",
+      "kind": "StringLiteral",
+      "offset": 1374,
+      "length": 7,
+      "value": "\"ended\""
     },
     {
       "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/UIImage.Extensions.swift",
       "kind": "BooleanLiteral",
       "offset": 450,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/UIImage.Extensions.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1129,
       "length": 5,
       "value": "false"
     },
@@ -7971,39 +8308,39 @@
       "value": "true"
     },
     {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/KeyboardEvents.swift",
-      "kind": "Array",
-      "offset": 528,
-      "length": 2,
-      "value": "[]"
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/UIImage.Extensions.swift",
+      "kind": "FloatLiteral",
+      "offset": 2943,
+      "length": 3,
+      "value": "1.0"
     },
     {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/KeyboardEvents.swift",
-      "kind": "Array",
-      "offset": 1115,
-      "length": 2,
-      "value": "[]"
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/UIImage.Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3823,
+      "length": 1,
+      "value": "0"
     },
     {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/KeyboardEvents.swift",
-      "kind": "Array",
-      "offset": 2020,
-      "length": 2,
-      "value": "[]"
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/UIImage.Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 3988,
+      "length": 12,
+      "value": "\"PixelWidth\""
     },
     {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/KeyboardEvents.swift",
-      "kind": "Array",
-      "offset": 3618,
-      "length": 2,
-      "value": "[]"
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/UIImage.Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 4058,
+      "length": 13,
+      "value": "\"PixelHeight\""
     },
     {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/KeyboardEvents.swift",
-      "kind": "Array",
-      "offset": 4834,
-      "length": 2,
-      "value": "[]"
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/UIImage.Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 4269,
+      "length": 10,
+      "value": "\"DPIWidth\""
     },
     {
       "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/Capabilities\/MZInAppPurchaseManger.swift",
@@ -8020,6 +8357,230 @@
       "value": "true"
     },
     {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIExtensions.UITabBar.swift",
+      "kind": "BooleanLiteral",
+      "offset": 446,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIExtensions.UITabBar.swift",
+      "kind": "BooleanLiteral",
+      "offset": 470,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIExtensions.UITabBar.swift",
+      "kind": "BooleanLiteral",
+      "offset": 514,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIExtensions.UITabBar.swift",
+      "kind": "FloatLiteral",
+      "offset": 584,
+      "length": 4,
+      "value": "0.25"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIExtensions.UITabBar.swift",
+      "kind": "IntegerLiteral",
+      "offset": 624,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIExtensions.UITabBar.swift",
+      "kind": "BooleanLiteral",
+      "offset": 813,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIExtensions.UITabBar.swift",
+      "kind": "BooleanLiteral",
+      "offset": 884,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIExtensions.UITabBar.swift",
+      "kind": "BooleanLiteral",
+      "offset": 923,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIExtensions.UITabBar.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1102,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIExtensions.UITabBar.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1116,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIExtensions.UITabBar.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1152,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIExtensions.UITabBar.swift",
+      "kind": "FloatLiteral",
+      "offset": 1217,
+      "length": 4,
+      "value": "0.25"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIExtensions.UITabBar.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1242,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIExtensions.UITabBar.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1401,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIExtensions.UITabBar.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2027,
+      "length": 2,
+      "value": "25"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZInputUtility.swift",
+      "kind": "StringLiteral",
+      "offset": 547,
+      "length": 13,
+      "value": "\"0123456789.\""
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZInputUtility.swift",
+      "kind": "StringLiteral",
+      "offset": 652,
+      "length": 3,
+      "value": "\".\""
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZInputUtility.swift",
+      "kind": "StringLiteral",
+      "offset": 671,
+      "length": 16,
+      "value": "\"0\""
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZInputUtility.swift",
+      "kind": "StringLiteral",
+      "offset": 686,
+      "length": 3,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZInputUtility.swift",
+      "kind": "IntegerLiteral",
+      "offset": 803,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZInputUtility.swift",
+      "kind": "StringLiteral",
+      "offset": 838,
+      "length": 3,
+      "value": "\".\""
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZInputUtility.swift",
+      "kind": "IntegerLiteral",
+      "offset": 852,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZInputUtility.swift",
+      "kind": "IntegerLiteral",
+      "offset": 913,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZInputUtility.swift",
+      "kind": "StringLiteral",
+      "offset": 973,
+      "length": 3,
+      "value": "\".\""
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZInputUtility.swift",
+      "kind": "StringLiteral",
+      "offset": 1119,
+      "length": 15,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZInputUtility.swift",
+      "kind": "StringLiteral",
+      "offset": 1133,
+      "length": 7,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZInputUtility.swift",
+      "kind": "StringLiteral",
+      "offset": 1441,
+      "length": 13,
+      "value": "\"0123456789.\""
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZInputUtility.swift",
+      "kind": "StringLiteral",
+      "offset": 1797,
+      "length": 19,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZInputUtility.swift",
+      "kind": "StringLiteral",
+      "offset": 1807,
+      "length": 1,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZInputUtility.swift",
+      "kind": "StringLiteral",
+      "offset": 1815,
+      "length": 7,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZInputUtility.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1975,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZInputUtility.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2029,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZInputUtility.swift",
       "kind": "StringLiteral",
       "offset": 2242,
@@ -8029,9 +8590,37 @@
     {
       "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZInputUtility.swift",
       "kind": "StringLiteral",
+      "offset": 2502,
+      "length": 5,
+      "value": "\"°C\""
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZInputUtility.swift",
+      "kind": "StringLiteral",
+      "offset": 3610,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZInputUtility.swift",
+      "kind": "StringLiteral",
       "offset": 2623,
       "length": 8,
       "value": "\"MZUIKitExtension.AsNumber\""
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZInputUtility.swift",
+      "kind": "StringLiteral",
+      "offset": 4463,
+      "length": 42,
+      "value": "\"textInput must UITextFiled or UITextView\""
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZInputUtility.swift",
+      "kind": "FloatLiteral",
+      "offset": 5596,
+      "length": 3,
+      "value": "1.0"
     },
     {
       "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZInputUtility.swift",
@@ -8064,9 +8653,93 @@
     {
       "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZInputUtility.swift",
       "kind": "StringLiteral",
+      "offset": 8716,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZInputUtility.swift",
+      "kind": "StringLiteral",
+      "offset": 9297,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZInputUtility.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9360,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZInputUtility.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9412,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZInputUtility.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10056,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZInputUtility.swift",
+      "kind": "StringLiteral",
       "offset": 7512,
       "length": 15,
       "value": "\"MZUIKitExtension.TextViewControl\""
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIExtensions.UIView.swift",
+      "kind": "StringLiteral",
+      "offset": 1325,
+      "length": 12,
+      "value": "\"circleMask\""
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIExtensions.UIView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1450,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIExtensions.UIView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1509,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIExtensions.UIView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1558,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIExtensions.UIView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1616,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIExtensions.UIView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1664,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIExtensions.UIView.swift",
+      "kind": "StringLiteral",
+      "offset": 1746,
+      "length": 12,
+      "value": "\"circleMask\""
     },
     {
       "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIExtensions.UIView.swift",
@@ -8074,6 +8747,13 @@
       "offset": 1994,
       "length": 1,
       "value": "2"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIExtensions.UIView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2335,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIExtensions.UIView.swift",
@@ -8097,11 +8777,193 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIExtensions.UIView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3509,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIExtensions.UIView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3584,
+      "length": 2,
+      "value": "72"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIExtensions.UIView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4101,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIColorExtensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 283,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIColorExtensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 289,
+      "length": 4,
+      "value": "0xFF"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIColorExtensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 303,
+      "length": 4,
+      "value": "0xFF"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIColorExtensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 345,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIColorExtensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 350,
+      "length": 4,
+      "value": "0xFF"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIColorExtensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 364,
+      "length": 4,
+      "value": "0xFF"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIColorExtensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 405,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIColorExtensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 410,
+      "length": 4,
+      "value": "0xFF"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIColorExtensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 424,
+      "length": 4,
+      "value": "0xFF"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIColorExtensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 456,
+      "length": 8,
+      "value": "0xFFFFFF"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIColorExtensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 483,
+      "length": 2,
+      "value": "24"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIColorExtensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 489,
+      "length": 4,
+      "value": "0xFF"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIColorExtensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 503,
+      "length": 4,
+      "value": "0xFF"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIColorExtensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 511,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/Capabilities\/MZMediaLibraryPickerX.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1045,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/Capabilities\/MZMediaLibraryPickerX.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2192,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/Capabilities\/MZMediaLibraryPickerX.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2344,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/Capabilities\/MZMediaLibraryPickerX.swift",
+      "kind": "StringLiteral",
+      "offset": 3681,
+      "length": 14,
+      "value": "\"public.image\""
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/Capabilities\/MZMediaLibraryPickerX.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4153,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/Capabilities\/MZMediaLibraryPickerX.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4367,
+      "length": 4,
+      "value": "true"
+    },
+    {
       "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/MZUIs\/MZUIs.Localization.swift",
       "kind": "StringLiteral",
       "offset": 285,
       "length": 2,
       "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/MZUIs\/MZUIs.Localization.swift",
+      "kind": "StringLiteral",
+      "offset": 1392,
+      "length": 18,
+      "value": "\"Not support type\""
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/MZUIs\/MZUIs.Localization.swift",
+      "kind": "StringLiteral",
+      "offset": 1644,
+      "length": 4,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/MZUIs\/MZUIs.Localization.swift",
+      "kind": "StringLiteral",
+      "offset": 1656,
+      "length": 3,
+      "value": "\" \""
     },
     {
       "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/MZUIs\/MZUIs.Localization.swift",
@@ -8116,6 +8978,34 @@
       "offset": 498,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIExtensions.UIAlertController.swift",
+      "kind": "StringLiteral",
+      "offset": 941,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIExtensions.UIAlertController.swift",
+      "kind": "StringLiteral",
+      "offset": 1154,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIExtensions.UIAlertController.swift",
+      "kind": "StringLiteral",
+      "offset": 1800,
+      "length": 7,
+      "value": "\"title\""
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIExtensions.UIAlertController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1985,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIExtensions.UIAlertController.swift",
@@ -8140,6 +9030,13 @@
     },
     {
       "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIExtensions.UIAlertController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4425,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIExtensions.UIAlertController.swift",
       "kind": "BooleanLiteral",
       "offset": 4797,
       "length": 5,
@@ -8147,10 +9044,38 @@
     },
     {
       "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIExtensions.UIAlertController.swift",
+      "kind": "StringLiteral",
+      "offset": 5136,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIExtensions.UIAlertController.swift",
+      "kind": "StringLiteral",
+      "offset": 5333,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIExtensions.UIAlertController.swift",
+      "kind": "StringLiteral",
+      "offset": 5813,
+      "length": 7,
+      "value": "\"title\""
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIExtensions.UIAlertController.swift",
       "kind": "BooleanLiteral",
       "offset": 6048,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIExtensions.UIAlertController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6752,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIExtensions.UIAlertController.swift",
@@ -8174,6 +9099,48 @@
       "value": "\"Ok\""
     },
     {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIExtensions.UIAlertController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9014,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/Capabilities\/MZMediaLibraryPicker.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1097,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/Capabilities\/MZMediaLibraryPicker.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1797,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/Capabilities\/MZMediaLibraryPicker.swift",
+      "kind": "StringLiteral",
+      "offset": 2483,
+      "length": 14,
+      "value": "\"public.image\""
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/Capabilities\/MZMediaLibraryPicker.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2955,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/Capabilities\/MZMediaLibraryPicker.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3169,
+      "length": 4,
+      "value": "true"
+    },
+    {
       "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIPresentViewOnTopWithMask.swift",
       "kind": "BooleanLiteral",
       "offset": 304,
@@ -8182,36 +9149,64 @@
     },
     {
       "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIPresentViewOnTopWithMask.swift",
+      "kind": "FloatLiteral",
+      "offset": 1329,
+      "length": 4,
+      "value": "0.25"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIPresentViewOnTopWithMask.swift",
+      "kind": "FloatLiteral",
+      "offset": 1374,
+      "length": 4,
+      "value": "0.75"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIPresentViewOnTopWithMask.swift",
       "kind": "BooleanLiteral",
-      "offset": 1651,
+      "offset": 1604,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIPresentViewOnTopWithMask.swift",
+      "kind": "StringLiteral",
+      "offset": 1693,
+      "length": 51,
+      "value": "\"[warnign] Present view is not equal, please check\""
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIPresentViewOnTopWithMask.swift",
       "kind": "FloatLiteral",
-      "offset": 3124,
+      "offset": 1984,
+      "length": 4,
+      "value": "0.25"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIPresentViewOnTopWithMask.swift",
+      "kind": "FloatLiteral",
+      "offset": 3106,
       "length": 5,
       "value": "0.001"
     },
     {
       "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIPresentViewOnTopWithMask.swift",
       "kind": "IntegerLiteral",
-      "offset": 3166,
+      "offset": 3148,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIPresentViewOnTopWithMask.swift",
       "kind": "IntegerLiteral",
-      "offset": 3309,
+      "offset": 3291,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIPresentViewOnTopWithMask.swift",
       "kind": "IntegerLiteral",
-      "offset": 3315,
+      "offset": 3297,
       "length": 1,
       "value": "1"
     }

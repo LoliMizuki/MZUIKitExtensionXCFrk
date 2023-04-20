@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
 // swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MZUIKitExtension
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import CoreGraphics
@@ -13,21 +13,69 @@ import UIKit
 import UniformTypeIdentifiers
 import _Concurrency
 import _StringProcessing
+@_hasMissingDesignatedInitializers public class MZUIControl {
+  @objc deinit
+}
+extension MZUIKitExtension.MZUIControl {
+  public class KeyboardEvents : MZUIKitExtension.MZUIControlKeyboardEventsProtocol {
+    public var _observers: [any ObjectiveC.NSObjectProtocol]
+    public var willShowAction: ((Foundation.Notification) -> ())?
+    public var willHideAction: ((Foundation.Notification) -> ())?
+    public init()
+    public func KeyboardWillShow(notification: Foundation.Notification)
+    public func KeyboardWillHide(notification: Foundation.Notification)
+    @objc deinit
+  }
+}
+extension MZUIKitExtension.MZUIControl {
+  public class TapToDismissKeyboard : MZUIKitExtension.MZUIControlKeyboardEventsProtocol {
+    public var _observers: [any ObjectiveC.NSObjectProtocol]
+    public init()
+    public func KeyboardWillShow(notification: Foundation.Notification)
+    public func KeyboardWillHide(notification: Foundation.Notification)
+    public func addControl(to _view: UIKit.UIView)
+    public func addOtherResponder(_ responder: UIKit.UIResponder)
+    public func removeControl()
+    @objc deinit
+  }
+}
+extension MZUIKitExtension.MZUIControl {
+  public class ShiftViewForKeyboardShow : MZUIKitExtension.MZUIControlKeyboardEventsProtocol {
+    public var _observers: [any ObjectiveC.NSObjectProtocol]
+    public init()
+    public func addInputViews(_ inputViews: [UIKit.UIView])
+    public func setAtViewDidAppear(view: UIKit.UIView)
+    public func KeyboardWillShow(notification: Foundation.Notification)
+    public func KeyboardWillHide(notification: Foundation.Notification)
+    @objc deinit
+  }
+}
+public protocol MZUIControlKeyboardEventsProtocol {
+  var _observers: [any ObjectiveC.NSObjectProtocol] { get set }
+  func KeyboardWillShow(notification: Foundation.Notification)
+  func KeyboardWillHide(notification: Foundation.Notification)
+  mutating func enable()
+  mutating func disable()
+}
+extension MZUIKitExtension.MZUIControlKeyboardEventsProtocol {
+  public mutating func enable()
+  public mutating func disable()
+}
 extension UIKit.UIImageView {
   @_Concurrency.MainActor(unsafe) public var contentClippingRect: CoreFoundation.CGRect {
     get
   }
 }
 public protocol MZTouchNotifierProtocol : AnyObject {
-  func addTouchResponder(touchResponder: MZUIKitExtension.MZTouchResponderProtocol)
-  func removeTouchResponder(touchResponder: MZUIKitExtension.MZTouchResponderProtocol)
+  func addTouchResponder(touchResponder: any MZUIKitExtension.MZTouchResponderProtocol)
+  func removeTouchResponder(touchResponder: any MZUIKitExtension.MZTouchResponderProtocol)
   func touchesBegan(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
   func touchesMoved(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
   func touchesEnded(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
   func positionWithTouch(touch: UIKit.UITouch) -> CoreFoundation.CGPoint
 }
 public protocol MZTouchResponderProtocol : AnyObject {
-  var touchNotifier: MZUIKitExtension.MZTouchNotifierProtocol! { get set }
+  var touchNotifier: (any MZUIKitExtension.MZTouchNotifierProtocol)! { get set }
   func touchesBegan(touches: Swift.Set<UIKit.UITouch>)
   func touchesMoved(touches: Swift.Set<UIKit.UITouch>)
   func touchesEnded(touches: Swift.Set<UIKit.UITouch>)
@@ -71,54 +119,6 @@ extension UIKit.UIImage {
   }
   @objc deinit
 }
-@_hasMissingDesignatedInitializers public class MZUIControl {
-  @objc deinit
-}
-extension MZUIKitExtension.MZUIControl {
-  public class KeyboardEvents : MZUIKitExtension.MZUIControlKeyboardEventsProtocol {
-    public var _observers: [ObjectiveC.NSObjectProtocol]
-    public var willShowAction: ((Foundation.Notification) -> ())?
-    public var willHideAction: ((Foundation.Notification) -> ())?
-    public init()
-    public func willShow(notification: Foundation.Notification)
-    public func willHide(notification: Foundation.Notification)
-    @objc deinit
-  }
-}
-extension MZUIKitExtension.MZUIControl {
-  public class TapToDismissKeyboard : MZUIKitExtension.MZUIControlKeyboardEventsProtocol {
-    public var _observers: [ObjectiveC.NSObjectProtocol]
-    public init()
-    public func willShow(notification: Foundation.Notification)
-    public func willHide(notification: Foundation.Notification)
-    public func addControl(to view: UIKit.UIView)
-    public func addOtherResponder(_ responder: UIKit.UIResponder)
-    public func removeControl()
-    @objc deinit
-  }
-}
-extension MZUIKitExtension.MZUIControl {
-  public class ShiftViewWhenKeyboardShow : MZUIKitExtension.MZUIControlKeyboardEventsProtocol {
-    public var _observers: [ObjectiveC.NSObjectProtocol]
-    public init()
-    public func addInputViews(_ inputViews: [UIKit.UIView])
-    public func setAtViewDidAppear(view: UIKit.UIView)
-    public func willShow(notification: Foundation.Notification)
-    public func willHide(notification: Foundation.Notification)
-    @objc deinit
-  }
-}
-public protocol MZUIControlKeyboardEventsProtocol {
-  var _observers: [ObjectiveC.NSObjectProtocol] { get set }
-  func willShow(notification: Foundation.Notification)
-  func willHide(notification: Foundation.Notification)
-  mutating func enable()
-  mutating func disable()
-}
-extension MZUIKitExtension.MZUIControlKeyboardEventsProtocol {
-  public mutating func enable()
-  public mutating func disable()
-}
 @objc public class MZInAppPurchaseManger : ObjectiveC.NSObject {
   public var canMakePayments: Swift.Bool {
     get
@@ -130,19 +130,19 @@ extension MZUIKitExtension.MZUIControlKeyboardEventsProtocol {
     get
   }
   public init(productIdentifiers: Swift.Set<Swift.String>)
-  public func requestProducts(handler: (([StoreKit.SKProduct]?, Swift.Error?) -> ())?)
+  public func requestProducts(handler: (([StoreKit.SKProduct]?, (any Swift.Error)?) -> ())?)
   public func sendPayment(with product: StoreKit.SKProduct, success: ((Swift.String) -> ())? = nil, fail: ((Swift.String) -> ())? = nil)
-  public func sendRestoreRequest(handler: (([Swift.String]?, Swift.Error?) -> ())? = nil)
+  public func sendRestoreRequest(handler: (([Swift.String]?, (any Swift.Error)?) -> ())? = nil)
   @objc deinit
 }
 extension MZUIKitExtension.MZInAppPurchaseManger : StoreKit.SKProductsRequestDelegate {
-  @objc dynamic public func request(_ request: StoreKit.SKRequest, didFailWithError error: Swift.Error)
+  @objc dynamic public func request(_ request: StoreKit.SKRequest, didFailWithError error: any Swift.Error)
   @objc dynamic public func productsRequest(_ request: StoreKit.SKProductsRequest, didReceive response: StoreKit.SKProductsResponse)
 }
 extension MZUIKitExtension.MZInAppPurchaseManger : StoreKit.SKPaymentTransactionObserver {
   @objc dynamic public func paymentQueue(_ queue: StoreKit.SKPaymentQueue, updatedTransactions transactions: [StoreKit.SKPaymentTransaction])
   @objc dynamic public func paymentQueueRestoreCompletedTransactionsFinished(_ queue: StoreKit.SKPaymentQueue)
-  @objc dynamic public func paymentQueue(_ queue: StoreKit.SKPaymentQueue, restoreCompletedTransactionsFailedWithError error: Swift.Error)
+  @objc dynamic public func paymentQueue(_ queue: StoreKit.SKPaymentQueue, restoreCompletedTransactionsFailedWithError error: any Swift.Error)
 }
 @_hasMissingDesignatedInitializers public class MZInputUtility {
   public static func editingNumberText(of text: Swift.String?) -> Swift.String?
@@ -274,9 +274,10 @@ extension MZUIKitExtension.MZMediaLibraryPicker : UIKit.UIImagePickerControllerD
 }
 public class MZUIPresentViewOnTopWithMask {
   public var enableTapMaskToHide: Swift.Bool
+  public var onHidingAction: (() -> ())?
   public init()
-  public func show(presentFor presentView: UIKit.UIView? = nil, on parentView: UIKit.UIView? = nil, beforePresenting: ((UIKit.UIView) -> ())? = nil)
-  public func hide(forPresented view: UIKit.UIView? = nil, animating: Swift.Bool = true)
+  public func show(presentFor presentView: UIKit.UIView? = nil, on parentView: UIKit.UIView, beforePresenting: ((UIKit.UIView) -> ())? = nil)
+  public func hide(forPresented _view: UIKit.UIView? = nil, animating: Swift.Bool = true)
   @objc deinit
 }
 extension MZUIKitExtension.MZTouchType : Swift.Equatable {}
