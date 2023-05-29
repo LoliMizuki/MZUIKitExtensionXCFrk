@@ -146,6 +146,9 @@ extension MZUIKitExtension.MZInAppPurchaseManger : StoreKit.SKPaymentTransaction
   @objc dynamic public func paymentQueueRestoreCompletedTransactionsFinished(_ queue: StoreKit.SKPaymentQueue)
   @objc dynamic public func paymentQueue(_ queue: StoreKit.SKPaymentQueue, restoreCompletedTransactionsFailedWithError error: any Swift.Error)
 }
+extension UIKit.UITextField {
+  @_Concurrency.MainActor(unsafe) public func addAccessoryBarWithDoneButton(title: Swift.String = "Done", endEditingFor view: UIKit.UIView)
+}
 @_hasMissingDesignatedInitializers public class MZInputUtility {
   public static func editingNumberText(of text: Swift.String?) -> Swift.String?
   public static func numberText(of text: Swift.String?, range: Swift.Range<Swift.Double>? = nil, unit: Swift.String) -> Swift.String?
