@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
-// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MZSwifts
+// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
+// swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MZSwifts
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Combine
 import CoreGraphics
@@ -66,6 +66,23 @@ extension Foundation.Date {
 }
 extension Foundation.Date {
   public static let iso8610Format: Swift.String
+  public static func fromISO8601(_ string: Swift.String) -> Foundation.Date?
+  public static func fromISO8601(_ any: Any?) -> Foundation.Date?
+  public func iso8601String(at locale: Foundation.Locale = .current, in timeZone: Foundation.TimeZone = .current) -> Swift.String
+}
+extension Foundation.Date {
+  public func startOf(_ type: Foundation.Date.StartEndOfDayType, of calendarIdentifier: Foundation.Calendar.Identifier = Calendar.current.identifier) -> Foundation.Date?
+  public func endOf(_ type: Foundation.Date.StartEndOfDayType, of calendarIdentifier: Foundation.Calendar.Identifier = Calendar.current.identifier) -> Foundation.Date?
+  public enum StartEndOfDayType {
+    case year
+    case month
+    case day
+    public static func == (a: Foundation.Date.StartEndOfDayType, b: Foundation.Date.StartEndOfDayType) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
 }
 public protocol MZNotificationComponentEventProtocol : Swift.CaseIterable {
   var notificationName: Foundation.Notification.Name { get }
@@ -83,7 +100,7 @@ extension MZSwifts.MZNotificationComponentProtocol where Self.NotifyEvent : MZSw
     get
   }
   public func observe(_ event: Self.NotifyEvent, observer: Any, action: ObjectiveC.Selector)
-  public func observe(_ event: Self.NotifyEvent, queue: Foundation.OperationQueue?, using block: @escaping (Foundation.Notification) -> Swift.Void) -> ObjectiveC.NSObjectProtocol
+  public func observe(_ event: Self.NotifyEvent, queue: Foundation.OperationQueue?, using block: @escaping (Foundation.Notification) -> Swift.Void) -> any ObjectiveC.NSObjectProtocol
   public func remove(observer: Any, event: Self.NotifyEvent)
   public func remove(observer: Any)
   public func post(_ event: Self.NotifyEvent, userInfo: [Swift.AnyHashable : Any]? = nil)
@@ -514,6 +531,8 @@ extension Swift.String {
 }
 extension MZSwifts.MZTimer.State : Swift.Equatable {}
 extension MZSwifts.MZTimer.State : Swift.Hashable {}
+extension Foundation.Date.StartEndOfDayType : Swift.Equatable {}
+extension Foundation.Date.StartEndOfDayType : Swift.Hashable {}
 extension MZSwifts.MZUnit.MeasurementSystem : Swift.Equatable {}
 extension MZSwifts.MZUnit.MeasurementSystem : Swift.Hashable {}
 extension MZSwifts.MZAngle.CircularMotion : Swift.Equatable {}
