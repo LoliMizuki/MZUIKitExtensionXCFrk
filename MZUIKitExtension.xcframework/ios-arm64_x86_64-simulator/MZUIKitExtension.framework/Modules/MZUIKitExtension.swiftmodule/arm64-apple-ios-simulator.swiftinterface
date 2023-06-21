@@ -149,6 +149,17 @@ extension MZUIKitExtension.MZInAppPurchaseManger : StoreKit.SKPaymentTransaction
 extension UIKit.UITextField {
   @_Concurrency.MainActor(unsafe) public func addAccessoryBarWithDoneButton(title: Swift.String = "Done", endEditingFor view: UIKit.UIView)
 }
+extension MZUIKitExtension.MZUIs {
+  public static var defaultLocaleIDIfNotFoundInCurrent: Swift.String {
+    get
+    set
+  }
+  public class func keyLocalized(of key: Swift.String, comment: Swift.String = "", defaultLocaleID: Swift.String? = MZUIs.defaultLocaleIDIfNotFoundInCurrent) -> Swift.String?
+  public class func keyLocalized(to views: [UIKit.UIView]?, setting: ((UIKit.UIView) -> ())? = nil)
+}
+extension Swift.String {
+  public func keyLocalized(comment: Swift.String = "", defaultLocaleID: Swift.String? = MZUIs.defaultLocaleIDIfNotFoundInCurrent) -> Swift.String?
+}
 @_hasMissingDesignatedInitializers public class MZInputUtility {
   public static func editingNumberText(of text: Swift.String?) -> Swift.String?
   public static func numberText(of text: Swift.String?, range: Swift.Range<Swift.Double>? = nil, unit: Swift.String) -> Swift.String?
