@@ -1,7 +1,7 @@
 framework module MZSwifts {
   umbrella header "MZSwifts.h"
-
   export *
+
   module * { export * }
 }
 

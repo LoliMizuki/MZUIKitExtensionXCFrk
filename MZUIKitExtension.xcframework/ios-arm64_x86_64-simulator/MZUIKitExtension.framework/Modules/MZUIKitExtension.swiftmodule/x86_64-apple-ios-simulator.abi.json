@@ -6448,6 +6448,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "__DefaultCustomPlaygroundQuickLookable",
             "printedName": "__DefaultCustomPlaygroundQuickLookable",
             "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
@@ -7000,6 +7007,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "__DefaultCustomPlaygroundQuickLookable",
             "printedName": "__DefaultCustomPlaygroundQuickLookable",
             "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
@@ -7061,6 +7075,35 @@
             "declAttributes": [
               "AccessControl",
               "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "localizing",
+            "printedName": "localizing(comment:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:SS16MZUIKitExtensionE10localizing7commentS2S_tF",
+            "mangledName": "$sSS16MZUIKitExtensionE10localizing7commentS2S_tF",
+            "moduleName": "MZUIKitExtension",
+            "declAttributes": [
+              "AccessControl"
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -7682,6 +7725,10 @@
                 "mangledName": "$sSo6UIViewC16MZUIKitExtensionE7isShownSbvM",
                 "moduleName": "MZUIKitExtension",
                 "implicit": true,
+                "intro_iOS": "2.0",
+                "declAttributes": [
+                  "Available"
+                ],
                 "isFromExtension": true,
                 "accessorKind": "_modify"
               }
@@ -7936,6 +7983,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
           },
           {
             "kind": "Conformance",
@@ -8201,6 +8255,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "__DefaultCustomPlaygroundQuickLookable",
             "printedName": "__DefaultCustomPlaygroundQuickLookable",
             "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
@@ -8436,6 +8497,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
           }
         ]
       },
@@ -9122,6 +9190,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
           }
         ]
       },
@@ -9224,6 +9299,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
           },
           {
             "kind": "Conformance",
@@ -10080,43 +10162,50 @@
     },
     {
       "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIExtensions.UIView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3292,
-      "length": 2,
-      "value": "72"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIExtensions.UIView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3341,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIExtensions.UIView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3399,
+      "offset": 2475,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIExtensions.UIView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3509,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIExtensions.UIView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3584,
+      "offset": 3444,
       "length": 2,
       "value": "72"
     },
     {
       "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIExtensions.UIView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4101,
+      "offset": 3493,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIExtensions.UIView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3551,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIExtensions.UIView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3661,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIExtensions.UIView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3736,
+      "length": 2,
+      "value": "72"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIExtensions.UIView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4253,
       "length": 4,
       "value": "true"
     },
@@ -10291,7 +10380,7 @@
     {
       "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/MZUIs\/MZUIs.Localization.swift",
       "kind": "StringLiteral",
-      "offset": 1729,
+      "offset": 1736,
       "length": 2,
       "value": "\"\""
     },
