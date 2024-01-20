@@ -47,6 +47,8 @@ extension MZUIKitExtension.MZUIControl {
     public var adjustShiftFunc: (CoreFoundation.CGFloat) -> CoreFoundation.CGFloat
     public init()
     public func addInputViews(_ inputViews: [UIKit.UIView])
+    public func removeInputViews()
+    public func setInputViews(_ inputViews: [UIKit.UIView])
     public func setAtViewDidAppear(view: UIKit.UIView)
     public func KeyboardWillShow(notification: Foundation.Notification)
     public func KeyboardWillHide(notification: Foundation.Notification)
@@ -148,7 +150,7 @@ extension MZUIKitExtension.MZInAppPurchaseManger : StoreKit.SKPaymentTransaction
   @objc dynamic public func paymentQueue(_ queue: StoreKit.SKPaymentQueue, restoreCompletedTransactionsFailedWithError error: any Swift.Error)
 }
 extension UIKit.UITextField {
-  @_Concurrency.MainActor(unsafe) public func addAccessoryBarWithDoneButton(title: Swift.String = "Done", endEditingFor view: UIKit.UIView)
+  @_Concurrency.MainActor(unsafe) public func addAccessoryBarWithDoneButton(title: Swift.String = "Done", endEditingFor view: UIKit.UIView, textColor: UIKit.UIColor? = nil, barColor: UIKit.UIColor? = .white, barHeight: CoreFoundation.CGFloat = 44)
 }
 extension MZUIKitExtension.MZUIs {
   public static var defaultLocaleIDIfNotFoundInCurrent: Swift.String {

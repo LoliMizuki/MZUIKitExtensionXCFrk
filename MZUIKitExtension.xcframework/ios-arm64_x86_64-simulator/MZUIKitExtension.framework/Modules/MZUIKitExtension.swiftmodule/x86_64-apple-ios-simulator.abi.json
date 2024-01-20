@@ -1210,6 +1210,60 @@
               },
               {
                 "kind": "Function",
+                "name": "removeInputViews",
+                "printedName": "removeInputViews()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:16MZUIKitExtension11MZUIControlC24ShiftViewForKeyboardShowC16removeInputViewsyyF",
+                "mangledName": "$s16MZUIKitExtension11MZUIControlC24ShiftViewForKeyboardShowC16removeInputViewsyyF",
+                "moduleName": "MZUIKitExtension",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "setInputViews",
+                "printedName": "setInputViews(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[UIKit.UIView]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIView",
+                        "printedName": "UIKit.UIView",
+                        "usr": "c:objc(cs)UIView"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:16MZUIKitExtension11MZUIControlC24ShiftViewForKeyboardShowC13setInputViewsyySaySo6UIViewCGF",
+                "mangledName": "$s16MZUIKitExtension11MZUIControlC24ShiftViewForKeyboardShowC13setInputViewsyySaySo6UIViewCGF",
+                "moduleName": "MZUIKitExtension",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
                 "name": "setAtViewDidAppear",
                 "printedName": "setAtViewDidAppear(view:)",
                 "children": [
@@ -6900,7 +6954,7 @@
           {
             "kind": "Function",
             "name": "addAccessoryBarWithDoneButton",
-            "printedName": "addAccessoryBarWithDoneButton(title:endEditingFor:)",
+            "printedName": "addAccessoryBarWithDoneButton(title:endEditingFor:textColor:barColor:barHeight:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -6919,11 +6973,48 @@
                 "name": "UIView",
                 "printedName": "UIKit.UIView",
                 "usr": "c:objc(cs)UIView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "hasDefaultArg": true,
+                "usr": "s:14CoreFoundation7CGFloatV"
               }
             ],
             "declKind": "Func",
-            "usr": "s:So11UITextFieldC16MZUIKitExtensionE29addAccessoryBarWithDoneButton5title13endEditingForySS_So6UIViewCtF",
-            "mangledName": "$sSo11UITextFieldC16MZUIKitExtensionE29addAccessoryBarWithDoneButton5title13endEditingForySS_So6UIViewCtF",
+            "usr": "s:So11UITextFieldC16MZUIKitExtensionE29addAccessoryBarWithDoneButton5title13endEditingFor9textColor03barP00Q6HeightySS_So6UIViewCSo7UIColorCSgAN14CoreFoundation7CGFloatVtF",
+            "mangledName": "$sSo11UITextFieldC16MZUIKitExtensionE29addAccessoryBarWithDoneButton5title13endEditingFor9textColor03barP00Q6HeightySS_So6UIViewCSo7UIColorCSgAN12CoreGraphics7CGFloatVtF",
             "moduleName": "MZUIKitExtension",
             "declAttributes": [
               "Custom",
@@ -9400,70 +9491,70 @@
     {
       "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZKeyboardEvents.swift",
       "kind": "IntegerLiteral",
-      "offset": 4515,
+      "offset": 4763,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZKeyboardEvents.swift",
       "kind": "IntegerLiteral",
-      "offset": 4521,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZKeyboardEvents.swift",
-      "kind": "FloatLiteral",
-      "offset": 4600,
-      "length": 4,
-      "value": "0.25"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZKeyboardEvents.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4684,
+      "offset": 4769,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZKeyboardEvents.swift",
       "kind": "FloatLiteral",
-      "offset": 4904,
+      "offset": 4848,
       "length": 4,
       "value": "0.25"
     },
     {
       "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZKeyboardEvents.swift",
       "kind": "IntegerLiteral",
-      "offset": 4988,
+      "offset": 4932,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZKeyboardEvents.swift",
+      "kind": "FloatLiteral",
+      "offset": 5152,
+      "length": 4,
+      "value": "0.25"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZKeyboardEvents.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5236,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZKeyboardEvents.swift",
       "kind": "IntegerLiteral",
-      "offset": 4994,
+      "offset": 5242,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZKeyboardEvents.swift",
       "kind": "Array",
-      "offset": 5223,
+      "offset": 5471,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZKeyboardEvents.swift",
       "kind": "IntegerLiteral",
-      "offset": 5815,
+      "offset": 6063,
       "length": 2,
       "value": "44"
     },
     {
       "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZKeyboardEvents.swift",
       "kind": "IntegerLiteral",
-      "offset": 5855,
+      "offset": 6103,
       "length": 1,
       "value": "0"
     },
@@ -9757,70 +9848,70 @@
     {
       "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/UITextField.Extensions.swift",
       "kind": "IntegerLiteral",
-      "offset": 377,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/UITextField.Extensions.swift",
-      "kind": "IntegerLiteral",
-      "offset": 388,
+      "offset": 426,
       "length": 2,
       "value": "44"
     },
     {
       "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/UITextField.Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 482,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/UITextField.Extensions.swift",
       "kind": "FloatLiteral",
-      "offset": 442,
+      "offset": 554,
       "length": 4,
       "value": "0.25"
     },
     {
       "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/UITextField.Extensions.swift",
       "kind": "BooleanLiteral",
-      "offset": 816,
+      "offset": 988,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/UITextField.Extensions.swift",
       "kind": "BooleanLiteral",
-      "offset": 941,
+      "offset": 1113,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/UITextField.Extensions.swift",
       "kind": "BooleanLiteral",
-      "offset": 1010,
+      "offset": 1182,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/UITextField.Extensions.swift",
       "kind": "IntegerLiteral",
-      "offset": 1321,
+      "offset": 1493,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/UITextField.Extensions.swift",
       "kind": "IntegerLiteral",
-      "offset": 1366,
+      "offset": 1538,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/UITextField.Extensions.swift",
       "kind": "IntegerLiteral",
-      "offset": 1662,
+      "offset": 1834,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/UITextField.Extensions.swift",
       "kind": "IntegerLiteral",
-      "offset": 1707,
+      "offset": 1879,
       "length": 2,
       "value": "-8"
     },
