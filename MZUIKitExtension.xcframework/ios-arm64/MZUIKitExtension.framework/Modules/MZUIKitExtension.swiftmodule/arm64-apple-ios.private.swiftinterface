@@ -252,6 +252,17 @@ extension UIKit.UIViewController {
 extension Swift.String {
   public func localizing(comment: Swift.String = "") -> Swift.String
 }
+@propertyWrapper public struct UserDefaultsStoredUIColor {
+  public init(key: Swift.String, default: UIKit.UIColor?)
+  public var wrappedValue: UIKit.UIColor? {
+    get
+    set
+  }
+}
+extension MZUIKitExtension.UserDefaultsStoredUIColor {
+  public static func color(forKey key: Swift.String, default: UIKit.UIColor?) -> UIKit.UIColor?
+  public static func setColor(_ color: UIKit.UIColor?, forKey key: Swift.String)
+}
 extension MZUIKitExtension.MZUIs {
   @_hasMissingDesignatedInitializers public class AlertController {
     public static var actionTitleFunc: ((Swift.String) -> Swift.String)?

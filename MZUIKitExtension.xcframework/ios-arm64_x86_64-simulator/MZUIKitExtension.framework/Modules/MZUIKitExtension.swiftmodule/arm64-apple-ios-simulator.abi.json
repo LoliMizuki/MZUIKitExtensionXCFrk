@@ -5590,6 +5590,270 @@
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
+        "moduleName": "MZUIKitExtension",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UserDefaultsStoredUIColor",
+        "printedName": "UserDefaultsStoredUIColor",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(key:default:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UserDefaultsStoredUIColor",
+                "printedName": "MZUIKitExtension.UserDefaultsStoredUIColor",
+                "usr": "s:16MZUIKitExtension25UserDefaultsStoredUIColorV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16MZUIKitExtension25UserDefaultsStoredUIColorV3key7defaultACSS_So0F0CSgtcfc",
+            "mangledName": "$s16MZUIKitExtension25UserDefaultsStoredUIColorV3key7defaultACSS_So0F0CSgtcfc",
+            "moduleName": "MZUIKitExtension",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "wrappedValue",
+            "printedName": "wrappedValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16MZUIKitExtension25UserDefaultsStoredUIColorV12wrappedValueSo0F0CSgvp",
+            "mangledName": "$s16MZUIKitExtension25UserDefaultsStoredUIColorV12wrappedValueSo0F0CSgvp",
+            "moduleName": "MZUIKitExtension",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16MZUIKitExtension25UserDefaultsStoredUIColorV12wrappedValueSo0F0CSgvg",
+                "mangledName": "$s16MZUIKitExtension25UserDefaultsStoredUIColorV12wrappedValueSo0F0CSgvg",
+                "moduleName": "MZUIKitExtension",
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16MZUIKitExtension25UserDefaultsStoredUIColorV12wrappedValueSo0F0CSgvs",
+                "mangledName": "$s16MZUIKitExtension25UserDefaultsStoredUIColorV12wrappedValueSo0F0CSgvs",
+                "moduleName": "MZUIKitExtension",
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16MZUIKitExtension25UserDefaultsStoredUIColorV12wrappedValueSo0F0CSgvM",
+                "mangledName": "$s16MZUIKitExtension25UserDefaultsStoredUIColorV12wrappedValueSo0F0CSgvM",
+                "moduleName": "MZUIKitExtension",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "color",
+            "printedName": "color(forKey:default:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16MZUIKitExtension25UserDefaultsStoredUIColorV5color6forKey7defaultSo0F0CSgSS_AItFZ",
+            "mangledName": "$s16MZUIKitExtension25UserDefaultsStoredUIColorV5color6forKey7defaultSo0F0CSgSS_AItFZ",
+            "moduleName": "MZUIKitExtension",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setColor",
+            "printedName": "setColor(_:forKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16MZUIKitExtension25UserDefaultsStoredUIColorV8setColor_6forKeyySo0F0CSg_SStFZ",
+            "mangledName": "$s16MZUIKitExtension25UserDefaultsStoredUIColorV8setColor_6forKeyySo0F0CSg_SStFZ",
+            "moduleName": "MZUIKitExtension",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:16MZUIKitExtension25UserDefaultsStoredUIColorV",
+        "mangledName": "$s16MZUIKitExtension25UserDefaultsStoredUIColorV",
+        "moduleName": "MZUIKitExtension",
+        "declAttributes": [
+          "AccessControl",
+          "PropertyWrapper"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
         "moduleName": "MZUIKitExtension"
       },
       {
@@ -10474,6 +10738,13 @@
       "offset": 1736,
       "length": 2,
       "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UserDefaultsStored.Extensions\/UserDefaultsStoredUIColor.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1464,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZUIKitExtension\/Sources\/MZUIKitExtension\/UIExtensions\/MZUIExtensions.UIAlertController.swift",
