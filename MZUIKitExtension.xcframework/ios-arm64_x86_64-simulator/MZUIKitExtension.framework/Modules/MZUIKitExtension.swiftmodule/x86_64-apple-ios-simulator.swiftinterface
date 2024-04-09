@@ -218,17 +218,19 @@ extension UIKit.UIView {
   @_Concurrency.MainActor(unsafe) public func snapshotImage(size: CoreFoundation.CGSize? = nil, dpi: Swift.Int = 72, opaque: Swift.Bool = false, usingCopyView: Swift.Bool = false) -> UIKit.UIImage?
   @_Concurrency.MainActor(unsafe) public func _setupForNib(withName nibName: Swift.String? = nil)
 }
+extension UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public func removeAllGestureRecognizers()
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func addTapGestureRecognizer(target: Any?, action: ObjectiveC.Selector?) -> UIKit.UITapGestureRecognizer
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func setTapGestureRecognizer(target: Any?, action: ObjectiveC.Selector?) -> UIKit.UITapGestureRecognizer
+}
 extension UIKit.UIControl {
   @_Concurrency.MainActor(unsafe) public func setAction(_ action: UIKit.UIAction, for event: UIKit.UIControl.Event)
   @_Concurrency.MainActor(unsafe) public func setAction(for event: UIKit.UIControl.Event, action: @escaping ((UIKit.UIAction) -> ()))
   @_Concurrency.MainActor(unsafe) public func addAction(for event: UIKit.UIControl.Event, action: @escaping ((UIKit.UIAction) -> ()))
   @_Concurrency.MainActor(unsafe) public func removeAllActions()
   @_Concurrency.MainActor(unsafe) public func removeAction(for event: UIKit.UIControl.Event)
-  @_Concurrency.MainActor(unsafe) public func removeAllGestureRecognizers()
-  @discardableResult
-  @_Concurrency.MainActor(unsafe) public func addTapGestureRecognizer(target: Any?, action: ObjectiveC.Selector?) -> UIKit.UITapGestureRecognizer
-  @discardableResult
-  @_Concurrency.MainActor(unsafe) public func setTapGestureRecognizer(target: Any?, action: ObjectiveC.Selector?) -> UIKit.UITapGestureRecognizer
 }
 extension UIKit.UIColor {
   convenience public init(hex: Swift.Int)

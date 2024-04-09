@@ -8943,6 +8943,130 @@
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeAllGestureRecognizers",
+            "printedName": "removeAllGestureRecognizers()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So6UIViewC16MZUIKitExtensionE27removeAllGestureRecognizersyyF",
+            "mangledName": "$sSo6UIViewC16MZUIKitExtensionE27removeAllGestureRecognizersyyF",
+            "moduleName": "MZUIKitExtension",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "addTapGestureRecognizer",
+            "printedName": "addTapGestureRecognizer(target:action:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UITapGestureRecognizer",
+                "printedName": "UIKit.UITapGestureRecognizer",
+                "usr": "c:objc(cs)UITapGestureRecognizer"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ObjectiveC.Selector?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Selector",
+                    "printedName": "ObjectiveC.Selector",
+                    "usr": "s:10ObjectiveC8SelectorV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So6UIViewC16MZUIKitExtensionE23addTapGestureRecognizer6target6actionSo05UITapfG0CypSg_10ObjectiveC8SelectorVSgtF",
+            "mangledName": "$sSo6UIViewC16MZUIKitExtensionE23addTapGestureRecognizer6target6actionSo05UITapfG0CypSg_10ObjectiveC8SelectorVSgtF",
+            "moduleName": "MZUIKitExtension",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "DiscardableResult"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setTapGestureRecognizer",
+            "printedName": "setTapGestureRecognizer(target:action:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UITapGestureRecognizer",
+                "printedName": "UIKit.UITapGestureRecognizer",
+                "usr": "c:objc(cs)UITapGestureRecognizer"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ObjectiveC.Selector?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Selector",
+                    "printedName": "ObjectiveC.Selector",
+                    "usr": "s:10ObjectiveC8SelectorV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So6UIViewC16MZUIKitExtensionE23setTapGestureRecognizer6target6actionSo05UITapfG0CypSg_10ObjectiveC8SelectorVSgtF",
+            "mangledName": "$sSo6UIViewC16MZUIKitExtensionE23setTapGestureRecognizer6target6actionSo05UITapfG0CypSg_10ObjectiveC8SelectorVSgtF",
+            "moduleName": "MZUIKitExtension",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "DiscardableResult"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -9208,130 +9332,6 @@
             "declAttributes": [
               "Custom",
               "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "removeAllGestureRecognizers",
-            "printedName": "removeAllGestureRecognizers()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:So9UIControlC16MZUIKitExtensionE27removeAllGestureRecognizersyyF",
-            "mangledName": "$sSo9UIControlC16MZUIKitExtensionE27removeAllGestureRecognizersyyF",
-            "moduleName": "MZUIKitExtension",
-            "declAttributes": [
-              "Custom",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "addTapGestureRecognizer",
-            "printedName": "addTapGestureRecognizer(target:action:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UITapGestureRecognizer",
-                "printedName": "UIKit.UITapGestureRecognizer",
-                "usr": "c:objc(cs)UITapGestureRecognizer"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Any?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "ObjectiveC.Selector?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Selector",
-                    "printedName": "ObjectiveC.Selector",
-                    "usr": "s:10ObjectiveC8SelectorV"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:So9UIControlC16MZUIKitExtensionE23addTapGestureRecognizer6target6actionSo05UITapfG0CypSg_10ObjectiveC8SelectorVSgtF",
-            "mangledName": "$sSo9UIControlC16MZUIKitExtensionE23addTapGestureRecognizer6target6actionSo05UITapfG0CypSg_10ObjectiveC8SelectorVSgtF",
-            "moduleName": "MZUIKitExtension",
-            "declAttributes": [
-              "Custom",
-              "AccessControl",
-              "DiscardableResult"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setTapGestureRecognizer",
-            "printedName": "setTapGestureRecognizer(target:action:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UITapGestureRecognizer",
-                "printedName": "UIKit.UITapGestureRecognizer",
-                "usr": "c:objc(cs)UITapGestureRecognizer"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Any?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "ObjectiveC.Selector?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Selector",
-                    "printedName": "ObjectiveC.Selector",
-                    "usr": "s:10ObjectiveC8SelectorV"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:So9UIControlC16MZUIKitExtensionE23setTapGestureRecognizer6target6actionSo05UITapfG0CypSg_10ObjectiveC8SelectorVSgtF",
-            "mangledName": "$sSo9UIControlC16MZUIKitExtensionE23setTapGestureRecognizer6target6actionSo05UITapfG0CypSg_10ObjectiveC8SelectorVSgtF",
-            "moduleName": "MZUIKitExtension",
-            "declAttributes": [
-              "Custom",
-              "AccessControl",
-              "DiscardableResult"
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
