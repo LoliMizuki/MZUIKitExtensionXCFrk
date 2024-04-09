@@ -1162,7 +1162,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "NSObjectProtocol",
-                "printedName": "ObjectiveC.NSObjectProtocol",
+                "printedName": "any ObjectiveC.NSObjectProtocol",
                 "usr": "c:objc(pl)NSObject"
               },
               {
@@ -3497,6 +3497,7 @@
             "declAttributes": [
               "AccessControl"
             ],
+            "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           },
           {
@@ -3546,6 +3547,7 @@
             "declAttributes": [
               "AccessControl"
             ],
+            "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           },
           {
@@ -3582,6 +3584,7 @@
             "declAttributes": [
               "AccessControl"
             ],
+            "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           },
           {
@@ -3631,6 +3634,7 @@
             "declAttributes": [
               "AccessControl"
             ],
+            "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           },
           {
@@ -3674,6 +3678,7 @@
             "declAttributes": [
               "AccessControl"
             ],
+            "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           },
           {
@@ -3723,6 +3728,7 @@
             "declAttributes": [
               "AccessControl"
             ],
+            "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           }
         ],
@@ -7256,6 +7262,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MZSwifts",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "Data",
         "printedName": "Data",
@@ -7966,6 +7982,43 @@
             ],
             "isFromExtension": true,
             "funcSelfKind": "Mutating"
+          },
+          {
+            "kind": "Function",
+            "name": "at",
+            "printedName": "at(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "τ_0_0?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:Sa8MZSwiftsE2atyxSgSiF",
+            "mangledName": "$sSa8MZSwiftsE2atyxSgSiF",
+            "moduleName": "MZSwifts",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<Element>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Struct",
@@ -7975,6 +8028,7 @@
         "genericSig": "<τ_0_0>",
         "sugared_genericSig": "<Element>",
         "declAttributes": [
+          "EagerMove",
           "Frozen"
         ],
         "isExternal": true,
@@ -9907,6 +9961,7 @@
         "mangledName": "$sSS",
         "moduleName": "Swift",
         "declAttributes": [
+          "EagerMove",
           "Frozen"
         ],
         "isExternal": true,
@@ -15162,6 +15217,486 @@
             "mangledName": "$ss21_ObjectiveCBridgeableP"
           }
         ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Dictionary",
+        "printedName": "Dictionary",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "bool",
+            "printedName": "bool(of:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:SD8MZSwiftsSSRszyXlRs_rlE4bool2ofSbSS_tF",
+            "mangledName": "$sSD8MZSwiftsSSRszyXlRs_rlE4bool2ofSbSS_tF",
+            "moduleName": "MZSwifts",
+            "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 == Swift.String, τ_0_1 == AnyObject>",
+            "sugared_genericSig": "<Key, Value where Key == Swift.String, Value == AnyObject>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "int",
+            "printedName": "int(of:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:SD8MZSwiftsSSRszyXlRs_rlE3int2ofSiSS_tF",
+            "mangledName": "$sSD8MZSwiftsSSRszyXlRs_rlE3int2ofSiSS_tF",
+            "moduleName": "MZSwifts",
+            "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 == Swift.String, τ_0_1 == AnyObject>",
+            "sugared_genericSig": "<Key, Value where Key == Swift.String, Value == AnyObject>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "double",
+            "printedName": "double(of:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:SD8MZSwiftsSSRszyXlRs_rlE6double2ofSdSS_tF",
+            "mangledName": "$sSD8MZSwiftsSSRszyXlRs_rlE6double2ofSdSS_tF",
+            "moduleName": "MZSwifts",
+            "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 == Swift.String, τ_0_1 == AnyObject>",
+            "sugared_genericSig": "<Key, Value where Key == Swift.String, Value == AnyObject>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "string",
+            "printedName": "string(of:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:SD8MZSwiftsSSRszyXlRs_rlE6string2ofS2S_tF",
+            "mangledName": "$sSD8MZSwiftsSSRszyXlRs_rlE6string2ofS2S_tF",
+            "moduleName": "MZSwifts",
+            "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 == Swift.String, τ_0_1 == AnyObject>",
+            "sugared_genericSig": "<Key, Value where Key == Swift.String, Value == AnyObject>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "set",
+            "printedName": "set(key:value:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:SD8MZSwiftsSSRszyXlRs_rlE3set3key5valueySS_SSSgtF",
+            "mangledName": "$sSD8MZSwiftsSSRszyXlRs_rlE3set3key5valueySS_SSSgtF",
+            "moduleName": "MZSwifts",
+            "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 == Swift.String, τ_0_1 == AnyObject>",
+            "sugared_genericSig": "<Key, Value where Key == Swift.String, Value == AnyObject>",
+            "declAttributes": [
+              "Mutating",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "Mutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:SD",
+        "mangledName": "$sSD",
+        "moduleName": "Swift",
+        "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : Swift.Hashable>",
+        "sugared_genericSig": "<Key, Value where Key : Swift.Hashable>",
+        "declAttributes": [
+          "EagerMove",
+          "Frozen"
+        ],
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sequence",
+            "printedName": "Sequence",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(key: τ_0_0, value: τ_0_1)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_1"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Iterator",
+                "printedName": "Iterator",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Iterator",
+                    "printedName": "Swift.Dictionary<τ_0_0, τ_0_1>.Iterator",
+                    "usr": "s:SD8IteratorV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:ST",
+            "mangledName": "$sST"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Collection",
+            "printedName": "Collection",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(key: τ_0_0, value: τ_0_1)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_1"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Index",
+                "printedName": "Index",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Index",
+                    "printedName": "Swift.Dictionary<τ_0_0, τ_0_1>.Index",
+                    "usr": "s:SD5IndexV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Iterator",
+                "printedName": "Iterator",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Iterator",
+                    "printedName": "Swift.Dictionary<τ_0_0, τ_0_1>.Iterator",
+                    "usr": "s:SD8IteratorV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "SubSequence",
+                "printedName": "SubSequence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Slice",
+                    "printedName": "Swift.Slice<[τ_0_0 : τ_0_1]>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[τ_0_0 : τ_0_1]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_0"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_1"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:s5SliceV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Indices",
+                "printedName": "Indices",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DefaultIndices",
+                    "printedName": "Swift.DefaultIndices<[τ_0_0 : τ_0_1]>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[τ_0_0 : τ_0_1]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_0"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_1"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:SI"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:Sl",
+            "mangledName": "$sSl"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByDictionaryLiteral",
+            "printedName": "ExpressibleByDictionaryLiteral",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Key",
+                "printedName": "Key",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Value",
+                "printedName": "Value",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_1"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s30ExpressibleByDictionaryLiteralP",
+            "mangledName": "$ss30ExpressibleByDictionaryLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_HasCustomAnyHashableRepresentation",
+            "printedName": "_HasCustomAnyHashableRepresentation",
+            "usr": "s:s35_HasCustomAnyHashableRepresentationP",
+            "mangledName": "$ss35_HasCustomAnyHashableRepresentationP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomReflectable",
+            "printedName": "CustomReflectable",
+            "usr": "s:s17CustomReflectableP",
+            "mangledName": "$ss17CustomReflectableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ObjectiveCBridgeable",
+            "printedName": "_ObjectiveCBridgeable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_ObjectiveCType",
+                "printedName": "_ObjectiveCType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSDictionary",
+                    "printedName": "Foundation.NSDictionary",
+                    "usr": "c:objc(cs)NSDictionary"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s21_ObjectiveCBridgeableP",
+            "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          }
+        ]
       }
     ],
     "json_format_version": 8
@@ -15176,45 +15711,10 @@
     },
     {
       "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZMath.swift",
-      "kind": "FloatLiteral",
-      "offset": 417,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZMath.swift",
-      "kind": "FloatLiteral",
-      "offset": 430,
-      "length": 3,
-      "value": "1.0"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZMath.swift",
-      "kind": "IntegerLiteral",
-      "offset": 517,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZMath.swift",
       "kind": "BooleanLiteral",
       "offset": 682,
       "length": 5,
       "value": "false"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZMath.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1140,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZTimer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 553,
-      "length": 1,
-      "value": "0"
     },
     {
       "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/Standard Library\/MZData.swift",
@@ -15222,48 +15722,6 @@
       "offset": 344,
       "length": 4,
       "value": "true"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/Standard Library\/MZData.swift",
-      "kind": "IntegerLiteral",
-      "offset": 408,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/Standard Library\/MZData.swift",
-      "kind": "StringLiteral",
-      "offset": 419,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/Standard Library\/MZData.swift",
-      "kind": "StringLiteral",
-      "offset": 448,
-      "length": 34,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/Standard Library\/MZData.swift",
-      "kind": "StringLiteral",
-      "offset": 481,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/Standard Library\/MZData.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1341,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/Standard Library\/MZData.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1415,
-      "length": 1,
-      "value": "1"
     },
     {
       "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/Standard Library\/MZCombine.swift",
@@ -15287,125 +15745,6 @@
       "value": "\"yyyy-MM-dd'T'HH:mm:ssZ\""
     },
     {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/Standard Library\/MZDate.swift",
-      "kind": "StringLiteral",
-      "offset": 1411,
-      "length": 3,
-      "value": "\"[\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/Standard Library\/MZDate.swift",
-      "kind": "StringLiteral",
-      "offset": 1578,
-      "length": 3,
-      "value": "\".\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/Standard Library\/MZDate.swift",
-      "kind": "StringLiteral",
-      "offset": 1643,
-      "length": 3,
-      "value": "\"+\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/Standard Library\/MZDate.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3231,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/Standard Library\/MZDate.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3242,
-      "length": 2,
-      "value": "-1"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/Standard Library\/MZDate.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3327,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/Standard Library\/MZDate.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3338,
-      "length": 2,
-      "value": "-1"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/Standard Library\/MZDate.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3419,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/Standard Library\/MZDate.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3430,
-      "length": 2,
-      "value": "-1"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZUnit.swift",
-      "kind": "FloatLiteral",
-      "offset": 404,
-      "length": 6,
-      "value": "3.2808"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZUnit.swift",
-      "kind": "FloatLiteral",
-      "offset": 524,
-      "length": 6,
-      "value": "3.2808"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZUnit.swift",
-      "kind": "FloatLiteral",
-      "offset": 803,
-      "length": 3,
-      "value": "1.8"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZUnit.swift",
-      "kind": "IntegerLiteral",
-      "offset": 820,
-      "length": 2,
-      "value": "32"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZUnit.swift",
-      "kind": "FloatLiteral",
-      "offset": 944,
-      "length": 3,
-      "value": "5.0"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZUnit.swift",
-      "kind": "FloatLiteral",
-      "offset": 948,
-      "length": 3,
-      "value": "9.0"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZUnit.swift",
-      "kind": "FloatLiteral",
-      "offset": 967,
-      "length": 4,
-      "value": "32.0"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZDispatch.swift",
-      "kind": "IntegerLiteral",
-      "offset": 339,
-      "length": 4,
-      "value": "1000"
-    },
-    {
       "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZAngle.swift",
       "kind": "IntegerLiteral",
       "offset": 311,
@@ -15418,20 +15757,6 @@
       "offset": 346,
       "length": 1,
       "value": "1"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZAngle.swift",
-      "kind": "StringLiteral",
-      "offset": 452,
-      "length": 11,
-      "value": "\"Clockwise\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZAngle.swift",
-      "kind": "StringLiteral",
-      "offset": 507,
-      "length": 18,
-      "value": "\"CounterClockwise\""
     },
     {
       "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZAngle.swift",
@@ -15460,230 +15785,6 @@
       "offset": 346,
       "length": 1,
       "value": "1"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZAngle.swift",
-      "kind": "IntegerLiteral",
-      "offset": 643,
-      "length": 3,
-      "value": "180"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZAngle.swift",
-      "kind": "IntegerLiteral",
-      "offset": 754,
-      "length": 3,
-      "value": "180"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZAngle.swift",
-      "kind": "IntegerLiteral",
-      "offset": 839,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZAngle.swift",
-      "kind": "IntegerLiteral",
-      "offset": 863,
-      "length": 3,
-      "value": "360"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZAngle.swift",
-      "kind": "FloatLiteral",
-      "offset": 928,
-      "length": 5,
-      "value": "360.0"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZAngle.swift",
-      "kind": "IntegerLiteral",
-      "offset": 969,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZAngle.swift",
-      "kind": "FloatLiteral",
-      "offset": 983,
-      "length": 5,
-      "value": "360.0"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZAngle.swift",
-      "kind": "FloatLiteral",
-      "offset": 1263,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZAngle.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1276,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZAngle.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1503,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZAngle.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1534,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZAngle.swift",
-      "kind": "FloatLiteral",
-      "offset": 1545,
-      "length": 4,
-      "value": "90.0"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZAngle.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1579,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZAngle.swift",
-      "kind": "FloatLiteral",
-      "offset": 1590,
-      "length": 5,
-      "value": "270.0"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZAngle.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1633,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZAngle.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1664,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZAngle.swift",
-      "kind": "FloatLiteral",
-      "offset": 1675,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZAngle.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1708,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZAngle.swift",
-      "kind": "FloatLiteral",
-      "offset": 1719,
-      "length": 5,
-      "value": "180.0"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZAngle.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1799,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZAngle.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1806,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZAngle.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1856,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZAngle.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1869,
-      "length": 3,
-      "value": "360"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZAngle.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2661,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZAngle.swift",
-      "kind": "StringLiteral",
-      "offset": 2673,
-      "length": 33,
-      "value": "\"add degress must more than zero\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZAngle.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2804,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZAngle.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2812,
-      "length": 3,
-      "value": "360"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZAngle.swift",
-      "kind": "FloatLiteral",
-      "offset": 2948,
-      "length": 5,
-      "value": "360.0"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZAngle.swift",
-      "kind": "FloatLiteral",
-      "offset": 3033,
-      "length": 5,
-      "value": "360.0"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZAngle.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3313,
-      "length": 3,
-      "value": "360"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZAngle.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3386,
-      "length": 3,
-      "value": "180"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZAngle.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3405,
-      "length": 3,
-      "value": "360"
     },
     {
       "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/Standard Library\/MZString.swift",
@@ -15701,20 +15802,6 @@
     },
     {
       "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/Standard Library\/MZString.swift",
-      "kind": "StringLiteral",
-      "offset": 348,
-      "length": 13,
-      "value": "\"0123456789.\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/Standard Library\/MZString.swift",
-      "kind": "StringLiteral",
-      "offset": 534,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/Standard Library\/MZString.swift",
       "kind": "Array",
       "offset": 677,
       "length": 2,
@@ -15728,865 +15815,11 @@
       "value": "false"
     },
     {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/Standard Library\/MZString.swift",
-      "kind": "StringLiteral",
-      "offset": 801,
-      "length": 13,
-      "value": "\"0123456789.\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/Standard Library\/MZString.swift",
-      "kind": "StringLiteral",
-      "offset": 987,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/Standard Library\/MZString.swift",
-      "kind": "StringLiteral",
-      "offset": 1218,
-      "length": 3,
-      "value": "\":\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/Standard Library\/MZString.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1257,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/Standard Library\/MZString.swift",
-      "kind": "StringLiteral",
-      "offset": 1278,
-      "length": 30,
-      "value": "\"Sorry, only `min:sec` format\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/Standard Library\/MZString.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1366,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/Standard Library\/MZString.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1452,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/Standard Library\/MZString.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1540,
-      "length": 2,
-      "value": "60"
-    },
-    {
       "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZDebug.swift",
       "kind": "BooleanLiteral",
       "offset": 387,
       "length": 5,
       "value": "false"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZDebug.swift",
-      "kind": "StringLiteral",
-      "offset": 675,
-      "length": 10,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZDebug.swift",
-      "kind": "StringLiteral",
-      "offset": 684,
-      "length": 5,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZDebug.swift",
-      "kind": "StringLiteral",
-      "offset": 688,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZDebug.swift",
-      "kind": "StringLiteral",
-      "offset": 705,
-      "length": 82,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZDebug.swift",
-      "kind": "StringLiteral",
-      "offset": 784,
-      "length": 1,
-      "value": "\": \""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZDebug.swift",
-      "kind": "StringLiteral",
-      "offset": 804,
-      "length": 12,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZDebug.swift",
-      "kind": "StringLiteral",
-      "offset": 815,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZDebug.swift",
-      "kind": "StringLiteral",
-      "offset": 1152,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZDebug.swift",
-      "kind": "StringLiteral",
-      "offset": 1169,
-      "length": 11,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZDebug.swift",
-      "kind": "StringLiteral",
-      "offset": 1179,
-      "length": 3,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZDebug.swift",
-      "kind": "StringLiteral",
-      "offset": 1197,
-      "length": 80,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZDebug.swift",
-      "kind": "StringLiteral",
-      "offset": 1276,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZDebug.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1767,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZDebug.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1811,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZDebug.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1855,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZDebug.swift",
-      "kind": "StringLiteral",
-      "offset": 1877,
-      "length": 29,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZDebug.swift",
-      "kind": "StringLiteral",
-      "offset": 1885,
-      "length": 1,
-      "value": "\":\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZDebug.swift",
-      "kind": "StringLiteral",
-      "offset": 1895,
-      "length": 1,
-      "value": "\":\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZDebug.swift",
-      "kind": "StringLiteral",
-      "offset": 1905,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZDebug.swift",
-      "kind": "StringLiteral",
-      "offset": 2024,
-      "length": 25,
-      "value": "\"[\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZDebug.swift",
-      "kind": "StringLiteral",
-      "offset": 2033,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZDebug.swift",
-      "kind": "StringLiteral",
-      "offset": 2047,
-      "length": 1,
-      "value": "\"]\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZDebug.swift",
-      "kind": "StringLiteral",
-      "offset": 2424,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZDebug.swift",
-      "kind": "StringLiteral",
-      "offset": 2442,
-      "length": 19,
-      "value": "\"** Assert Fail **\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZDebug.swift",
-      "kind": "StringLiteral",
-      "offset": 2477,
-      "length": 23,
-      "value": "\"  message: \""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZDebug.swift",
-      "kind": "StringLiteral",
-      "offset": 2499,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZDebug.swift",
-      "kind": "StringLiteral",
-      "offset": 2516,
-      "length": 85,
-      "value": "\"  in \""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZDebug.swift",
-      "kind": "StringLiteral",
-      "offset": 2600,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZDebug.swift",
-      "kind": "StringLiteral",
-      "offset": 2617,
-      "length": 19,
-      "value": "\"** ** ** ** ** **\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZDebug.swift",
-      "kind": "StringLiteral",
-      "offset": 2652,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZDebug.swift",
-      "kind": "StringLiteral",
-      "offset": 2781,
-      "length": 16,
-      "value": "\"can not be nil\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZDebug.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3088,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZDebug.swift",
-      "kind": "StringLiteral",
-      "offset": 3454,
-      "length": 13,
-      "value": "\"Override Me\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZDebug.swift",
-      "kind": "StringLiteral",
-      "offset": 3776,
-      "length": 21,
-      "value": "\"You CANNOT PASS !!!\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZDebug.swift",
-      "kind": "StringLiteral",
-      "offset": 4166,
-      "length": 18,
-      "value": "\"Implement Me !!!\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZDebug.swift",
-      "kind": "StringLiteral",
-      "offset": 4642,
-      "length": 40,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZDebug.swift",
-      "kind": "StringLiteral",
-      "offset": 4654,
-      "length": 1,
-      "value": "\".\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZDebug.swift",
-      "kind": "StringLiteral",
-      "offset": 4670,
-      "length": 1,
-      "value": "\"(l:\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZDebug.swift",
-      "kind": "StringLiteral",
-      "offset": 4680,
-      "length": 1,
-      "value": "\")\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZDebug.swift",
-      "kind": "StringLiteral",
-      "offset": 4868,
-      "length": 8,
-      "value": "\".swift\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZDebug.swift",
-      "kind": "StringLiteral",
-      "offset": 4884,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZDebug.swift",
-      "kind": "StringLiteral",
-      "offset": 5150,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZDebug.swift",
-      "kind": "StringLiteral",
-      "offset": 5168,
-      "length": 19,
-      "value": "\"** Fatal Error **\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZDebug.swift",
-      "kind": "StringLiteral",
-      "offset": 5203,
-      "length": 23,
-      "value": "\"  message: \""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZDebug.swift",
-      "kind": "StringLiteral",
-      "offset": 5225,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZDebug.swift",
-      "kind": "StringLiteral",
-      "offset": 5242,
-      "length": 85,
-      "value": "\"  in \""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZDebug.swift",
-      "kind": "StringLiteral",
-      "offset": 5326,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZDebug.swift",
-      "kind": "StringLiteral",
-      "offset": 5343,
-      "length": 19,
-      "value": "\"** ** ** ** ** **\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZDebug.swift",
-      "kind": "StringLiteral",
-      "offset": 5378,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZDebug.swift",
-      "kind": "StringLiteral",
-      "offset": 5626,
-      "length": 24,
-      "value": "\"Unknow segue to \""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZDebug.swift",
-      "kind": "StringLiteral",
-      "offset": 5649,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZJson.swift",
-      "kind": "StringLiteral",
-      "offset": 751,
-      "length": 4,
-      "value": "\"\n\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZJson.swift",
-      "kind": "StringLiteral",
-      "offset": 763,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZJson.swift",
-      "kind": "StringLiteral",
-      "offset": 1242,
-      "length": 53,
-      "value": "\"Fail convert to jsonData from string: \""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZJson.swift",
-      "kind": "StringLiteral",
-      "offset": 1294,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZJson.swift",
-      "kind": "StringLiteral",
-      "offset": 1534,
-      "length": 54,
-      "value": "\"Fail convert to json object from data: \""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZJson.swift",
-      "kind": "StringLiteral",
-      "offset": 1587,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZJson.swift",
-      "kind": "StringLiteral",
-      "offset": 1704,
-      "length": 35,
-      "value": "\"Fail convert to array from object\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZJson.swift",
-      "kind": "StringLiteral",
-      "offset": 1977,
-      "length": 53,
-      "value": "\"Fail convert to jsonData from string: \""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZJson.swift",
-      "kind": "StringLiteral",
-      "offset": 2029,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZJson.swift",
-      "kind": "StringLiteral",
-      "offset": 2269,
-      "length": 54,
-      "value": "\"Fail convert to json object from data: \""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZJson.swift",
-      "kind": "StringLiteral",
-      "offset": 2322,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZJson.swift",
-      "kind": "StringLiteral",
-      "offset": 2452,
-      "length": 34,
-      "value": "\"Fail convert to dict from object\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/Standard Library\/MZBundle.swift",
-      "kind": "StringLiteral",
-      "offset": 180,
-      "length": 28,
-      "value": "\"CFBundleShortVersionString\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/Standard Library\/MZBundle.swift",
-      "kind": "StringLiteral",
-      "offset": 297,
-      "length": 17,
-      "value": "\"CFBundleVersion\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZVector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 322,
-      "length": 3,
-      "value": "360"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZVector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 352,
-      "length": 2,
-      "value": "90"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZVector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 378,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZVector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 386,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZVector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 415,
-      "length": 3,
-      "value": "-90"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZVector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 442,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZVector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 449,
-      "length": 2,
-      "value": "-1"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZVector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 479,
-      "length": 3,
-      "value": "270"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZVector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 506,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZVector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 513,
-      "length": 2,
-      "value": "-1"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZVector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 542,
-      "length": 4,
-      "value": "-270"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZVector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 570,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZVector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 578,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZVector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 609,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZVector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 634,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZVector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 642,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZVector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 671,
-      "length": 3,
-      "value": "360"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZVector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 698,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZVector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 706,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZVector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 735,
-      "length": 3,
-      "value": "180"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZVector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 761,
-      "length": 2,
-      "value": "-1"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZVector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 770,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZVector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 798,
-      "length": 4,
-      "value": "-180"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZVector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 826,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZVector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 834,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZVector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1273,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZVector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1300,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZVector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1324,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZVector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1331,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZVector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1364,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZVector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1388,
-      "length": 2,
-      "value": "-1"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZVector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1396,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZVector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1491,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZVector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1507,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZVector.swift",
-      "kind": "FloatLiteral",
-      "offset": 1988,
-      "length": 5,
-      "value": "360.0"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZVector.swift",
-      "kind": "FloatLiteral",
-      "offset": 2017,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZVector.swift",
-      "kind": "FloatLiteral",
-      "offset": 2059,
-      "length": 4,
-      "value": "90.0"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZVector.swift",
-      "kind": "FloatLiteral",
-      "offset": 2135,
-      "length": 5,
-      "value": "180.0"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZVector.swift",
-      "kind": "FloatLiteral",
-      "offset": 2212,
-      "length": 5,
-      "value": "270.0"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZVector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2709,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZVector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2729,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZPath.swift",
-      "kind": "BooleanLiteral",
-      "offset": 314,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZEnvironment.swift",
-      "kind": "BooleanLiteral",
-      "offset": 343,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZWeight.swift",
-      "kind": "StringLiteral",
-      "offset": 1890,
-      "length": 6,
-      "value": "\"gram\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZWeight.swift",
-      "kind": "StringLiteral",
-      "offset": 1929,
-      "length": 7,
-      "value": "\"ounce\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZWeight.swift",
-      "kind": "StringLiteral",
-      "offset": 2079,
-      "length": 3,
-      "value": "\"g\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZWeight.swift",
-      "kind": "StringLiteral",
-      "offset": 2115,
-      "length": 4,
-      "value": "\"oz\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZWeight.swift",
-      "kind": "FloatLiteral",
-      "offset": 2247,
-      "length": 12,
-      "value": "0.0352739619"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZWeight.swift",
-      "kind": "FloatLiteral",
-      "offset": 2333,
-      "length": 12,
-      "value": "0.0352739619"
     },
     {
       "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZWeight.swift",
@@ -16659,62 +15892,6 @@
       "value": "true"
     },
     {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZWeight.swift",
-      "kind": "StringLiteral",
-      "offset": 4635,
-      "length": 56,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZWeight.swift",
-      "kind": "StringLiteral",
-      "offset": 4690,
-      "length": 3,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZWeight.swift",
-      "kind": "StringLiteral",
-      "offset": 4787,
-      "length": 3,
-      "value": "\" \""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZWeight.swift",
-      "kind": "StringLiteral",
-      "offset": 4793,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZWeight.swift",
-      "kind": "StringLiteral",
-      "offset": 4901,
-      "length": 75,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZWeight.swift",
-      "kind": "StringLiteral",
-      "offset": 4956,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZWeight.swift",
-      "kind": "StringLiteral",
-      "offset": 4964,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZWeight.swift",
-      "kind": "StringLiteral",
-      "offset": 4975,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
       "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZSampleUpdateTimer.swift",
       "kind": "IntegerLiteral",
       "offset": 270,
@@ -16729,111 +15906,6 @@
       "value": "0"
     },
     {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/ETC\/MZSampleUpdateTimer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 466,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/CG\/MZCG.swift",
-      "kind": "StringLiteral",
-      "offset": 553,
-      "length": 49,
-      "value": "\"use another eg: float\/mzfloat\/double to do this\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/CG\/MZCG.swift",
-      "kind": "IntegerLiteral",
-      "offset": 732,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/CG\/MZCG.swift",
-      "kind": "IntegerLiteral",
-      "offset": 738,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/CG\/MZCG.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2364,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/CG\/MZCG.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2375,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/CG\/MZCG.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3497,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/CG\/MZCG.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3508,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/CG\/MZCG.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3926,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/CG\/MZCG.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3932,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/CG\/MZCG.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4055,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/CG\/MZCG.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4061,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/CG\/MZCG.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4195,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/CG\/MZCG.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4265,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/Standard Library\/MZNumber.swift",
-      "kind": "StringLiteral",
-      "offset": 1288,
-      "length": 3,
-      "value": "\".\""
-    },
-    {
       "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/Standard Library\/MZNumber.swift",
       "kind": "StringLiteral",
       "offset": 2075,
@@ -16846,55 +15918,6 @@
       "offset": 2099,
       "length": 7,
       "value": "\"false\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/Standard Library\/MZNumber.swift",
-      "kind": "StringLiteral",
-      "offset": 2142,
-      "length": 6,
-      "value": "\"true\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/Standard Library\/MZNumber.swift",
-      "kind": "StringLiteral",
-      "offset": 2151,
-      "length": 7,
-      "value": "\"false\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/Standard Library\/MZNumber.swift",
-      "kind": "StringLiteral",
-      "offset": 2608,
-      "length": 15,
-      "value": "\"%0.\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/Standard Library\/MZNumber.swift",
-      "kind": "StringLiteral",
-      "offset": 2621,
-      "length": 1,
-      "value": "\"f\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/Standard Library\/MZNumber.swift",
-      "kind": "StringLiteral",
-      "offset": 2659,
-      "length": 9,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/Standard Library\/MZNumber.swift",
-      "kind": "StringLiteral",
-      "offset": 2667,
-      "length": 3,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/Standard Library\/MZNumber.swift",
-      "kind": "StringLiteral",
-      "offset": 2826,
-      "length": 3,
-      "value": "\".\""
     },
     {
       "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/Standard Library\/MZNumber.swift",
@@ -16930,27 +15953,6 @@
       "offset": 4599,
       "length": 4,
       "value": "true"
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/Standard Library\/MZNumber.swift",
-      "kind": "StringLiteral",
-      "offset": 4910,
-      "length": 3,
-      "value": "\".\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/Standard Library\/MZNumber.swift",
-      "kind": "StringLiteral",
-      "offset": 4930,
-      "length": 31,
-      "value": "\"0123456789\""
-    },
-    {
-      "filePath": "\/Users\/mizukiinaba\/miz_repositories\/miz\/iOS\/MZSwifts\/Sources\/MZSwifts\/Standard Library\/MZNumber.swift",
-      "kind": "StringLiteral",
-      "offset": 4960,
-      "length": 1,
-      "value": "\"\""
     }
   ]
 }

@@ -1,7 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
-// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MZSwifts
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target x86_64-apple-ios16.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name MZSwifts
 import Combine
 import CoreGraphics
 import CryptoKit
@@ -211,13 +210,19 @@ extension MZSwifts.MZDebug {
   public class func fatalUnkonowSegue(to any: Any)
 }
 @_hasMissingDesignatedInitializers public class MZJson {
+  @objc deinit
+}
+extension MZSwifts.MZJson {
   public class func jsonData(ofAny any: Any) -> Foundation.Data?
   public class func jsonData(ofDictionary dictionary: [Swift.String : Swift.AnyObject]) -> Foundation.Data?
   public class func jsonString(from data: Foundation.Data) -> Swift.String?
+}
+extension MZSwifts.MZJson {
   public class func jsonString(from dictionary: [Swift.String : Swift.AnyObject]) -> Swift.String?
+}
+extension MZSwifts.MZJson {
   public class func array(from jsonString: Swift.String) -> [Swift.AnyObject]?
   public class func dictionary(from jsonString: Swift.String) -> [Swift.String : Swift.AnyObject]?
-  @objc deinit
 }
 extension Foundation.Bundle {
   public var appVersion: Swift.String? {
@@ -526,6 +531,16 @@ extension Swift.String {
   public func double(removeNonNumbersCharacters: Swift.Bool = true, locale: Foundation.Locale = Locale.current) -> Swift.Double?
   public func cgFloat(removeNonNumbersCharacters: Swift.Bool = true, locale: Foundation.Locale = Locale.current) -> CoreFoundation.CGFloat?
   public func mzFloat(removeNonNumbersCharacters: Swift.Bool = true, locale: Foundation.Locale = Locale.current) -> MZSwifts.MZFloat?
+}
+extension Swift.Dictionary where Key == Swift.String, Value == AnyObject {
+  public func bool(of key: Swift.String) -> Swift.Bool
+  public func int(of key: Swift.String) -> Swift.Int
+  public func double(of key: Swift.String) -> Swift.Double
+  public func string(of key: Swift.String) -> Swift.String
+  public mutating func set(key: Swift.String, value: Swift.String?)
+}
+extension Swift.Array {
+  public func at(_ index: Swift.Int) -> Element?
 }
 extension MZSwifts.MZTimer.State : Swift.Equatable {}
 extension MZSwifts.MZTimer.State : Swift.Hashable {}

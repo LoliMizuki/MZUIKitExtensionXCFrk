@@ -1,7 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
-// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MZUIKitExtension
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios16.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name MZUIKitExtension
 import CoreGraphics
 import Foundation
 import MZSwifts
@@ -70,6 +69,7 @@ extension UIKit.UIImageView {
   @_Concurrency.MainActor(unsafe) public var contentClippingRect: CoreFoundation.CGRect {
     get
   }
+  @_Concurrency.MainActor(unsafe) public func colorAt(_ point: CoreFoundation.CGPoint) -> UIKit.UIColor?
 }
 public protocol MZTouchNotifierProtocol : AnyObject {
   func addTouchResponder(touchResponder: any MZUIKitExtension.MZTouchResponderProtocol)
@@ -119,10 +119,16 @@ extension UIKit.UIImage {
   public func cropped(to cropRect: CoreFoundation.CGRect) -> UIKit.UIImage?
   public func rotating(to orientation: UIKit.UIImage.Orientation) -> UIKit.UIImage?
 }
+extension UIKit.UIImage {
+  public func colorAt(x: CoreFoundation.CGFloat, y: CoreFoundation.CGFloat) -> UIKit.UIColor?
+}
 @_hasMissingDesignatedInitializers public class MZImage {
   public struct DataInfo {
   }
   @objc deinit
+}
+extension CoreGraphics.CGImage {
+  public func colorAt(x: Swift.Int, y: Swift.Int) -> UIKit.UIColor?
 }
 @objc public class MZInAppPurchaseManger : ObjectiveC.NSObject {
   public var canMakePayments: Swift.Bool {
@@ -209,7 +215,8 @@ extension UIKit.UIView {
   @_Concurrency.MainActor(unsafe) public func addCircleMask()
   @_Concurrency.MainActor(unsafe) public func drawBorder(color: UIKit.UIColor = UIColor.green, width: CoreFoundation.CGFloat = 2)
   @_Concurrency.MainActor(unsafe) public func copyView<T>() -> T where T : UIKit.UIView
-  @_Concurrency.MainActor(unsafe) public func snapshotImage(size: CoreFoundation.CGSize? = nil, dpi: Swift.Int = 72, opaque: Swift.Bool = true, usingCopyView: Swift.Bool = false) -> UIKit.UIImage?
+  @_Concurrency.MainActor(unsafe) public func snapshotImage(size: CoreFoundation.CGSize? = nil, dpi: Swift.Int = 72, opaque: Swift.Bool = false, usingCopyView: Swift.Bool = false) -> UIKit.UIImage?
+  @_Concurrency.MainActor(unsafe) public func _setupForNib(withName nibName: Swift.String? = nil)
 }
 extension UIKit.UIControl {
   @_Concurrency.MainActor(unsafe) public func setAction(_ action: UIKit.UIAction, for event: UIKit.UIControl.Event)
@@ -217,6 +224,11 @@ extension UIKit.UIControl {
   @_Concurrency.MainActor(unsafe) public func addAction(for event: UIKit.UIControl.Event, action: @escaping ((UIKit.UIAction) -> ()))
   @_Concurrency.MainActor(unsafe) public func removeAllActions()
   @_Concurrency.MainActor(unsafe) public func removeAction(for event: UIKit.UIControl.Event)
+  @_Concurrency.MainActor(unsafe) public func removeAllGestureRecognizers()
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func addTapGestureRecognizer(target: Any?, action: ObjectiveC.Selector?) -> UIKit.UITapGestureRecognizer
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func setTapGestureRecognizer(target: Any?, action: ObjectiveC.Selector?) -> UIKit.UITapGestureRecognizer
 }
 extension UIKit.UIColor {
   convenience public init(hex: Swift.Int)
@@ -249,8 +261,27 @@ extension MZUIKitExtension.MZUIs {
 extension UIKit.UIViewController {
   @_Concurrency.MainActor(unsafe) public class func topViewController() -> UIKit.UIViewController?
 }
+extension MZUIKitExtension.MZUIs {
+  public class ViewLocalizableControl {
+    public var adjustsFontSizeToFitWidthForLabel: Swift.Bool
+    public var localID: Swift.String? {
+      get
+    }
+    public init()
+    public func add(view: UIKit.UIView, localizedStringKey: Swift.String)
+    public func addViewUseSelfTextAsKey(_ view: UIKit.UIView)
+    public func localizedStringKey(of view: UIKit.UIView) -> Swift.String?
+    public func update(localID: Swift.String? = nil)
+    public func removeAll()
+    @objc deinit
+  }
+}
+extension MZUIKitExtension.MZUIs {
+  public class func localized(of text: Swift.String?, localeID: Swift.String? = nil, comment: Swift.String = "") -> Swift.String?
+}
 extension Swift.String {
   public func localizing(comment: Swift.String = "") -> Swift.String
+  public func localizing(localeID: Swift.String? = nil, comment: Swift.String = "") -> Swift.String
 }
 @propertyWrapper public struct UserDefaultsStoredUIColor {
   public init(key: Swift.String, default: UIKit.UIColor?)
@@ -262,6 +293,9 @@ extension Swift.String {
 extension MZUIKitExtension.UserDefaultsStoredUIColor {
   public static func color(forKey key: Swift.String, default: UIKit.UIColor?) -> UIKit.UIColor?
   public static func setColor(_ color: UIKit.UIColor?, forKey key: Swift.String)
+}
+extension UIKit.UIButton {
+  @_Concurrency.MainActor(unsafe) public func setUnderline(color: UIKit.UIColor? = nil)
 }
 extension MZUIKitExtension.MZUIs {
   @_hasMissingDesignatedInitializers public class AlertController {
