@@ -349,6 +349,9 @@ public class MZUIPresentViewOnTopWithMask {
   public func hide(forPresented _view: UIKit.UIView? = nil, animating: Swift.Bool = true)
   @objc deinit
 }
+extension UIKit.UITextView {
+  @_Concurrency.MainActor(unsafe) public func addAccessoryBarWithDoneButton(title: Swift.String = "Done", endEditingFor view: UIKit.UIView, textColor: UIKit.UIColor? = nil, barColor: UIKit.UIColor? = .white, barHeight: CoreFoundation.CGFloat = 44)
+}
 extension MZUIKitExtension.MZTouchType : Swift.Equatable {}
 extension MZUIKitExtension.MZTouchType : Swift.Hashable {}
 extension MZUIKitExtension.MZTouchType : Swift.RawRepresentable {}

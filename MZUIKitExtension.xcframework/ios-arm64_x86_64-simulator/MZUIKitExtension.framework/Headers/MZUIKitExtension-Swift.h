@@ -367,6 +367,7 @@ SWIFT_CLASS("_TtC16MZUIKitExtension21MZMediaLibraryPickerX")
 
 
 
+
 #endif
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
@@ -728,6 +729,7 @@ SWIFT_CLASS("_TtC16MZUIKitExtension21MZMediaLibraryPickerX")
 - (void)imagePickerController:(UIImagePickerController * _Nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<UIImagePickerControllerInfoKey, id> * _Nonnull)info;
 - (void)imagePickerControllerDidCancel:(UIImagePickerController * _Nonnull)picker;
 @end
+
 
 
 
