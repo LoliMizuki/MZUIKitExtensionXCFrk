@@ -451,6 +451,50 @@ public func * (lhs: CoreFoundation.CGPoint, rhs: CoreFoundation.CGSize) -> CoreF
   public static func forceToMainThread(_ action: @escaping () -> ())
   @objc deinit
 }
+extension Swift.Sequence {
+  #if compiler(>=5.3) && $AsyncAwait
+  @inlinable public func asyncMap<T>(_ transform: (Self.Element) async throws -> T) async rethrows -> [T] {
+        var values = [T]()
+
+        for element in self {
+            try await values.append(transform(element))
+        }
+
+        return values
+    }
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @inlinable public func asyncCompactMap<T>(_ transform: (Self.Element) async throws -> T?) async rethrows -> [T] {
+        var values = [T]()
+        
+        for element in self {
+            if let value = try await transform(element) {
+                values.append(value)
+            }
+        }
+
+        return values
+    }
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @inlinable public func asyncReduce<Result>(_ initialResult: Result, _ nextPartialResult: (Result, Self.Element) async throws -> Result) async rethrows -> Result {
+        var partialResult = initialResult
+
+        for element in self {
+            partialResult = try await nextPartialResult(partialResult, element)
+        }
+
+        return partialResult
+    }
+  #endif
+}
+#if compiler(>=5.3) && $Actors
+extension _Concurrency.MainActor {
+  #if compiler(>=5.3) && $AsyncAwait && $Sendable
+  public static func run<T>(resultType: T.Type = T.self, body: @_Concurrency.MainActor @Sendable () throws -> T) async rethrows -> T
+  #endif
+}
+#endif
 public typealias MZFloat = Swift.Double
 extension Swift.Double {
   public var float: Swift.Float {

@@ -7096,6 +7096,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MZSwifts",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "CoreGraphics",
         "printedName": "CoreGraphics",
         "declKind": "Import",
@@ -13215,6 +13225,329 @@
             "printedName": "Encodable",
             "usr": "s:SE",
             "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Sequence",
+        "printedName": "Sequence",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "asyncMap",
+            "printedName": "asyncMap(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[τ_1_0]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_1_0"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(τ_0_0.Element) async throws -> τ_1_0",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_1_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DependentMember",
+                    "printedName": "τ_0_0.Element"
+                  }
+                ],
+                "typeAttributes": [
+                  "noescape"
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:ST8MZSwiftsE8asyncMapySayqd__Gqd__7ElementQzYaKXEYaKlF",
+            "mangledName": "$sST8MZSwiftsE8asyncMapySayqd__Gqd__7ElementQzYaKXEYaKlF",
+            "moduleName": "MZSwifts",
+            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : Swift.Sequence>",
+            "sugared_genericSig": "<Self, T where Self : Swift.Sequence>",
+            "declAttributes": [
+              "Rethrows",
+              "AccessControl",
+              "Inlinable"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "asyncCompactMap",
+            "printedName": "asyncCompactMap(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[τ_1_0]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_1_0"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(τ_0_0.Element) async throws -> τ_1_0?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "τ_1_0?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_1_0"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DependentMember",
+                    "printedName": "τ_0_0.Element"
+                  }
+                ],
+                "typeAttributes": [
+                  "noescape"
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:ST8MZSwiftsE15asyncCompactMapySayqd__Gqd__Sg7ElementQzYaKXEYaKlF",
+            "mangledName": "$sST8MZSwiftsE15asyncCompactMapySayqd__Gqd__Sg7ElementQzYaKXEYaKlF",
+            "moduleName": "MZSwifts",
+            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : Swift.Sequence>",
+            "sugared_genericSig": "<Self, T where Self : Swift.Sequence>",
+            "declAttributes": [
+              "Rethrows",
+              "AccessControl",
+              "Inlinable"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "asyncReduce",
+            "printedName": "asyncReduce(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_1_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_1_0"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(τ_1_0, τ_0_0.Element) async throws -> τ_1_0",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_1_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(τ_1_0, τ_0_0.Element)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_1_0"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DependentMember",
+                        "printedName": "τ_0_0.Element"
+                      }
+                    ]
+                  }
+                ],
+                "typeAttributes": [
+                  "noescape"
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:ST8MZSwiftsE11asyncReduceyqd__qd___qd__qd___7ElementQztYaKXEtYaKlF",
+            "mangledName": "$sST8MZSwiftsE11asyncReduceyqd__qd___qd__qd___7ElementQztYaKXEtYaKlF",
+            "moduleName": "MZSwifts",
+            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : Swift.Sequence>",
+            "sugared_genericSig": "<Self, Result where Self : Swift.Sequence>",
+            "declAttributes": [
+              "Rethrows",
+              "AccessControl",
+              "Inlinable"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:ST",
+        "mangledName": "$sST",
+        "moduleName": "Swift",
+        "genericSig": "<τ_0_0.Element == τ_0_0.Iterator.Element, τ_0_0.Iterator : Swift.IteratorProtocol>",
+        "sugared_genericSig": "<Self.Element == Self.Iterator.Element, Self.Iterator : Swift.IteratorProtocol>",
+        "isExternal": true
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MainActor",
+        "printedName": "MainActor",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "run",
+            "printedName": "run(resultType:body:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Metatype",
+                "printedName": "τ_0_0.Type",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "hasDefaultArg": true
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() throws -> τ_0_0",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "typeAttributes": [
+                  "noescape"
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:ScM8MZSwiftsE3run10resultType4bodyxxm_xyYbKScMYcXEtYaKlFZ",
+            "mangledName": "$sScM8MZSwiftsE3run10resultType4bodyxxm_xyYbKScMYcXEtYaKlFZ",
+            "moduleName": "MZSwifts",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<T>",
+            "static": true,
+            "declAttributes": [
+              "Rethrows",
+              "AccessControl",
+              "Final"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:ScM",
+        "mangledName": "$sScM",
+        "moduleName": "_Concurrency",
+        "intro_Macosx": "10.15",
+        "intro_iOS": "13.0",
+        "intro_tvOS": "13.0",
+        "intro_watchOS": "6.0",
+        "declAttributes": [
+          "Final",
+          "GlobalActor",
+          "Available",
+          "Available",
+          "Available",
+          "Available"
+        ],
+        "isExternal": true,
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Actor",
+            "printedName": "Actor",
+            "usr": "s:ScA",
+            "mangledName": "$sScA"
+          },
+          {
+            "kind": "Conformance",
+            "name": "GlobalActor",
+            "printedName": "GlobalActor",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ActorType",
+                "printedName": "ActorType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MainActor",
+                    "printedName": "_Concurrency.MainActor",
+                    "usr": "s:ScM"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:12_Concurrency11GlobalActorP",
+            "mangledName": "$ss11GlobalActorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "AnyActor",
+            "printedName": "AnyActor",
+            "usr": "s:12_Concurrency8AnyActorP",
+            "mangledName": "$ss8AnyActorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
