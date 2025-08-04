@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
-// swift-module-flags: -target arm64-apple-ios16.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name MZUIKitExtension
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target arm64-apple-ios16.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name MZUIKitExtension
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
 import CoreGraphics
 import Foundation
 import MZSwifts
@@ -66,10 +67,10 @@ extension MZUIKitExtension.MZUIControlKeyboardEventsProtocol {
   public mutating func disable()
 }
 extension UIKit.UIImageView {
-  @_Concurrency.MainActor(unsafe) public var contentClippingRect: CoreFoundation.CGRect {
+  @_Concurrency.MainActor @preconcurrency public var contentClippingRect: CoreFoundation.CGRect {
     get
   }
-  @_Concurrency.MainActor(unsafe) public func colorAt(_ point: CoreFoundation.CGPoint) -> UIKit.UIColor?
+  @_Concurrency.MainActor @preconcurrency public func colorAt(_ point: CoreFoundation.CGPoint) -> UIKit.UIColor?
 }
 public protocol MZTouchNotifierProtocol : AnyObject {
   func addTouchResponder(touchResponder: any MZUIKitExtension.MZTouchResponderProtocol)
@@ -98,7 +99,7 @@ public enum MZTouchType : Swift.Int {
 }
 extension MZUIKitExtension.MZTouchType : Swift.CaseIterable {
   public typealias AllCases = [MZUIKitExtension.MZTouchType]
-  public static var allCases: [MZUIKitExtension.MZTouchType] {
+  nonisolated public static var allCases: [MZUIKitExtension.MZTouchType] {
     get
   }
 }
@@ -156,7 +157,7 @@ extension MZUIKitExtension.MZInAppPurchaseManger : StoreKit.SKPaymentTransaction
   @objc dynamic public func paymentQueue(_ queue: StoreKit.SKPaymentQueue, restoreCompletedTransactionsFailedWithError error: any Swift.Error)
 }
 extension UIKit.UITextField {
-  @_Concurrency.MainActor(unsafe) public func addAccessoryBarWithDoneButton(title: Swift.String = "Done", endEditingFor view: UIKit.UIView, textColor: UIKit.UIColor? = nil, barColor: UIKit.UIColor? = .white, barHeight: CoreFoundation.CGFloat = 44)
+  @_Concurrency.MainActor @preconcurrency public func addAccessoryBarWithDoneButton(title: Swift.String = "Done", endEditingFor view: UIKit.UIView, textColor: UIKit.UIColor? = nil, barColor: UIKit.UIColor? = .white, barHeight: CoreFoundation.CGFloat = 44)
 }
 extension MZUIKitExtension.MZUIs {
   public static var defaultLocaleIDIfNotFoundInCurrent: Swift.String {
@@ -196,41 +197,41 @@ extension MZUIKitExtension.MZInputUtility {
   }
 }
 extension MZUIKitExtension.MZInputUtility {
-  @objc @_Concurrency.MainActor(unsafe) public class TextViewControl : ObjectiveC.NSObject, UIKit.UITextViewDelegate {
-    @_Concurrency.MainActor(unsafe) public init(textView: UIKit.UITextView, maxLength: Swift.Int? = nil, placeholder: Swift.String? = nil)
+  @objc @_Concurrency.MainActor @preconcurrency public class TextViewControl : ObjectiveC.NSObject, UIKit.UITextViewDelegate {
+    @_Concurrency.MainActor @preconcurrency public init(textView: UIKit.UITextView, maxLength: Swift.Int? = nil, placeholder: Swift.String? = nil)
     @objc deinit
-    @_Concurrency.MainActor(unsafe) public func update()
-    @_Concurrency.MainActor(unsafe) @objc public func textViewDidChange(_ textView: UIKit.UITextView)
+    @_Concurrency.MainActor @preconcurrency public func update()
+    @_Concurrency.MainActor @preconcurrency @objc public func textViewDidChange(_ textView: UIKit.UITextView)
   }
 }
 @_hasMissingDesignatedInitializers public class MZUIs {
   @objc deinit
 }
 extension UIKit.UIView {
-  @_Concurrency.MainActor(unsafe) public var isShown: Swift.Bool {
+  @_Concurrency.MainActor @preconcurrency public var isShown: Swift.Bool {
     get
     set
   }
-  @_Concurrency.MainActor(unsafe) public func set(anchorPoint: CoreFoundation.CGPoint)
-  @_Concurrency.MainActor(unsafe) public func addCircleMask()
-  @_Concurrency.MainActor(unsafe) public func drawBorder(color: UIKit.UIColor = UIColor.green, width: CoreFoundation.CGFloat = 2)
-  @_Concurrency.MainActor(unsafe) public func copyView<T>() -> T where T : UIKit.UIView
-  @_Concurrency.MainActor(unsafe) public func snapshotImage(size: CoreFoundation.CGSize? = nil, dpi: Swift.Int = 72, opaque: Swift.Bool = false, usingCopyView: Swift.Bool = false) -> UIKit.UIImage?
-  @_Concurrency.MainActor(unsafe) public func _setupForNib(withName nibName: Swift.String? = nil)
+  @_Concurrency.MainActor @preconcurrency public func set(anchorPoint: CoreFoundation.CGPoint)
+  @_Concurrency.MainActor @preconcurrency public func addCircleMask()
+  @_Concurrency.MainActor @preconcurrency public func drawBorder(color: UIKit.UIColor = UIColor.green, width: CoreFoundation.CGFloat = 2)
+  @_Concurrency.MainActor @preconcurrency public func copyView<T>() -> T where T : UIKit.UIView
+  @_Concurrency.MainActor @preconcurrency public func snapshotImage(size: CoreFoundation.CGSize? = nil, dpi: Swift.Int = 72, opaque: Swift.Bool = false, usingCopyView: Swift.Bool = false) -> UIKit.UIImage?
+  @_Concurrency.MainActor @preconcurrency public func _setupForNib(withName nibName: Swift.String? = nil)
 }
 extension UIKit.UIView {
-  @_Concurrency.MainActor(unsafe) public func removeAllGestureRecognizers()
+  @_Concurrency.MainActor @preconcurrency public func removeAllGestureRecognizers()
   @discardableResult
-  @_Concurrency.MainActor(unsafe) public func addTapGestureRecognizer(target: Any?, action: ObjectiveC.Selector?) -> UIKit.UITapGestureRecognizer
+  @_Concurrency.MainActor @preconcurrency public func addTapGestureRecognizer(target: Any?, action: ObjectiveC.Selector?) -> UIKit.UITapGestureRecognizer
   @discardableResult
-  @_Concurrency.MainActor(unsafe) public func setTapGestureRecognizer(target: Any?, action: ObjectiveC.Selector?) -> UIKit.UITapGestureRecognizer
+  @_Concurrency.MainActor @preconcurrency public func setTapGestureRecognizer(target: Any?, action: ObjectiveC.Selector?) -> UIKit.UITapGestureRecognizer
 }
 extension UIKit.UIControl {
-  @_Concurrency.MainActor(unsafe) public func setAction(_ action: UIKit.UIAction, for event: UIKit.UIControl.Event)
-  @_Concurrency.MainActor(unsafe) public func setAction(for event: UIKit.UIControl.Event, action: @escaping ((UIKit.UIAction) -> ()))
-  @_Concurrency.MainActor(unsafe) public func addAction(for event: UIKit.UIControl.Event, action: @escaping ((UIKit.UIAction) -> ()))
-  @_Concurrency.MainActor(unsafe) public func removeAllActions()
-  @_Concurrency.MainActor(unsafe) public func removeAction(for event: UIKit.UIControl.Event)
+  @_Concurrency.MainActor @preconcurrency public func setAction(_ action: UIKit.UIAction, for event: UIKit.UIControl.Event)
+  @_Concurrency.MainActor @preconcurrency public func setAction(for event: UIKit.UIControl.Event, action: @escaping (UIKit.UIAction) -> ())
+  @_Concurrency.MainActor @preconcurrency public func addAction(for event: UIKit.UIControl.Event, action: @escaping (UIKit.UIAction) -> ())
+  @_Concurrency.MainActor @preconcurrency public func removeAllActions()
+  @_Concurrency.MainActor @preconcurrency public func removeAction(for event: UIKit.UIControl.Event)
 }
 extension UIKit.UIColor {
   convenience public init(hex: Swift.Int)
@@ -251,17 +252,17 @@ extension UIKit.UIColor {
   @objc deinit
 }
 extension MZUIKitExtension.MZMediaLibraryPickerX : PhotosUI.PHPickerViewControllerDelegate {
-  @_Concurrency.MainActor(unsafe) public func picker(_ picker: PhotosUI.PHPickerViewController, didFinishPicking results: [PhotosUI.PHPickerResult])
+  @_Concurrency.MainActor @preconcurrency public func picker(_ picker: PhotosUI.PHPickerViewController, didFinishPicking results: [PhotosUI.PHPickerResult])
 }
 extension MZUIKitExtension.MZMediaLibraryPickerX : UIKit.UIImagePickerControllerDelegate, UIKit.UINavigationControllerDelegate {
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func imagePickerController(_ picker: UIKit.UIImagePickerController, didFinishPickingMediaWithInfo info: [UIKit.UIImagePickerController.InfoKey : Any])
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func imagePickerControllerDidCancel(_ picker: UIKit.UIImagePickerController)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func imagePickerController(_ picker: UIKit.UIImagePickerController, didFinishPickingMediaWithInfo info: [UIKit.UIImagePickerController.InfoKey : Any])
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func imagePickerControllerDidCancel(_ picker: UIKit.UIImagePickerController)
 }
 extension MZUIKitExtension.MZUIs {
   public class func topViewController() -> UIKit.UIViewController?
 }
 extension UIKit.UIViewController {
-  @_Concurrency.MainActor(unsafe) public class func topViewController() -> UIKit.UIViewController?
+  @_Concurrency.MainActor @preconcurrency public class func topViewController() -> UIKit.UIViewController?
 }
 extension MZUIKitExtension.MZUIs {
   public class ViewLocalizableControl {
@@ -297,7 +298,7 @@ extension MZUIKitExtension.UserDefaultsStoredUIColor {
   public static func setColor(_ color: UIKit.UIColor?, forKey key: Swift.String)
 }
 extension UIKit.UIButton {
-  @_Concurrency.MainActor(unsafe) public func setUnderline(color: UIKit.UIColor? = nil)
+  @_Concurrency.MainActor @preconcurrency public func setUnderline(color: UIKit.UIColor? = nil)
 }
 extension MZUIKitExtension.MZUIs {
   @_hasMissingDesignatedInitializers public class AlertController {
@@ -310,15 +311,15 @@ extension MZUIKitExtension.MZUIs {
   }
 }
 extension UIKit.UIAlertController {
-  @_Concurrency.MainActor(unsafe) convenience public init(title: Swift.String? = nil, message: Swift.String? = nil, needLocalize: Swift.Bool = false, style: UIKit.UIAlertController.Style, actions: [UIKit.UIAlertAction]? = nil, actionSheetPadStyle: UIKit.UIAlertController.ActionSheetPadStyle = .default)
+  @_Concurrency.MainActor @preconcurrency convenience public init(title: Swift.String? = nil, message: Swift.String? = nil, needLocalize: Swift.Bool = false, style: UIKit.UIAlertController.Style, actions: [UIKit.UIAlertAction]? = nil, actionSheetPadStyle: UIKit.UIAlertController.ActionSheetPadStyle = .default)
 }
 extension UIKit.UIAlertController {
   @discardableResult
-  @_Concurrency.MainActor(unsafe) public class func show(title: Swift.String? = nil, message: Swift.String? = nil, needLocalize: Swift.Bool = false, style: UIKit.UIAlertController.Style, actions: [UIKit.UIAlertAction]? = nil, in viewController: UIKit.UIViewController? = nil, actionSheetPadStyle: UIKit.UIAlertController.ActionSheetPadStyle = .default) -> UIKit.UIAlertController
+  @_Concurrency.MainActor @preconcurrency public class func show(title: Swift.String? = nil, message: Swift.String? = nil, needLocalize: Swift.Bool = false, style: UIKit.UIAlertController.Style, actions: [UIKit.UIAlertAction]? = nil, in viewController: UIKit.UIViewController? = nil, actionSheetPadStyle: UIKit.UIAlertController.ActionSheetPadStyle = .default) -> UIKit.UIAlertController
   @discardableResult
-  @_Concurrency.MainActor(unsafe) public class func showWithCancel(title: Swift.String? = nil, message: Swift.String? = nil, needLocalize: Swift.Bool = false, style: UIKit.UIAlertController.Style, actions: [UIKit.UIAlertAction]? = nil, in viewController: UIKit.UIViewController? = nil, cancelTitle: Swift.String = "Cancel", cancelAction: ((UIKit.UIAlertAction) -> ())? = nil, actionSheetPadStyle: UIKit.UIAlertController.ActionSheetPadStyle = .default) -> UIKit.UIAlertController
+  @_Concurrency.MainActor @preconcurrency public class func showWithCancel(title: Swift.String? = nil, message: Swift.String? = nil, needLocalize: Swift.Bool = false, style: UIKit.UIAlertController.Style, actions: [UIKit.UIAlertAction]? = nil, in viewController: UIKit.UIViewController? = nil, cancelTitle: Swift.String = "Cancel", cancelAction: ((UIKit.UIAlertAction) -> ())? = nil, actionSheetPadStyle: UIKit.UIAlertController.ActionSheetPadStyle = .default) -> UIKit.UIAlertController
   @discardableResult
-  @_Concurrency.MainActor(unsafe) public static func popover(title: Swift.String? = nil, message: Swift.String? = nil, in owner: UIKit.UIViewController, okTitle: Swift.String = "Ok", okAction: (() -> ())? = nil) -> UIKit.UIAlertController
+  @_Concurrency.MainActor @preconcurrency public static func popover(title: Swift.String? = nil, message: Swift.String? = nil, in owner: UIKit.UIViewController, okTitle: Swift.String = "Ok", okAction: (() -> ())? = nil) -> UIKit.UIAlertController
 }
 extension UIKit.UIAlertController {
   public enum ActionSheetPadStyle {
@@ -328,7 +329,7 @@ extension UIKit.UIAlertController {
   }
 }
 extension UIKit.UINavigationBar {
-  @_Concurrency.MainActor(unsafe) public func removeShadow()
+  @_Concurrency.MainActor @preconcurrency public func removeShadow()
 }
 @objc @_inheritsConvenienceInitializers public class MZMediaLibraryPicker : ObjectiveC.NSObject {
   @available(iOS 13.0, *)
@@ -338,8 +339,8 @@ extension UIKit.UINavigationBar {
   @objc deinit
 }
 extension MZUIKitExtension.MZMediaLibraryPicker : UIKit.UIImagePickerControllerDelegate, UIKit.UINavigationControllerDelegate {
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func imagePickerController(_ picker: UIKit.UIImagePickerController, didFinishPickingMediaWithInfo info: [UIKit.UIImagePickerController.InfoKey : Any])
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func imagePickerControllerDidCancel(_ picker: UIKit.UIImagePickerController)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func imagePickerController(_ picker: UIKit.UIImagePickerController, didFinishPickingMediaWithInfo info: [UIKit.UIImagePickerController.InfoKey : Any])
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func imagePickerControllerDidCancel(_ picker: UIKit.UIImagePickerController)
 }
 public class MZUIPresentViewOnTopWithMask {
   public var enableTapMaskToHide: Swift.Bool
@@ -350,10 +351,11 @@ public class MZUIPresentViewOnTopWithMask {
   @objc deinit
 }
 extension UIKit.UITextView {
-  @_Concurrency.MainActor(unsafe) public func addAccessoryBarWithDoneButton(title: Swift.String = "Done", endEditingFor view: UIKit.UIView, textColor: UIKit.UIColor? = nil, barColor: UIKit.UIColor? = .white, barHeight: CoreFoundation.CGFloat = 44)
+  @_Concurrency.MainActor @preconcurrency public func addAccessoryBarWithDoneButton(title: Swift.String = "Done", endEditingFor view: UIKit.UIView, textColor: UIKit.UIColor? = nil, barColor: UIKit.UIColor? = .white, barHeight: CoreFoundation.CGFloat = 44)
 }
 extension MZUIKitExtension.MZTouchType : Swift.Equatable {}
 extension MZUIKitExtension.MZTouchType : Swift.Hashable {}
 extension MZUIKitExtension.MZTouchType : Swift.RawRepresentable {}
+extension MZUIKitExtension.MZInputUtility.TextViewControl : Swift.Sendable {}
 extension MZUIKitExtension.MZMediaLibraryPickerX.SourceType : Swift.Equatable {}
 extension MZUIKitExtension.MZMediaLibraryPickerX.SourceType : Swift.Hashable {}

@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
-// swift-module-flags: -target arm64-apple-ios16.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name MZSwifts
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target arm64-apple-ios16.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name MZSwifts
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
 import Combine
 import CoreGraphics
 import CryptoKit
@@ -138,11 +139,11 @@ extension MZSwifts.MZUnit {
     case metric
     case imperial
     public static func == (a: MZSwifts.MZUnit.MeasurementSystem, b: MZSwifts.MZUnit.MeasurementSystem) -> Swift.Bool
-    public func hash(into hasher: inout Swift.Hasher)
     public typealias AllCases = [MZSwifts.MZUnit.MeasurementSystem]
-    public static var allCases: [MZSwifts.MZUnit.MeasurementSystem] {
+    nonisolated public static var allCases: [MZSwifts.MZUnit.MeasurementSystem] {
       get
     }
+    public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
       get
     }
@@ -165,7 +166,7 @@ extension Dispatch.DispatchTime {
     public init?(rawValue: Swift.Int)
     public typealias AllCases = [MZSwifts.MZAngle.CircularMotion]
     public typealias RawValue = Swift.Int
-    public static var allCases: [MZSwifts.MZAngle.CircularMotion] {
+    nonisolated public static var allCases: [MZSwifts.MZAngle.CircularMotion] {
       get
     }
     public var rawValue: Swift.Int {
@@ -192,7 +193,7 @@ extension Swift.String {
 @_hasMissingDesignatedInitializers public class MZDebug {
   public static var isEnable: Swift.Bool
   public class func log(_ item: Any? = nil, filePath: Swift.String = #file, functionName: Swift.String = #function, line: Swift.Int = #line)
-  public class func logFunctionName(prefix: Swift.String? = nil, filePath: Swift.String = #file, functionName: Swift.String = #function, line: Swift.Int = #line)
+  public class func logFunctionName(prefix: Swift.String = "", filePath: Swift.String = #file, functionName: Swift.String = #function, line: Swift.Int = #line)
   public class func timeLog(_ message: Swift.String, filePath: Swift.String = #file, functionName: Swift.String = #function, line: Swift.Int = #line)
   public class func assert(predicate: @autoclosure () -> Swift.Bool, message: Swift.String, filePath: Swift.String = #file, functionName: Swift.String = #function, line: Swift.Int = #line)
   public class func assert(noNil target: Any?)
@@ -452,7 +453,6 @@ public func * (lhs: CoreFoundation.CGPoint, rhs: CoreFoundation.CGSize) -> CoreF
   @objc deinit
 }
 extension Swift.Sequence {
-  #if compiler(>=5.3) && $AsyncAwait
   @inlinable public func asyncMap<T>(_ transform: (Self.Element) async throws -> T) async rethrows -> [T] {
         var values = [T]()
 
@@ -462,8 +462,6 @@ extension Swift.Sequence {
 
         return values
     }
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   @inlinable public func asyncCompactMap<T>(_ transform: (Self.Element) async throws -> T?) async rethrows -> [T] {
         var values = [T]()
         
@@ -475,8 +473,6 @@ extension Swift.Sequence {
 
         return values
     }
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   @inlinable public func asyncReduce<Result>(_ initialResult: Result, _ nextPartialResult: (Result, Self.Element) async throws -> Result) async rethrows -> Result {
         var partialResult = initialResult
 
@@ -486,15 +482,10 @@ extension Swift.Sequence {
 
         return partialResult
     }
-  #endif
 }
-#if compiler(>=5.3) && $Actors
 extension _Concurrency.MainActor {
-  #if compiler(>=5.3) && $AsyncAwait && $Sendable
   public static func run<T>(resultType: T.Type = T.self, body: @_Concurrency.MainActor @Sendable () throws -> T) async rethrows -> T
-  #endif
 }
-#endif
 public typealias MZFloat = Swift.Double
 extension Swift.Double {
   public var float: Swift.Float {
