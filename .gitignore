@@ -2,6 +2,7 @@
 /.build
 /Packages
 /*.xcodeproj
-xcuserdata/
 Archived_Frameworks_Output/
 MZUIKitExtension/workingtemp/
+/.swiftpm/xcode/package.xcworkspace/xcuserdata/
+/.swiftpm/xcode/xcuserdata/
