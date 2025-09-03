@@ -11,14 +11,25 @@ let package = Package(
     products: [
         .library(
             name: "MZUIKitExtensionXCFrk",
-            targets: ["MZSwifts", "MZUIKitExtension"]),
+            targets: ["MZUIKitExtension", "MZSwiftsWrapper"]
+        )
+    ],
+    
+    dependencies: [
+        .package(
+            url: "https://github.com/LoliMizuki/MZSwiftsXCFrk",
+            from: "1.4.0"
+        )
     ],
     
     targets: [
-        .binaryTarget(
-            name: "MZSwifts",
-            path: "MZSwifts.xcframework"
+        .target(
+            name: "MZSwiftsWrapper",
+            dependencies: [
+                .product(name: "MZSwifts", package: "MZSwiftsXCFrk")
+            ]
         ),
+
         .binaryTarget(
             name: "MZUIKitExtension",
             path: "MZUIKitExtension.xcframework"
